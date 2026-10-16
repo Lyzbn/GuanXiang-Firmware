@@ -52,7 +52,7 @@ Follow the prerelease package instructions and checksums. Existing history and s
 
 The public **v1.1.0-rc.1 prerelease** retains source-version metadata `1.1.0-dev`. Its application source is `ae85426`. The local Release build and fixed-source CI, including 238,355 native regression checks, passed. Main-reading checks cover **13,522 layouts and 214,191 bounds**; study checks cover **5,362 layouts and 34,342 bounds**, with zero errors. The two galleries contain 68 and 32 host previews respectively. Fixed-source CI `38967327177` passed; the selected Linux application image is **1,567,632 bytes**. Its digest and device-check boundaries are recorded in [VALIDATION.md](VALIDATION.md).
 
-The new candidate passed app-only writing, independent flash verification, NVS preservation and the serial boot smoke test; user acceptance passed. Matching relink and modified-framework rebuild checks also passed; native execution of the public Linux wrapper remains pending. The [validation record](VALIDATION.md) will distinguish each artifact and its device results; the [release notes](RELEASE_NOTES_v1.1.0.md) describe this prerelease.
+The new candidate passed app-only writing, independent flash verification, NVS preservation and the serial boot smoke test; user acceptance passed. Matching relink and modified-framework rebuild checks also passed; native Linux relinking and framework rebuilding [passed](https://github.com/Lyzbn/GuanXiang-Firmware/actions/runs/38968830479) using the published release assets. The [validation record](VALIDATION.md) will distinguish each artifact and its device results; the [release notes](RELEASE_NOTES_v1.1.0.md) describe this prerelease.
 
 ## Release materials
 

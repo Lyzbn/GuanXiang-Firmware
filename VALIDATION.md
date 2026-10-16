@@ -33,7 +33,11 @@ Flash 是本地构建统计，不是 Linux CI `.bin` 长度。主阅读与自学
 - 18 个去除调试信息的应用对象可重链，产物仍为 1,567,632 字节；仅 ELF 摘要及镜像校验区域的 65 个字节变化，其余字节一致。重链 SHA-256 为 `8f21618ed29e31fac0d6b212650d17aa65a7e39dfbe453e50f56b2ec4cbc3e7d`，不是安装镜像摘要。
 - 修改框架后 48 个 core/SPI/Wire 源文件与 3 个库重建和链接通过，测试结束后已恢复原始源文件。
 
-以上在交叉工具环境中使用准确 Linux CI 运行库完成；**公开 Linux wrapper 原生运行仍待单独执行**。完整结果见 [RELINK_VALIDATION.json](RELINK_VALIDATION.json)。该 JSON 是重链包生成时的记录，发布状态以本页为准。它仅描述重链流程，其 `device_flashing_performed: false` 表示此重链流程不烧录设备；本候选的独立设备结果记录在下文。
+以上在交叉工具环境中使用准确 Linux CI 运行库完成；**公开 Linux 原生重链与框架重建[检查已通过](https://github.com/Lyzbn/GuanXiang-Firmware/actions/runs/38968830479)**。完整结果见 [RELINK_VALIDATION.json](RELINK_VALIDATION.json)。该 JSON 是重链包生成时的记录，发布状态以本页为准。它仅描述重链流程，其 `device_flashing_performed: false` 表示此重链流程不烧录设备；本候选的独立设备结果记录在下文。
+
+### 公开包 Linux 原生验证
+
+公开只读工作流 `38968830479` 已通过：直接下载发行包，核对外层及包内摘要、源提交与18个应用对象，使用官方固定工具链重链得到1,567,632字节、SHA-256 `8f21618ed29e31fac0d6b212650d17aa65a7e39dfbe453e50f56b2ec4cbc3e7d`，并完成 Arduino core 重编与重链。权限维持 `contents: read`。安装包内验证文档与 PROVENANCE 为打包时快照，其“待公开后验证”状态由本次运行结果补齐；已公开安装资产字节不变。
 
 ### 本候选设备机器检查
 
@@ -53,7 +57,7 @@ Flash 是本地构建统计，不是 Linux CI `.bin` 长度。主阅读与自学
 
 Source `ae85426a6943abf851704dd74d2dc820eb4ae4c6` changes only the study hexagram card relative to the 38 candidate: all 64 cards show a 40px name, a figure on the left, trigram labels above and two summary lines below. Published reading, lesson and font data are byte-identical to this source.
 
-Fixed-source CI `38967327177` passed. The selected application is 1,567,632 bytes, SHA-256 `57e9dd2d6238164209ce90b4fc03c7b92e6c33df8f383d3b3cbba28dfb087f5e`. Exact-input capture `38967328357` and matching relink verification passed: 3,351 framework/source/SDK files matched; original objects and the unused-font removal reproduce the CI image exactly. All 18 stripped objects relink with only 65 digest/checksum bytes changed; rebuilding 48 core source units and three libraries after modification also passed. Native execution of the public Linux wrapper remains pending. Local Release statistics are RAM 24,556 bytes / Flash 1,567,545 bytes. Main-reading audit: 13,522 layouts / 214,191 bounds / 68 previews. Study audit: 5,362 layouts / 34,342 bounds / 32 previews; both report zero errors. The exact-source CI recorded 238,355 passing native checks. Debug was not rerun for this source.
+Fixed-source CI `38967327177` passed. The selected application is 1,567,632 bytes, SHA-256 `57e9dd2d6238164209ce90b4fc03c7b92e6c33df8f383d3b3cbba28dfb087f5e`. Exact-input capture `38967328357` and matching relink verification passed: 3,351 framework/source/SDK files matched; original objects and the unused-font removal reproduce the CI image exactly. All 18 stripped objects relink with only 65 digest/checksum bytes changed; rebuilding 48 core source units and three libraries after modification also passed. Native Linux relinking and framework rebuilding [passed](https://github.com/Lyzbn/GuanXiang-Firmware/actions/runs/38968830479) using the published release assets. Local Release statistics are RAM 24,556 bytes / Flash 1,567,545 bytes. Main-reading audit: 13,522 layouts / 214,191 bounds / 68 previews. Study audit: 5,362 layouts / 34,342 bounds / 32 previews; both report zero errors. The exact-source CI recorded 238,355 passing native checks. Debug was not rerun for this source.
 
 **App-only writing and independent flash verification passed. All 20,480 NVS bytes remain unchanged. The 20-second serial boot smoke test passed, with one normal boot, display/loop/IMU/speaker ready and no fatal error or reboot loop in the observation window. User acceptance passed; v1.1.0-rc.1 is publicly available as a prerelease.** The user confirmed the large-name cards, old data retention, complete reading with exactly one new history entry, and USB/battery cold starts with new data retained. These checks do not establish long-duration stress-test results. The historical 38 evidence below, including its Debug build, remains separate.
 
