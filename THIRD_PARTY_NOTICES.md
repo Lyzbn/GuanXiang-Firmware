@@ -59,7 +59,7 @@ SDK 的 ESP-IDF 基线为 `v4.4.7`，主仓提交 `38eeba213aa695aabfd6d89aa9f50
 
 应用所用 GNU Unifont 17.0.04、Noto Serif CJK SC Black、efont 的来源与许可见 [FONT_SOURCES.md](FONT_SOURCES.md)。古文来源与现代整理文字见 [TEXT_SOURCES.md](TEXT_SOURCES.md)。
 
-配套重链包已从 M5GFX archive 删除未使用的 `lgfx_font_japan.c.o`（IPA 衍生日文字体），成员数由 59 变为 58，其余成员顺序保持不变。删除前后使用原始 CI 应用对象重链，固件均逐字节等于候选应用摘要 `6a694cd5e1bec230d249fa4298cd9568841b52689c28484f853b38075b2b06f3`。因此该日文字体成员不随包分发；[IPA 原许可](licenses/third-party/vendor-fonts/IPA_Font_License_Agreement_v1.0.txt)仅作为裁剪来源记录保留。其他 GFXFF、efont 成员及相应声明仍保留。
+配套重链包已从 M5GFX archive 删除未使用的 `lgfx_font_japan.c.o`（IPA 衍生日文字体），成员数由 59 变为 58，其余成员顺序保持不变。删除前后使用原始 CI 应用对象重链，固件均逐字节等于候选应用摘要 `f58703ade8e478e8950393c071d9625de22d77e389ebff9f8f85504cf5565b6a`。因此该日文字体成员不随包分发；[IPA 原许可](licenses/third-party/vendor-fonts/IPA_Font_License_Agreement_v1.0.txt)仅作为裁剪来源记录保留。其他 GFXFF、efont 成员及相应声明仍保留。
 
 ## 外部工具链
 

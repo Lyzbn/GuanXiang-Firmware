@@ -1,24 +1,34 @@
 # GuanXiang
 
-Offline three-coin I Ching firmware for **M5Stack Cardputer ADV**, with a dark landscape interface, warm gold text, and local reading history.
+Offline three-coin I Ching and self-study firmware for **M5Stack Cardputer ADV**, with a dark landscape interface, warm gold text, and local reading history. Learn the eight trigrams and explore all 64 hexagrams without making a cast.
 
-**Version 1.1.0 has passed build and host checks and remains an unpublished release candidate.** The Linux CI application image has been selected. It has been flashed and passed the serial boot check; full device acceptance is in progress; licensing and matching relink materials are prepared. Application source remains private. [中文](README.md)
+**The updated 1.1.0 candidate passed fixed-source CI and was written to the device application partition. The serial boot smoke test passed; user acceptance is in progress, with no user result recorded yet, and firmware remains unpublished.** The written application digest matches, and all 20,480 NVS bytes remain identical to the pre-upgrade state. These checks do not establish acceptance of the display, controls or history interface. Matching release materials are being updated; application source remains private. [中文](README.md)
 
 ## Three reading modes
 
 Both primary and changed hexagrams support all three modes across the 64 hexagrams:
 
 - **Summary / 短意**: the default, with two four-character modern lines per hexagram.
-- **Insight / 精意**: a longer modern explanation with complete pagination.
+- **Insight / 精意**: four sections on each hexagram’s situation, principles, practical considerations and common misreadings, followed by commentary excerpts and sources.
 - **Classical / 古文**: the complete judgment text, rather than a shortened two-line excerpt.
 
-The project prepares the modern readings from classical commentaries; they are not an existing scholarly translation. Classical coverage includes 64 complete judgments, 384 separately accessible line texts and their 384 Small Image commentaries, plus the applicable special texts and commentaries for Qian and Kun. It is not the complete Yi Zhuan collection.
+Expanded readings cover **64 hexagrams**, with **386 individual readings: 384 lines plus the special Use of Nine and Use of Six texts**. Each line separates explanation of the cited commentary from present-day reflections. Long text is split by section and page, with a 16px body and at most four lines per screen.
 
-See the [text sources and editorial notes](TEXT_SOURCES.md), or inspect [all 64 modern readings and their source records](readings.json).
+Canonical texts, excerpts from Wang Bi’s commentary and Kong Yingda’s subcommentary, and GuanXiang’s modern interpretations are labelled separately. The modern text was prepared by the project with AI assistance and checked against classical sources; it is not an existing translation by those commentators or a modern scholar. Modern books are recommendations for further reading, not permissions or endorsements. The classical collection includes 64 complete judgments, 64 Great Images, 384 line texts and 384 Small Images, plus the special texts and Small Images for Qian and Kun. It is not the complete Yi Zhuan collection.
+
+See the [source and editorial notes](TEXT_SOURCES.md), [all 64 expanded and 386 line/special-text readings with sources](readings.json), and the [twelve lessons, diagrams and 64 Great Images](study-content.json).
 
 Press **I** on the home screen to open settings. **T** cycles and saves the default reading mode there. On a hexagram reading page, **T** changes only the current reading session and returns to page one; it does not save a new default. Opening a history entry applies the saved default and does not create another entry.
 
-Use **Up/Down** to turn pages, or **Enter** to advance. Summary and Insight offer the complete classical text after their final page. Classical mode proceeds to the next screen without repeating the same judgment. Moving-line pages retain complete line texts and Small Image commentaries.
+Use **Up/Down** to turn pages, or **Enter** to advance. Moving-line reading finishes every page of each card, then follows **line text → Small Image → Insight → next moving line → changed hexagram**. The final moving line leads directly to the changed hexagram. When all lines of Qian or Kun move, the special Use of Nine or Use of Six is completed first. Left/Right still switches cards directly.
+
+## Learn the 64 hexagrams
+
+Press **L** on the home screen. Study does not require a cast or create a history entry.
+
+1. **Twelve foundation lessons** introduce yin and yang, reading lines from bottom to top, and the eight trigrams through traditional mnemonics and diagrams.
+2. **Combine two trigrams** to see the resulting six-line figure, name and number. Li below Kan forms Jiji; reversing them forms Weiji. Up/Down selects the upper or lower trigram, and Left/Right changes it.
+3. **Explore all 64 in the conventional order**, with Left/Right jumping eight entries. Read the judgment, Great Image, Insight, six lines and sources using the same material as casting. Returning preserves the catalogue or combination position.
 
 ## Casting and history
 
@@ -33,13 +43,13 @@ The firmware interface and reading texts are in Chinese; this English guide does
 | Complete merged image | `0x0` | Resets NVS; preserve important records first |
 | Compatible GuanXiang application update | `0x10000` | Does not write NVS; requires matching partitions and app0 boot selection |
 
-Follow the final package instructions and checksums once released. The new reading default uses a separate storage key; existing history and settings formats remain unchanged. Offline application-upgrade checks passed, while history retention and cold starts still require acceptance on the new device build. Licensing and relink materials matching the selected image are prepared and relink checks passed. No public download is available.
+Follow the final package instructions and checksums once released. Existing history and settings formats remain unchanged. Device interaction, history retention and cold starts still require acceptance for the expanded-reading and self-study candidate. Matching installation assets, checksums and relink materials are being updated. No public 1.1.0 release download is available.
 
 ## Validation status
 
-Version **1.1.0** is frozen at application source commit `4d412daab3e4f18339637392813d51ea159af610`. The selected Linux CI application image is **1,202,112 bytes**; its SHA-256 is recorded in [VALIDATION.md](VALIDATION.md). **149,362 native checks**, **9,800 host layout checks** and the **62-page** preview audit passed, along with two CI rounds for the frozen application.
+The updated **1.1.0** application source is `38f2db6`. Local Release and Debug builds and **238,355 native checks** passed. Main-reading checks cover **13,522 layouts and 214,191 bounds**; study checks cover **5,359 layouts and 34,070 bounds**, with zero errors. The two galleries contain 68 and 29 host previews respectively. Fixed-source CI `38964682642` passed; the selected Linux application image is **1,567,440 bytes**. Its digest and device-check boundaries are recorded in [VALIDATION.md](VALIDATION.md).
 
-The candidate has not been flashed or accepted on hardware. Acceptance of the previous `b3a90f7a00e5f037e468d96917f6396db2b4dfeb` application applies only to that earlier image. See [validation records](VALIDATION.md) for current CI evidence and remaining work, and the [candidate release notes](RELEASE_NOTES_v1.1.0.md).
+The updated candidate is flashed, with the serial boot smoke test passed and user acceptance in progress; no user result has been recorded yet. Device evidence for earlier applications, including the previous three-mode draft, applies only to those images. The [validation record](VALIDATION.md) will distinguish each artifact and its device results; the [release notes](RELEASE_NOTES_v1.1.0.md) remain a candidate draft.
 
 ## Release materials
 

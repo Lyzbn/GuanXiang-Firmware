@@ -1,6 +1,64 @@
 # 验证记录 · Validation
 
-## 1.1.0 候选状态（2026-10-16）
+## 深化精意与自学候选（2026-10-16）
+
+本次应用源码为 `38f2db6040246967c6b827f2c809dde6f2cad725`，新增 64 卦四节精意、384 爻及用九／用六共 386 份解读、12 课八卦入门与上下卦组合自学。动爻 Enter 顺读完成爻辞、小象、精意及下一动爻，末项进入之卦。
+
+**本次固定源码 CI 已全部通过，选定应用已仅写入设备 app0；启动烟测通过，用户真机验收进行中，尚未收到验收结果，固件仍未正式发布。** 写后应用摘要匹配；NVS 全部 20,480 字节与升级前一致。这些证据不代替功能交互、历史回顾或冷启动验收。配套重链包另经完整来源与重链检查，结果见下文；不沿用旧 `4d412daa` 的结论。
+
+| 选定应用 | 标识 |
+| --- | --- |
+| 固定源码 Linux CI | `38964682642`，全部通过 |
+| 应用镜像大小 | 1,567,440 字节 |
+| 应用 SHA-256 | `f58703ade8e478e8950393c071d9625de22d77e389ebff9f8f85504cf5565b6a` |
+| 设备写入 | 仅 app0，写后摘要验证通过；NVS 20,480 字节不变 |
+
+该摘要只标识应用镜像，不是合并镜像或发行归档。
+
+本次受控串口启动烟测通过：显示 240×135、IMU 与扬声器就绪，应用进入 loop，报告 heap 358,076 字节。观察到一次正常应用启动，观察窗口内未见 fatal 错误或重启。用户正在核验启动数据、深度排版与动爻衔接、自学路线；尚未收到用户结果。启动烟测不等于这些交互项目已通过。
+
+| 检查 | 本次结果 |
+| --- | --- |
+| 本地原生回归 | 238,355 项通过 |
+| 内容与出处 | 64 卦／386 条爻级解读；450 处古典来源锚点命中固定版本 |
+| 正式构建 | 通过；RAM 24,556 / 327,680 字节；Flash 1,567,345 / 3,342,336 字节 |
+| 调试构建 | 通过；Flash 1,614,005 字节 |
+| 主阅读主机审计 | 13,522 个布局、214,191 个边界检查，0 错误；68 张预览 |
+| 自学主机审计 | 5,359 个布局、34,070 个边界检查，0 错误；29 张预览 |
+| 字形 | 2,241 个正文字符覆盖通过；317 个新增正文补字 |
+
+这里的 Flash 数值为本地构建统计，不是 Linux CI 应用 `.bin` 文件长度。主阅读与自学审计采用各自检查口径；主机预览仍不能代替 LCD 字形、实体键、声音、帧率与供电场景验收。来源锚点命中也不等于全部录文已据古籍扫描本逐字校勘。
+
+公开的 [readings.json](readings.json) 与 [study-content.json](study-content.json) 从上述固定提交导出，包含阅读文字、图示参数和出处；其文件摘要见 [TEXT_SOURCES.md](TEXT_SOURCES.md)。不含私有应用源码、完整来源页缓存、构建对象或设备数据。
+
+### 本次匹配重链与升级包
+
+- 完整来源采集运行 `38964686178`；包内 3,351 个 framework/source/SDK 文件均逐个与该次 CI 实际源码核对。
+- 18 个应用对象和 6 个库归档取自该次采集。原对象重链及移除未引用 IPA 字库成员后均逐字节等于应用 `f58703ad…5565b6a`。
+- 应用对象去除调试信息后可重链；仅 63 个字节在 ELF 摘要和镜像校验区域不同，其余应用字节一致。重链摘要为 `16370bc0d6c23d27221071fa3c2b3fdad991c613598e7f84c4d265955294c670`。
+- 修改框架后的 48 个 core/SPI/Wire 源文件及 3 个库重建通过，验证后原始源码已恢复；完整包清单核对通过。
+- 新版应用升级脚本的 8 个离线用例通过，测试仅使用包内应用和嵌入的布局样本，不依赖私有构建路径。
+
+重链验证在 macOS 交叉工具环境中使用准确 Linux CI 运行库完成；最终 Linux wrapper 尚待公开只读流程运行。详细记录见 [RELINK_VALIDATION.json](RELINK_VALIDATION.json)。这不替代下列用户硬件验收。
+
+### 新候选待验收
+
+- 乾、坎、既济等完整卦级及逐爻精意的 LCD 字形、分节分页和页脚提示。
+- 首页 L、12 课全部内容、上下卦组合、64 卦目录、返回位置和用九／用六。
+- 无动、单动、多动与全动乾坤的 Enter 顺读，包括末项进入之卦。
+- 原有起卦、T 模式切换、历史与设置保留、新历史仅增加一条、USB／电池冷启动和长时间运行。
+
+### Current candidate — English
+
+Updated application source is `38f2db6040246967c6b827f2c809dde6f2cad725`. Local Release/Debug builds and 238,355 native checks passed. Main-reading audit: 13,522 layouts / 214,191 bounds / 68 previews. Study audit: 5,359 layouts / 34,070 bounds / 29 previews. Both audits report zero errors. Content checks cover 64 expanded hexagram readings, 386 line/special-text readings and 450 source anchors.
+
+**Fixed-source CI `38964682642` passed and the selected application was flashed to app0 only. The serial boot smoke test passed; user acceptance is in progress, with no user result recorded yet, and firmware remains unpublished.** The application is 1,567,440 bytes, SHA-256 `f58703ade8e478e8950393c071d9625de22d77e389ebff9f8f85504cf5565b6a`; its written digest matches. All 20,480 NVS bytes remain unchanged. Matching relink and modified-framework rebuild checks passed with the supplied CI inputs; the final Linux wrapper remains to be run in the read-only public workflow. Local program-size statistics are not the CI `.bin` byte length. Older artifact and device records below apply only to their stated versions.
+
+## 以下为历史基线：上一轮三档阅读候选
+
+以下保留 `4d412daa` 的已完成记录，供区分版本。其镜像、重链材料及启动检查均不证明本次 `38f2db6` 的新增内容已在设备上通过。
+
+## 旧 4d 三档阅读候选状态（2026-10-16）
 
 应用源码已冻结，Linux CI 镜像已选定，构建与主机检查已通过。**本候选已烧录并通过启动检查，完整设备验收进行中，固件尚未正式发布。** 许可材料及与所选镜像匹配的重链材料已备齐，相关重链检查已通过。
 

@@ -1,0 +1,1104 @@
+{
+  "schema_version": 1,
+  "editorial_notice": "正文为本项目据原典、古注整理的入门导读，不是现成权威现代译文。传统口诀见《日讲易经解义》卷首；清本“盌”规范为“碗”。三爻教学顺序取口诀四组，不代表先天或后天方位。",
+  "pattern_convention": "bit0为底爻，阳1阴0；line_count显式区分1、3、6爻；多图按figures顺序分页呈现，不强行塞入同屏。",
+  "mnemonic_attribution_note": "清华大学出版社《毓老师讲易经①：乾坤卦》2018年书样第1页脚注归于朱熹《周易本义》；本稿未独立核验最早版本著作归属，界面仅标传统《八卦取象歌》。",
+  "sources": {
+    "benyi1": {
+      "title": "朱熹《原本周易本义》四库本卷一：乾总注、初九注及相关卦注",
+      "url": "https://zh.wikisource.org/w/index.php?title=原本周易本義_(四庫全書本)/卷01&oldid=736571",
+      "revision_id": 736571,
+      "sha256": "4ede98c06c8f335015e303b88655005016d9f3d7f48bfc5ec2dc2fb2bb021623"
+    },
+    "benyi2": {
+      "title": "朱熹《原本周易本义》四库本卷二：既济、未济总注",
+      "url": "https://zh.wikisource.org/w/index.php?title=原本周易本義_(四庫全書本)/卷02&oldid=736575",
+      "revision_id": 736575,
+      "sha256": "2b5ba5e76bee6b7f9313ed57926e9ff1cb8acc189039ca75ed0e71de392f3b4b"
+    },
+    "shuogua": {
+      "title": "《周易正义》说卦卷九之七，经文及孔颖达疏",
+      "url": "https://zh.wikisource.org/w/index.php?title=周易正義/09.07&oldid=2000787",
+      "revision_id": 2000787
+    },
+    "mnemonic": {
+      "title": "《日讲易经解义》四库本卷首：右八卦取象",
+      "url": "https://zh.wikisource.org/w/index.php?title=日講易經解義_(四庫全書本)&oldid=2092864",
+      "revision_id": 2092864
+    }
+  },
+  "cards": [
+    {
+      "id": "yin_yang",
+      "number": 1,
+      "course": "识八卦",
+      "title": "一画分阴阳",
+      "body": "连续的一横叫阳爻，中间断开的一横叫阴爻。阴爻虽然画成两截，仍是一爻，数爻时看横向层数，不数短线段。八卦先由三爻组成；辨清每层的阴阳，才能认出卦形。这里先学图形，不把阴阳直接等同于好坏。",
+      "text_kind": "本项目据原典及古注整理",
+      "figures": [
+        {
+          "line_count": 1,
+          "pattern": 1,
+          "label": "阳爻"
+        },
+        {
+          "line_count": 1,
+          "pattern": 0,
+          "label": "阴爻"
+        }
+      ],
+      "source_ids": [
+        "benyi1"
+      ],
+      "body_han_count": 81
+    },
+    {
+      "id": "bottom_up",
+      "number": 2,
+      "course": "识八卦",
+      "title": "从下往上读",
+      "body": "认卦和画卦都先从下面开始，再看中间，最后看上面。三爻各有阴阳两种选择，就组成八种卦形。请试着从底往上读出阴阳，再对照卦名；不要照普通文字的阅读方向，从顶部倒着排列，否则震与艮等卦容易混淆。",
+      "text_kind": "本项目据原典及古注整理",
+      "figures": [
+        {
+          "line_count": 3,
+          "pattern": 1,
+          "label": "下阳中阴上阴"
+        },
+        {
+          "line_count": 3,
+          "pattern": 4,
+          "label": "下阴中阴上阳"
+        }
+      ],
+      "source_ids": [
+        "benyi1"
+      ],
+      "body_han_count": 84
+    },
+    {
+      "id": "qian_kun",
+      "number": 3,
+      "course": "识八卦",
+      "title": "乾坤：连与断",
+      "body": "乾三连：三爻都是阳爻，横画连续，基本取象为天。坤六断：三爻都是阴爻，每爻分成两段，合看有六段，基本取象为地。先比较全连与全断，再记天与地。《说卦》以健释乾、以顺释坤；这两字是取义的入口，不能代替完整卦辞。",
+      "text_kind": "本项目据原典及古注整理",
+      "figures": [
+        {
+          "line_count": 3,
+          "pattern": 7,
+          "label": "乾·天"
+        },
+        {
+          "line_count": 3,
+          "pattern": 0,
+          "label": "坤·地"
+        }
+      ],
+      "source_ids": [
+        "mnemonic",
+        "shuogua"
+      ],
+      "body_han_count": 85
+    },
+    {
+      "id": "zhen_gen",
+      "number": 4,
+      "course": "识八卦",
+      "title": "震艮：仰与覆",
+      "body": "震仰盂，像口朝上的器皿：下面一爻连续，上面两爻断开。艮覆碗，像倒扣的碗：上面一爻连续，下面两爻断开。两卦都只有一阳，位置却不同。震取象为雷，以动释义；艮取象为山，以止释义。记住阳爻在底还是在顶，就不易认反。",
+      "text_kind": "本项目据原典及古注整理",
+      "figures": [
+        {
+          "line_count": 3,
+          "pattern": 1,
+          "label": "震·雷"
+        },
+        {
+          "line_count": 3,
+          "pattern": 4,
+          "label": "艮·山"
+        }
+      ],
+      "source_ids": [
+        "mnemonic",
+        "shuogua"
+      ],
+      "body_han_count": 87
+    },
+    {
+      "id": "li_kan",
+      "number": 5,
+      "course": "识八卦",
+      "title": "离坎：虚与满",
+      "body": "离中虚，中间是阴爻，上下是阳爻，基本取象为火。坎中满，中间是阳爻，上下是阴爻，基本取象为水。虚与满只说中间这一画，不是说全卦空或满。可以先遮住名称认中爻，再说出火与水；注意三画的坎，不是六画的重坎卦。",
+      "text_kind": "本项目据原典及古注整理",
+      "figures": [
+        {
+          "line_count": 3,
+          "pattern": 5,
+          "label": "离·火"
+        },
+        {
+          "line_count": 3,
+          "pattern": 2,
+          "label": "坎·水"
+        }
+      ],
+      "source_ids": [
+        "mnemonic",
+        "shuogua",
+        "benyi1"
+      ],
+      "body_han_count": 86
+    },
+    {
+      "id": "dui_xun",
+      "number": 6,
+      "course": "识八卦",
+      "title": "兑巽：上与下",
+      "body": "兑上缺，最上面一爻断开，下面两爻连续，基本取象为泽。巽下断，最下面一爻断开，上面两爻连续，基本取象为风。两卦都只有一阴，关键在阴爻的位置。《说卦》以说释兑，说在这里读作悦；以入释巽，孔疏用风的进入来说明。",
+      "text_kind": "本项目据原典及古注整理",
+      "figures": [
+        {
+          "line_count": 3,
+          "pattern": 3,
+          "label": "兑·泽"
+        },
+        {
+          "line_count": 3,
+          "pattern": 6,
+          "label": "巽·风"
+        }
+      ],
+      "source_ids": [
+        "mnemonic",
+        "shuogua"
+      ],
+      "body_han_count": 86
+    },
+    {
+      "id": "mnemonic_review",
+      "number": 7,
+      "course": "识八卦",
+      "title": "口诀连起来",
+      "body": "乾三连，坤六断；震仰盂，艮覆碗；离中虚，坎中满；兑上缺，巽下断。复习时先看卦画，按四组说出口诀，再核对名称和自然象。这是帮助记形的传统口诀，不是六十四卦吉凶判断。此处依口诀安排教学，不把这个顺序当成方位图。",
+      "text_kind": "本项目据原典及古注整理",
+      "figures": [
+        {
+          "line_count": 3,
+          "pattern": 7,
+          "label": "乾"
+        },
+        {
+          "line_count": 3,
+          "pattern": 0,
+          "label": "坤"
+        },
+        {
+          "line_count": 3,
+          "pattern": 1,
+          "label": "震"
+        },
+        {
+          "line_count": 3,
+          "pattern": 4,
+          "label": "艮"
+        },
+        {
+          "line_count": 3,
+          "pattern": 5,
+          "label": "离"
+        },
+        {
+          "line_count": 3,
+          "pattern": 2,
+          "label": "坎"
+        },
+        {
+          "line_count": 3,
+          "pattern": 3,
+          "label": "兑"
+        },
+        {
+          "line_count": 3,
+          "pattern": 6,
+          "label": "巽"
+        }
+      ],
+      "source_ids": [
+        "mnemonic"
+      ],
+      "body_han_count": 88
+    },
+    {
+      "id": "image_meaning",
+      "number": 8,
+      "course": "识八卦",
+      "title": "看象也读义",
+      "body": "天、地、雷、风、水、火、山、泽，是认识八卦的基本自然象。《说卦》还以健、顺、动、入、陷、丽、止、说解释卦名。丽在这里有附着之义，说读作悦。自然象和这些解释要合起来读；看到水便断定有灾，或看到天便断定成功，都跳过了经文的条件。",
+      "text_kind": "本项目据原典及古注整理",
+      "figures": [],
+      "source_ids": [
+        "shuogua"
+      ],
+      "body_han_count": 87
+    },
+    {
+      "id": "stack_trigrams",
+      "number": 9,
+      "course": "叠六爻",
+      "title": "下卦加上卦",
+      "body": "先放下面三爻，再加上面三爻，就得到六爻卦。下面称下卦，也称内卦；上面称上卦，也称外卦。下卦有八种，上卦也有八种，两两组合共六十四卦。下面可以选择任一八卦，再选上面的八卦，观察六爻图与卦名怎样随之改变。",
+      "text_kind": "本项目据原典及古注整理",
+      "figures": [
+        {
+          "line_count": 3,
+          "pattern": 7,
+          "label": "下乾"
+        },
+        {
+          "line_count": 3,
+          "pattern": 7,
+          "label": "上乾"
+        },
+        {
+          "line_count": 6,
+          "pattern": 63,
+          "label": "乾为天"
+        }
+      ],
+      "source_ids": [
+        "benyi1"
+      ],
+      "body_han_count": 87
+    },
+    {
+      "id": "line_positions",
+      "number": 10,
+      "course": "叠六爻",
+      "title": "六爻各有位",
+      "body": "六爻从下到上依次叫初、二、三、四、五、上。爻辞用九标阳，用六标阴：例如初九是最下面的阳爻，上六是最上面的阴爻。前三爻属于下卦，后三爻属于上卦。读爻辞时先在图上找到位置，再看它处于全卦的哪一阶段，不把某一句孤立套用。",
+      "text_kind": "本项目据原典及古注整理",
+      "figures": [
+        {
+          "line_count": 6,
+          "pattern": 21,
+          "label": "初九至上六"
+        }
+      ],
+      "source_ids": [
+        "benyi1"
+      ],
+      "body_han_count": 92
+    },
+    {
+      "id": "jiji_weiji",
+      "number": 11,
+      "course": "叠六爻",
+      "title": "水火换上下",
+      "body": "下离为火，上坎为水，合成水火既济；交换上下，就成为火水未济。命名先说上面的自然象，但画卦仍从下面开始。既济有事情已成之义，未济说事情未成；《本义》又提醒既济多有警戒。认出卦名只是第一步，还须读经文为什么如此提醒。",
+      "text_kind": "本项目据原典及古注整理",
+      "figures": [
+        {
+          "line_count": 6,
+          "pattern": 21,
+          "label": "水火既济"
+        },
+        {
+          "line_count": 6,
+          "pattern": 42,
+          "label": "火水未济"
+        }
+      ],
+      "source_ids": [
+        "benyi2"
+      ],
+      "body_han_count": 92
+    },
+    {
+      "id": "reading_method",
+      "number": 12,
+      "course": "叠六爻",
+      "title": "开始读一卦",
+      "body": "读一卦，先认上下卦与六爻位置，再读完整卦辞，接着看古注如何说明取象和条件，最后逐爻比较不同处境。经文、传文、古注与项目今释会分别标明，不把后人的解释混作原句。进入六十四卦目录后，可以按通行卦序学习，也可以用上下卦组合找到想读的一卦。",
+      "text_kind": "本项目据原典及古注整理",
+      "figures": [],
+      "source_ids": [
+        "benyi1",
+        "benyi2"
+      ],
+      "body_han_count": 104
+    }
+  ],
+  "hexagram_classical": [
+    {
+      "number": 1,
+      "name": "乾",
+      "judgment": "元亨。利贞。",
+      "great_image": "天行健，君子以自强不息。",
+      "source": {
+        "title": "周易/乾",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E4%B9%BE",
+        "revision_id": 2404991,
+        "sha256": "e8b8c4a93f7e1f86e00e83635a12423da0e134ec463ea21837f6a41b41661156"
+      }
+    },
+    {
+      "number": 2,
+      "name": "坤",
+      "judgment": "元亨。利牝马之贞。\n君子有攸往，先迷后得主。\n利西南得朋，东北丧朋。安贞，吉。",
+      "great_image": "地势坤，君子以厚德载物。",
+      "source": {
+        "title": "周易/坤",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%9D%A4",
+        "revision_id": 2404999,
+        "sha256": "a229442f54886cd2b21b1b6ab19cb377c4c59e5fcd8ac6b75f44b846459ca881"
+      }
+    },
+    {
+      "number": 3,
+      "name": "屯",
+      "judgment": "元亨，利贞。勿用有攸往，利建侯。",
+      "great_image": "云雷，屯；君子以经纶。",
+      "source": {
+        "title": "周易/屯",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%B1%AF",
+        "revision_id": 2527353,
+        "sha256": "9683da38374211851362493c9a51489b50792b7ac6ab075d242c27ad7eabd48e"
+      }
+    },
+    {
+      "number": 4,
+      "name": "蒙",
+      "judgment": "亨。匪我求童蒙，童蒙求我。初筮告，再三渎，渎则不告。利贞。",
+      "great_image": "山下出泉，蒙；君子以果行育德。",
+      "source": {
+        "title": "周易/蒙",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E8%92%99",
+        "revision_id": 2601829,
+        "sha256": "54ad0a6054afd8ccb62053c8149a6b4c66b7cb9a7e77fe8b31c4d874b97fa276"
+      }
+    },
+    {
+      "number": 5,
+      "name": "需",
+      "judgment": "有孚，光亨。贞吉，利涉大川。",
+      "great_image": "云上于天，需；君子以饮食宴乐。",
+      "source": {
+        "title": "周易/需",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E9%9C%80",
+        "revision_id": 2405039,
+        "sha256": "48abe6009474bf5afe40505001079457df8326910b7c5fac4125a5a7a356fe76"
+      }
+    },
+    {
+      "number": 6,
+      "name": "讼",
+      "judgment": "有孚，窒，惕，中吉，终凶。利见大人，不利涉大川。",
+      "great_image": "天与水违行，讼；君子以作事谋始。",
+      "source": {
+        "title": "周易/訟",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E8%A8%9F",
+        "revision_id": 2405032,
+        "sha256": "59292dbcac74e3f4a3d70cf783736326b42bfb1c0b822d419dcec5d77520ef09"
+      }
+    },
+    {
+      "number": 7,
+      "name": "师",
+      "judgment": "贞丈人吉，无咎。",
+      "great_image": "地中有水，师；君子以容民畜众。",
+      "source": {
+        "title": "周易/師",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%B8%AB",
+        "revision_id": 2405011,
+        "sha256": "131b206cbc0995b1adfdab9560e66d7843fd85e3172bb4e9f89bb37e4665c1f9"
+      }
+    },
+    {
+      "number": 8,
+      "name": "比",
+      "judgment": "吉。原筮元永贞，无咎。不宁方来，后夫凶。",
+      "great_image": "地上有水，比；先王以建万国，亲诸侯。",
+      "source": {
+        "title": "周易/比",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E6%AF%94",
+        "revision_id": 2405022,
+        "sha256": "bfa9eb4716a7c703479f6e6a7e4a9b15ab71ba78bd9c9912ded75e40f8b16554"
+      }
+    },
+    {
+      "number": 9,
+      "name": "小畜",
+      "judgment": "亨。密云不雨，自我西郊。",
+      "great_image": "风行天上，小畜，君子以懿文德。",
+      "source": {
+        "title": "周易/小畜",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%B0%8F%E7%95%9C",
+        "revision_id": 2405006,
+        "sha256": "f42cf7bcf0de765e5f997192eb4c9945a19487dfb20bd3ccadb704c52f02cdf4"
+      }
+    },
+    {
+      "number": 10,
+      "name": "履",
+      "judgment": "履虎尾，不咥人，亨。",
+      "great_image": "上天下泽，履；君子以辨上下，定民志。",
+      "source": {
+        "title": "周易/履",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%B1%A5",
+        "revision_id": 2494097,
+        "sha256": "d86ef9a395ed5891e1bda0287c0f2b0397400b21d09e613d34c9eae4f48100e8"
+      }
+    },
+    {
+      "number": 11,
+      "name": "泰",
+      "judgment": "小往大来，吉亨。",
+      "great_image": "天地交，泰；后以财成天地之道，辅相天地之宜，以左右民。",
+      "source": {
+        "title": "周易/泰",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E6%B3%B0",
+        "revision_id": 2106138,
+        "sha256": "ecd49dba63369af09ab717293badc4b5823106b89c25ee5ebed44466817616e7"
+      }
+    },
+    {
+      "number": 12,
+      "name": "否",
+      "judgment": "否之匪人，不利君子贞，大往小来。",
+      "great_image": "天地不交，否；君子以俭德辟难，不可荣以禄。",
+      "source": {
+        "title": "周易/否",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%90%A6",
+        "revision_id": 2106139,
+        "sha256": "f77270d71abb3e775b473769162c8ba82b523e733930e80f2cf260f6fa3ff4cf"
+      }
+    },
+    {
+      "number": 13,
+      "name": "同人",
+      "judgment": "同人于野，亨。利涉大川，利君子贞。",
+      "great_image": "天与火，同人；君子以类族辨物。",
+      "source": {
+        "title": "周易/同人",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%90%8C%E4%BA%BA",
+        "revision_id": 2106140,
+        "sha256": "9a9e6ac2ce8032856b0f061a594440d684b9a6e9ebb3e7db36212a726f66471b"
+      }
+    },
+    {
+      "number": 14,
+      "name": "大有",
+      "judgment": "元亨。",
+      "great_image": "火在天上，大有；君子以遏恶扬善，顺天休命。",
+      "source": {
+        "title": "周易/大有",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%A4%A7%E6%9C%89",
+        "revision_id": 2494004,
+        "sha256": "49b73707fe9e51e2e4efde66b960c5ae267f5b8eefcd1e752ee55fa7dd93db5a"
+      }
+    },
+    {
+      "number": 15,
+      "name": "谦",
+      "judgment": "亨，君子有终。",
+      "great_image": "地中有山，谦；君子以裒多益寡，称物平施。",
+      "source": {
+        "title": "周易/謙",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E8%AC%99",
+        "revision_id": 2106142,
+        "sha256": "2ffb3b0269b10fe966f76b4dd96b49503733677215fa6b9df7414a0a903d3700"
+      }
+    },
+    {
+      "number": 16,
+      "name": "豫",
+      "judgment": "利建侯行师。",
+      "great_image": "雷出地奋，豫。先王以作乐崇德，殷荐之上帝，以配祖考。",
+      "source": {
+        "title": "周易/豫",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E8%B1%AB",
+        "revision_id": 2106143,
+        "sha256": "444b5d44cc6d7005b0d43a9ef97fff42b8b82f30d2d8c4740c2418820d177b36"
+      }
+    },
+    {
+      "number": 17,
+      "name": "随",
+      "judgment": "元亨。利贞。无咎。",
+      "great_image": "泽中有雷，随；君子以向晦入宴息。",
+      "source": {
+        "title": "周易/隨",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E9%9A%A8",
+        "revision_id": 2497157,
+        "sha256": "4efab4ca14190c6d78e8a9a51ca51eb6ad73003166b9c89a0785f44e49c1071e"
+      }
+    },
+    {
+      "number": 18,
+      "name": "蛊",
+      "judgment": "元亨。利涉大川。先甲三日，后甲三日。",
+      "great_image": "山下有风，蛊；君子以振民育德。",
+      "source": {
+        "title": "周易/蠱",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E8%A0%B1",
+        "revision_id": 2106145,
+        "sha256": "b823e1f7c186f7ae3ea27e22955595a873311c8c8f1c00a1b09d00f887df6a5a"
+      }
+    },
+    {
+      "number": 19,
+      "name": "临",
+      "judgment": "元亨。利贞。至于八月有凶。",
+      "great_image": "泽上有地，临；君子以教思无穷，容保民无疆。",
+      "source": {
+        "title": "周易/臨",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E8%87%A8",
+        "revision_id": 2106146,
+        "sha256": "beadffbfc5356c83e7068507a7446efbe4c175eeec1c3845ec634e288f3217cc"
+      }
+    },
+    {
+      "number": 20,
+      "name": "观",
+      "judgment": "盥而不荐，有孚颙若。",
+      "great_image": "风行地上，观；先王以省方，观民设教。",
+      "source": {
+        "title": "周易/觀",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E8%A7%80",
+        "revision_id": 2106147,
+        "sha256": "82a41830c878c010fb1164b131c2a3b8ba18cbb4592d46f5d38abc120cf2e9e7"
+      }
+    },
+    {
+      "number": 21,
+      "name": "噬嗑",
+      "judgment": "亨。利用狱。",
+      "great_image": "雷电噬嗑；先王以明罚敕法。",
+      "source": {
+        "title": "周易/噬嗑",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%99%AC%E5%97%91",
+        "revision_id": 2404997,
+        "sha256": "db8345f6caa1e34ad0add5951b6546db6ff1168375e5220e3efd8c4f6badf830"
+      }
+    },
+    {
+      "number": 22,
+      "name": "贲",
+      "judgment": "亨。小利有攸往。",
+      "great_image": "山下有火，贲；君子以明庶政，无敢折狱。",
+      "source": {
+        "title": "周易/賁",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E8%B3%81",
+        "revision_id": 2405035,
+        "sha256": "f7418a0d3805c366e3afc6e9c7fb32c0c1da7883bf714cbe6235fe477365773c"
+      }
+    },
+    {
+      "number": 23,
+      "name": "剥",
+      "judgment": "不利有攸往。",
+      "great_image": "山附地上，剥；上以厚下，安宅。",
+      "source": {
+        "title": "周易/剝",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%89%9D",
+        "revision_id": 2404994,
+        "sha256": "a719d564a93cd90a6474efe2515e070e2bc1537394eaeb85f3f92fe2da5d7ef3"
+      }
+    },
+    {
+      "number": 24,
+      "name": "复",
+      "judgment": "亨。出入无疾，朋来无咎。反复其道，七日来复，利有攸往。",
+      "great_image": "雷在地中，复；先王以至日闭关，商旅不行，后不省方。",
+      "source": {
+        "title": "周易/復",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%BE%A9",
+        "revision_id": 2497162,
+        "sha256": "81af912f4f2b2e80cd7e532e96ced7ddd4f2009a2e76358abac80c8c3ddf0c51"
+      }
+    },
+    {
+      "number": 25,
+      "name": "无妄",
+      "judgment": "元亨。利贞。其匪正有眚，不利有攸往。",
+      "great_image": "天下雷行，物与无妄；先王以茂对时，育万物。",
+      "source": {
+        "title": "周易/无妄",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E6%97%A0%E5%A6%84",
+        "revision_id": 2527352,
+        "sha256": "8b0c1cccd695ebeb46b21bb7dd2cd4fb6a7921f5310c0d4ff7238b1c07a99012"
+      }
+    },
+    {
+      "number": 26,
+      "name": "大畜",
+      "judgment": "利贞，不家食吉，利涉大川。",
+      "great_image": "天在山中，大畜；君子以多识前言往行，以畜其德。",
+      "source": {
+        "title": "周易/大畜",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%A4%A7%E7%95%9C",
+        "revision_id": 2405001,
+        "sha256": "8eb67508919828e639e9fbb6513318b183102e5412488007c35a562d3919f0a7"
+      }
+    },
+    {
+      "number": 27,
+      "name": "颐",
+      "judgment": "贞吉。观颐，自求口实。",
+      "great_image": "山下有雷，颐；君子以慎言语，节饮食。",
+      "source": {
+        "title": "周易/頤",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E9%A0%A4",
+        "revision_id": 2405042,
+        "sha256": "fc7603fd1bd8e4d73bca4a6b12a322021754fce2f493c3e83b592b4abb7ab982"
+      }
+    },
+    {
+      "number": 28,
+      "name": "大过",
+      "judgment": "栋桡，利有攸往，亨。",
+      "great_image": "泽灭木，大过。君子以独立不惧，遁世无闷。",
+      "source": {
+        "title": "周易/大過",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%A4%A7%E9%81%8E",
+        "revision_id": 2405002,
+        "sha256": "ad4b9ded3baa7aff3ad1b90e4e034e331ca8c54cf84ba19208836bff5cc9f41b"
+      }
+    },
+    {
+      "number": 29,
+      "name": "坎",
+      "judgment": "习坎：有孚，维心亨。行有尚。",
+      "great_image": "水洊至，习坎；君子以常德行，习教事。",
+      "source": {
+        "title": "周易/坎",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%9D%8E",
+        "revision_id": 2502716,
+        "sha256": "da7aee1d247bc4ce1592fdafbf9d4b17fb3207ed5fa1e875963fa8e913b8f46c"
+      }
+    },
+    {
+      "number": 30,
+      "name": "离",
+      "judgment": "利贞。亨。畜牝牛，吉。",
+      "great_image": "明两作离，大人以继明照于四方。",
+      "source": {
+        "title": "周易/離",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E9%9B%A2",
+        "revision_id": 2528049,
+        "sha256": "4b4e7fdfa364bfa441d9d1b3ceb4037d5f6ed7da4e3f144d95393674cfec010a"
+      }
+    },
+    {
+      "number": 31,
+      "name": "咸",
+      "judgment": "亨。利贞。取女吉。",
+      "great_image": "山上有泽，咸；君子以虚受人。",
+      "source": {
+        "title": "周易/咸",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%92%B8",
+        "revision_id": 2404996,
+        "sha256": "2af1a796adc503c8d4e699506a8266ca9d26927f3e1927f0077ae174486023c1"
+      }
+    },
+    {
+      "number": 32,
+      "name": "恒",
+      "judgment": "亨，无咎。利贞，利有攸往。",
+      "great_image": "雷风，恒；君子以立不易方。",
+      "source": {
+        "title": "周易/恒",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E6%81%92",
+        "revision_id": 2530043,
+        "sha256": "f83bd210dfac9669fab947e02479a45bcff367da4ea21d29192c6afe8216d8c1"
+      }
+    },
+    {
+      "number": 33,
+      "name": "遁",
+      "judgment": "亨。小利贞。",
+      "great_image": "天下有山，遁；君子以远小人，不恶而严。",
+      "source": {
+        "title": "周易/遯",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E9%81%AF",
+        "revision_id": 2405037,
+        "sha256": "978fac550393f8f1c7710cce5596ab698183877f18b7fbea9473172952e7ab46"
+      }
+    },
+    {
+      "number": 34,
+      "name": "大壮",
+      "judgment": "利贞。",
+      "great_image": "雷在天上，大壮；君子以非礼弗履。",
+      "source": {
+        "title": "周易/大壯",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%A4%A7%E5%A3%AF",
+        "revision_id": 2531745,
+        "sha256": "674310af5463d01e36e6b8b11bb3e5dd7591b63ac381917e42391e2f2724ab7a"
+      }
+    },
+    {
+      "number": 35,
+      "name": "晋",
+      "judgment": "康侯用锡马蕃庶，昼日三接。",
+      "great_image": "明出地上，晋；君子以自昭明德。",
+      "source": {
+        "title": "周易/晉",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E6%99%89",
+        "revision_id": 2584802,
+        "sha256": "bd51d51f3a62784288fd183a0b610e0862f99e19289e75a1d8c735acf287db68"
+      }
+    },
+    {
+      "number": 36,
+      "name": "明夷",
+      "judgment": "利艰贞。",
+      "great_image": "明入地中，明夷；君子以莅众，用晦而明。",
+      "source": {
+        "title": "周易/明夷",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E6%98%8E%E5%A4%B7",
+        "revision_id": 2531747,
+        "sha256": "806bac05f2b162ccc57709315d392de0c1ec55c76e6805c086ca1f0eec907eb9"
+      }
+    },
+    {
+      "number": 37,
+      "name": "家人",
+      "judgment": "利女贞。",
+      "great_image": "风自火出，家人；君子以言有物，而行有恒。",
+      "source": {
+        "title": "周易/家人",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%AE%B6%E4%BA%BA",
+        "revision_id": 2405005,
+        "sha256": "0179c8e76f2ef04ee811c1acf142f707d29083fe324de7c4cd086ceb47f79c99"
+      }
+    },
+    {
+      "number": 38,
+      "name": "睽",
+      "judgment": "小事吉。",
+      "great_image": "上火下泽，睽；君子以同而异。",
+      "source": {
+        "title": "周易/睽",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E7%9D%BD",
+        "revision_id": 2531978,
+        "sha256": "c1d6fa887f02fe3cd5cd6f1cb26c19c681e6d3411baaffa0b63bf67205f754c1"
+      }
+    },
+    {
+      "number": 39,
+      "name": "蹇",
+      "judgment": "利西南，不利东北；利见大人，贞吉。",
+      "great_image": "山上有水，蹇；君子以反身修德。",
+      "source": {
+        "title": "周易/蹇",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E8%B9%87",
+        "revision_id": 2405036,
+        "sha256": "4fca7850987f383c2a66b195c5c35c5f39be0c41877c5607013d6a9858d7066b"
+      }
+    },
+    {
+      "number": 40,
+      "name": "解",
+      "judgment": "利西南，无所往，其来复吉。有攸往，夙吉。",
+      "great_image": "雷雨作，解；君子以赦过宥罪。",
+      "source": {
+        "title": "周易/解",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E8%A7%A3",
+        "revision_id": 2405031,
+        "sha256": "1692cdd39a4394193a1d2e6bf9b18e540d1b04f62ab995e7ffffbdfedf7db51c"
+      }
+    },
+    {
+      "number": 41,
+      "name": "损",
+      "judgment": "有孚，元吉。无咎，可贞，利有攸往。曷之用？二簋可用享。",
+      "great_image": "山下有泽，损；君子以惩忿窒欲。",
+      "source": {
+        "title": "周易/損",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E6%90%8D",
+        "revision_id": 2405014,
+        "sha256": "4a666d00946a3e1b263073fe01b4fc6c43005081345f1fef5edd7ad3631406e5"
+      }
+    },
+    {
+      "number": 42,
+      "name": "益",
+      "judgment": "利有攸往。利涉大川。",
+      "great_image": "风雷，益；君子以见善则迁，有过则改。",
+      "source": {
+        "title": "周易/益",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E7%9B%8A",
+        "revision_id": 2405025,
+        "sha256": "06c7cedf7e76fcc3cde93e19595b0eeaeae87a617c4672764c327eb1d8089013"
+      }
+    },
+    {
+      "number": 43,
+      "name": "夬",
+      "judgment": "扬于王庭，孚号，有厉，告自邑，不利即戎，利有攸往。",
+      "great_image": "泽上于天，夬；君子以施禄及下，居德则忌。",
+      "source": {
+        "title": "周易/夬",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%A4%AC",
+        "revision_id": 2405003,
+        "sha256": "1dbda1e9e07a19fe4ff04491bf7f99b3b9c501702773972d647745c2c5f4b0aa"
+      }
+    },
+    {
+      "number": 44,
+      "name": "姤",
+      "judgment": "女壮，勿用取女。",
+      "great_image": "天下有风，姤；后以施命诰四方。",
+      "source": {
+        "title": "周易/姤",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%A7%A4",
+        "revision_id": 2437487,
+        "sha256": "0ad9c15852f82af7ee896aea1b53a3a28bdb922c4b2e484fb1f4f8dc29c2eb5d"
+      }
+    },
+    {
+      "number": 45,
+      "name": "萃",
+      "judgment": "亨。王假有庙，利见大人，亨。利贞。用大牲吉，利有攸往。",
+      "great_image": "泽上于地，萃；君子以除戎器，戒不虞。",
+      "source": {
+        "title": "周易/萃",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E8%90%83",
+        "revision_id": 2535017,
+        "sha256": "0c75443453aa21e178d88f3ca69fb92bb275f1a3369e4d6c36ff4f9638e7c960"
+      }
+    },
+    {
+      "number": 46,
+      "name": "升",
+      "judgment": "元亨，用见大人，勿恤，南征吉。",
+      "great_image": "地中生木，升；君子以顺德，积小以高大。",
+      "source": {
+        "title": "周易/升",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%8D%87",
+        "revision_id": 2404995,
+        "sha256": "93e1dc68658655b3f7848ad602a105ea69c48698a7a66982c688ee4999745009"
+      }
+    },
+    {
+      "number": 47,
+      "name": "困",
+      "judgment": "亨，贞大人吉，无咎，有言不信。",
+      "great_image": "泽无水，困；君子以致命遂志。",
+      "source": {
+        "title": "周易/困",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%9B%B0",
+        "revision_id": 2502714,
+        "sha256": "bf6317455d24514e3663a47f299d2ebf43a08995c560ac3d68912f98c3e398d9"
+      }
+    },
+    {
+      "number": 48,
+      "name": "井",
+      "judgment": "改邑不改井，无丧无得，往来井井。汔至亦未繘井。羸其瓶，凶。",
+      "great_image": "木上有水，井；君子以劳民劝相。",
+      "source": {
+        "title": "周易/井",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E4%BA%95",
+        "revision_id": 2404992,
+        "sha256": "34f78ff12497ad2d99e182c2fe5f072af9e27549fbd326b257c8cfcacc50fd21"
+      }
+    },
+    {
+      "number": 49,
+      "name": "革",
+      "judgment": "巳日乃孚，元亨。利贞。悔亡。",
+      "great_image": "泽中有火，革；君子以治历明时。",
+      "source": {
+        "title": "周易/革",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E9%9D%A9",
+        "revision_id": 2674393,
+        "sha256": "06ae513abe4310a8e54515ef9425f92a197ad60db172e931a6051a6e9c0bba1e"
+      }
+    },
+    {
+      "number": 50,
+      "name": "鼎",
+      "judgment": "元吉，亨。",
+      "great_image": "木上有火，鼎；君子以正位凝命。",
+      "source": {
+        "title": "周易/鼎",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E9%BC%8E",
+        "revision_id": 2106200,
+        "sha256": "4705977c9a85a039a0ddf61ffb9e7baa6208def15b4d41934cb823046e6b5ec3"
+      }
+    },
+    {
+      "number": 51,
+      "name": "震",
+      "judgment": "亨。震来虩虩，笑言哑哑。震惊百里，不丧匕鬯。",
+      "great_image": "洊雷，震；君子以恐惧修省。",
+      "source": {
+        "title": "周易/震",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E9%9C%87",
+        "revision_id": 2560429,
+        "sha256": "0084d1f85a25ac2556fe40e4fccc6a03b0ddfc75723291a2b56564c1ac593bee"
+      }
+    },
+    {
+      "number": 52,
+      "name": "艮",
+      "judgment": "艮其背，不获其身，行其庭，不见其人，无咎。",
+      "great_image": "兼山，艮；君子以思不出其位。",
+      "source": {
+        "title": "周易/艮",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E8%89%AE",
+        "revision_id": 2405028,
+        "sha256": "0fb0d5820dfb140cb97ede2657770f56d925b622c117fd570a5dd8dfee418d77"
+      }
+    },
+    {
+      "number": 53,
+      "name": "渐",
+      "judgment": "女归吉，利贞。",
+      "great_image": "山上有木，渐；君子以居贤德，善俗。",
+      "source": {
+        "title": "周易/漸",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E6%BC%B8",
+        "revision_id": 2560535,
+        "sha256": "46da172e6576ba774f6c61741a2d566014f5e5fc90c1065251cb80ccd89b28d7"
+      }
+    },
+    {
+      "number": 54,
+      "name": "归妹",
+      "judgment": "征凶，无攸利。",
+      "great_image": "泽上有雷，归妹；君子以永终知敝。",
+      "source": {
+        "title": "周易/歸妹",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E6%AD%B8%E5%A6%B9",
+        "revision_id": 2511521,
+        "sha256": "03a725d580b54c4fb9279c88fbed6ee3f8a0198d4bb06bda8005e4fa96a4a8da"
+      }
+    },
+    {
+      "number": 55,
+      "name": "丰",
+      "judgment": "亨。王假之，勿忧，宜日中。",
+      "great_image": "雷电皆至，丰；君子以折狱致刑。",
+      "source": {
+        "title": "周易/豐",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E8%B1%90",
+        "revision_id": 2560608,
+        "sha256": "34a7435e6f633a3921adfc6416d4d5d1ca4fcb466369f4c35950aa66f419bbef"
+      }
+    },
+    {
+      "number": 56,
+      "name": "旅",
+      "judgment": "小亨，旅贞吉。",
+      "great_image": "山上有火，旅；君子以明慎用刑，而不留狱。",
+      "source": {
+        "title": "周易/旅",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E6%97%85",
+        "revision_id": 2560781,
+        "sha256": "d5fb1000d0ba4ae8e1a8aff0f3888fdfe37db39650a4a29ba8b91e0e4080b39c"
+      }
+    },
+    {
+      "number": 57,
+      "name": "巽",
+      "judgment": "小亨。利有攸往。利见大人。",
+      "great_image": "随风，巽；君子以申命行事。",
+      "source": {
+        "title": "周易/巽",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%B7%BD",
+        "revision_id": 2441563,
+        "sha256": "79e94364967282b18bcfec37796580eae17c3af103d87a626fc1d959abced2fe"
+      }
+    },
+    {
+      "number": 58,
+      "name": "兑",
+      "judgment": "亨。利贞。",
+      "great_image": "丽泽，兑；君子以朋友讲习。",
+      "source": {
+        "title": "周易/兌",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%85%8C",
+        "revision_id": 2404993,
+        "sha256": "0ecebe0d070dcd3cdf07019a3f1d578cbcd4d1bb441c48b8536bb596e3e49850"
+      }
+    },
+    {
+      "number": 59,
+      "name": "涣",
+      "judgment": "亨。王假有庙，利涉大川，利贞。",
+      "great_image": "风行水上，涣；先王以享于帝立庙。",
+      "source": {
+        "title": "周易/渙",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E6%B8%99",
+        "revision_id": 2405023,
+        "sha256": "198a4a36895852ef5012d78d8b34adbbf463f22d094899c38f37e149e8094efc"
+      }
+    },
+    {
+      "number": 60,
+      "name": "节",
+      "judgment": "亨。苦节不可贞。",
+      "great_image": "泽上有水，节；君子以制数度，议德行。",
+      "source": {
+        "title": "周易/節",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E7%AF%80",
+        "revision_id": 2405027,
+        "sha256": "a017661595c6358621214894a41885648d4e2fe71af0d43ebd9f7b3f66517bcf"
+      }
+    },
+    {
+      "number": 61,
+      "name": "中孚",
+      "judgment": "豚鱼吉，利涉大川，利贞。",
+      "great_image": "泽上有风，中孚；君子以议狱缓死。",
+      "source": {
+        "title": "周易/中孚",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E4%B8%AD%E5%AD%9A",
+        "revision_id": 2404990,
+        "sha256": "d61da365e37c5e41ce60429337ccbd3ef23acb10e5e1d4aee1f35c0f4c66c9be"
+      }
+    },
+    {
+      "number": 62,
+      "name": "小过",
+      "judgment": "亨。利贞。可小事，不可大事。飞鸟遗之音，不宜上宜下，大吉。",
+      "great_image": "山上有雷，小过；君子以行过乎恭，丧过乎哀，用过乎俭。",
+      "source": {
+        "title": "周易/小過",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%B0%8F%E9%81%8E",
+        "revision_id": 2405007,
+        "sha256": "7ab47c03fc3e16fd20c550bdcc825ba2e666591a70da6b6800cb9c30ad1e3436"
+      }
+    },
+    {
+      "number": 63,
+      "name": "既济",
+      "judgment": "亨小。利贞。初吉终乱。",
+      "great_image": "水在火上，既济；君子以思患而豫防之。",
+      "source": {
+        "title": "周易/既濟",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E6%97%A2%E6%BF%9F",
+        "revision_id": 2572417,
+        "sha256": "e9099522d8013177a9316c8fc499a10b80d50edd18b3401cbd79b2d31ab58d78"
+      }
+    },
+    {
+      "number": 64,
+      "name": "未济",
+      "judgment": "亨。小狐汔济，濡其尾，无攸利。",
+      "great_image": "火在水上，未济；君子以慎辨物居方。",
+      "source": {
+        "title": "周易/未濟",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E6%9C%AA%E6%BF%9F",
+        "revision_id": 2405020,
+        "sha256": "b12a283926d6a25db17f50c4b490fc417ecd66e8578b5bec757b7b6581e16911"
+      }
+    }
+  ]
+}

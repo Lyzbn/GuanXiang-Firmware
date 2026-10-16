@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       tag:
-        description: Release tag containing the v1.1.0 candidate relink assets
+        description: Public release tag containing the 38f2db604024 candidate relink assets
         required: true
         type: string
         default: v1.1.0-rc.1
@@ -23,6 +23,9 @@ jobs:
     timeout-minutes: 30
     env:
       RELINK_ASSET: GuanXiang-Cardputer-ADV-v1.1.0-candidate-Relink.zip
+      EXPECTED_SOURCE_COMMIT: 38f2db6040246967c6b827f2c809dde6f2cad725
+      EXPECTED_RELEASE_APP_SHA256: f58703ade8e478e8950393c071d9625de22d77e389ebff9f8f85504cf5565b6a
+      EXPECTED_APP_OBJECTS: '18'
 
     steps:
       - name: Set isolated working directories
@@ -46,6 +49,8 @@ jobs:
         run: python -m unittest discover -s tests -p test_verify_relink_release.py -v
 
       - name: Download this repository's release assets
+        # Keep contents:read. Run only when the selected release is public;
+        # a draft-asset permission denial must not be retried with broader access.
         env:
           GH_TOKEN: ${{ github.token }}
           RELEASE_TAG: ${{ inputs.tag }}
@@ -65,6 +70,26 @@ jobs:
             --checksums "$RELINK_DOWNLOAD/SHA256SUMS" \
             --destination "$RELINK_KIT"
 
+      - name: Check the recorded candidate provenance and object inventory
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          kit = Path(os.environ['RELINK_KIT'])
+          recipe = json.loads((kit / 'recipe.json').read_text())
+          if recipe['source_commit'] != os.environ['EXPECTED_SOURCE_COMMIT']:
+              raise SystemExit('Unexpected source commit in relink recipe')
+          if recipe['release_firmware_sha256'] != os.environ['EXPECTED_RELEASE_APP_SHA256']:
+              raise SystemExit('Unexpected selected release image in relink recipe')
+          expected = int(os.environ['EXPECTED_APP_OBJECTS'])
+          objects = list((kit / 'objects/app').glob('*.o'))
+          linked = [item for item in recipe['link'] if item.startswith('objects/app/')]
+          if len(objects) != expected or set(linked) != {str(p.relative_to(kit)) for p in objects}:
+              raise SystemExit('Application object inventory does not match the candidate')
+          print(f'Candidate source/image provenance and {expected} application objects: PASS')
+          PY
+
       - name: Install the kit's pinned official tools
         shell: bash
         run: |
@@ -83,8 +108,8 @@ jobs:
             --esptool "$PLATFORMIO_CORE_DIR/packages/tool-esptoolpy/esptool.py"
           python tools/verify_relink_release.py image \
             --path "$RELINK_KIT/work/firmware.bin" \
-            --size 1202112 \
-            --sha256 f76041e5a5aaa683826788b46376822eff67437ef9d8953681d7a5e467c966a0 \
+            --size 1567440 \
+            --sha256 16370bc0d6c23d27221071fa3c2b3fdad991c613598e7f84c4d265955294c670 \
             >> "$GITHUB_STEP_SUMMARY"
 
       - name: Recompile and relink the supplied Arduino core

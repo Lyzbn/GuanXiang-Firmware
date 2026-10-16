@@ -1,37 +1,37 @@
-# 观象 1.1.0（候选发行草稿）
+# 观象 1.1.0（深化精意与自学候选草稿）
 
-新增三档阅读：64 卦的本卦和之卦均可查看完整古文卦辞、现代短意和现代精意；默认短意，每卦两行四字。
+这次候选扩展阅读深度，并加入无需起卦的六十四卦自学。应用源码为 `38f2db6040246967c6b827f2c809dde6f2cad725`。**固定源码 CI 已全部通过，新应用已仅写入设备 app0；启动烟测通过，用户对新增阅读、自学与顺读的验收进行中，尚未收到验收结果，固件未正式发布。**
 
-- 设置页 T 循环切换并保存默认模式；卦意页 T 临时切换，并回到第一页，不改默认设置。
-- 长文完整分页；短意和精意可继续进入古文，古文末页直接进入后续。
-- 历史按已保存的默认模式阅读，不生成新历史；动爻保留完整爻辞和小象，符合条件时可读用九、用六及其小象。
-- 阅读模式使用独立存储键；现有历史与设置格式保持不变，保存失败时保持原内存状态。
-- 现代短意与精意由项目依据古典注疏整理，并非现成学者译文。古文范围为 64 条完整卦辞、384 条爻辞、384 条小象和上述特殊用辞，并非全本《易传》。参见[文本来源](TEXT_SOURCES.md)。
+## 新增与调整
 
-## 已冻结的候选与验证
+- **64 卦深化精意**：按「卦势、义理、处事、辨误」四节展开，讲清古义、处境和行动条件。
+- **386 份逐爻与用辞解读**：384 爻及用九、用六分「释义、精意」，古注节选与出处另列。现代反思不冒称古注原话。
+- **12 课 → 叠六爻 → 六十四卦自学**：首页 L 进入，从阴阳、读画方向和传统口诀认识八卦，再选择上下卦查找重卦，最后按通行卦序阅读。无需起卦，不新增历史。
+- **完整古文**：保留 64 条卦辞、384 条爻辞与小象及特殊用辞；自学另收 64 条完整大象，并非全本《易传》。
+- **动爻连续阅读**：Enter 先读完当前卡全部页，再按爻辞、小象、精意、下一动爻前进；末项直接进入之卦。乾坤六爻全动先完整读用九／用六。左右键仍可主动切卡。
+- **长文排版**：16px 正文、20px 行距、左对齐、每屏最多四行；章节从新页开始，不用缩字或截断容纳更多内容。
+- **三档与历史继续保留**：短意为默认两行四字；设置页 T 保存默认档位，阅读页 T 临时切换。自学不修改默认值，既有历史和设置格式不变。
 
-应用源码提交：`4d412daab3e4f18339637392813d51ea159af610`。
+经传原文、王弼注／孔颖达疏的古注节选、观象今释分别标明。今释为本项目依据古典注疏、借助 AI 辅助编写并核对的现代文字，不是现代学者的现成译文。推荐书目仅供延伸阅读，不表示作者、出版社或机构授权或认可本产品。完整现代文字、课程与出处见 [readings.json](readings.json)、[study-content.json](study-content.json) 和 [文本来源](TEXT_SOURCES.md)。
 
-选定 Linux CI 应用镜像：**1,202,112 字节**，SHA-256：
+## 已完成的软件验证
 
-```text
-6a694cd5e1bec230d249fa4298cd9568841b52689c28484f853b38075b2b06f3
-```
+本地 Release／Debug 构建通过；238,355 项原生检查通过。主阅读主机审计覆盖 13,522 个布局、214,191 个边界，提供 68 张预览；自学覆盖 5,359 个布局、34,070 个边界，提供 29 张预览，两者均无错误。内容检查覆盖 64 卦、386 份爻级解读与 450 处来源锚点。
 
-原生检查 **149,362 项**、主机布局检查 **9,800 项**和 **62 页**预览审计均通过；固定应用的两轮 CI 检查通过。最新 PR CI `38952526657` 和固定源码重链输入采集 `38952513232` 也已成功。PR #5 的工作流 HEAD `bb3cd84` 仅增加私有采集流程，不改应用代码。详见[验证记录](VALIDATION.md)。
+固定源码 Linux CI `38964682642` 全部通过；选定应用为 1,567,440 字节，SHA-256 为 `f58703ade8e478e8950393c071d9625de22d77e389ebff9f8f85504cf5565b6a`。仅写 app0 后摘要验证通过，NVS 全部 20,480 字节与升级前一致。启动烟测通过，用户验收进行中，尚无本次用户验收结论；匹配重链和安装材料正在更新。逐版本检查及设备边界见 [VALIDATION.md](VALIDATION.md)。
 
 ## 发行前剩余工作
 
-**本候选已烧录并通过启动检查，完整设备验收进行中，固件尚未正式发布或提供下载。** 许可与匹配所选镜像的重链材料已备齐，重链和修改库后的重建检查已通过。
-
-仍须确认新版的完整起卦、T 键切换、历史与设置保留、LCD 分页及 USB／电池冷启动。旧 b3 应用的验收结论仅适用于旧镜像；macOS 本地构建也不能替代这里选定的 Linux CI 镜像。正式安装包及其摘要将在发行材料确认后提供。
+新候选需要验证 LCD 字形与分节分页、首页 L 和课程／组合／目录按键、动爻到之卦的顺读，以及原有起卦、阅读档位、历史和设置保留、USB／电池冷启动。旧候选已完成的启动或交互记录仅适用于旧镜像。安装包与摘要将在匹配材料确认后更新，本文件不提供尚未确认的下载链接。
 
 ## English
 
-Candidate 1.1.0 adds Summary, Insight and complete Classical judgment modes for all 64 primary and changed hexagrams. Summary is the default, with two four-character lines. T saves the default in settings and changes only the current session on reading pages, returning to page one. Opening history uses the saved default and does not create a new entry. Reading-mode storage is independent of existing settings and history formats.
+This 1.1.0 candidate expands all 64 hexagram readings into four sections and adds 386 individual readings: 384 lines plus the special Use of Nine and Use of Six. Each separates explanation of the classical commentary from modern reflections, with commentary excerpts and sources shown separately.
 
-Modern readings are project interpretations based on classical commentaries, not an existing scholarly translation. The classical collection includes 64 complete judgments, 384 line texts and their 384 Small Image commentaries, plus the applicable special texts and commentaries for Qian and Kun; it is not the complete Yi Zhuan.
+Press L on the home screen for **twelve foundation lessons → upper/lower trigram combinations → all 64 hexagrams**. Study requires no cast and creates no history entry. It adds the 64 complete Great Images alongside the existing judgments, line texts and Small Images; this is not the complete Ten Wings.
 
-Application source is frozen at `4d412daab3e4f18339637392813d51ea159af610`. The selected Linux CI application is **1,202,112 bytes**, with the SHA-256 shown above. **149,362 native checks**, **9,800 layout checks**, the **62-page** preview audit and two CI rounds passed; latest private CI and relink-input capture also succeeded. The workflow-only PR head does not change the application.
+Enter finishes each moving-line card before continuing through line text, Small Image, Insight, the next moving line and finally the changed hexagram. All-moving Qian and Kun complete their special Use text first. Long text retains a 16px body, 20px line spacing and a four-line maximum; sections begin on new pages. Summary remains the default; T saves a default in settings or switches temporarily during reading. Existing history and settings formats remain unchanged.
 
-Licensing and matching relink materials are prepared and relink checks have passed. **The candidate firmware remains unpublished. It has been flashed and passed the serial boot check; full device acceptance is in progress.** Previous hardware acceptance applies only to the earlier b3 image. See [VALIDATION.md](VALIDATION.md) for the selected artifact, completed checks and remaining device work.
+Canonical text, Wang Bi/Kong Yingda commentary excerpts and AI-assisted project interpretations are labelled separately. Recommended modern books are further-reading suggestions, not licensed translations or endorsements.
+
+Application source: `38f2db6040246967c6b827f2c809dde6f2cad725`. Local Release/Debug builds and 238,355 native checks passed. Main-reading audit: 13,522 layouts / 214,191 bounds / 68 previews. Study audit: 5,359 layouts / 34,070 bounds / 29 previews. Both report zero errors. **Fixed-source CI `38964682642` passed and the selected application was flashed to app0 only. The serial boot smoke test passed; user acceptance is in progress, with no user result recorded yet, and firmware remains unpublished.** The application is 1,567,440 bytes; its SHA-256 is shown above and its written digest matches. All 20,480 NVS bytes are unchanged. Matching materials are being updated; earlier draft device or relink results do not validate this build. See [VALIDATION.md](VALIDATION.md).
