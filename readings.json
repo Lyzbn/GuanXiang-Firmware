@@ -1,0 +1,1596 @@
+{
+  "schema_version": 1,
+  "editorial_notice": "本项目据原典整理：现代短意与现代精意为本项目依据《周易》经传及《周易正义》等古典注疏、借助AI辅助编写并复核的现代转述，并非现成权威译文，不作结果保证。逐卦来源及整理依据见资料说明。",
+  "records": [
+    {
+      "number": 1,
+      "name": "乾",
+      "short_lines": [
+        "刚健进取",
+        "守正知止"
+      ],
+      "insight": "乾以天的运行不息为象，重在主动进取、持续修养。从潜龙到亢龙，又说明行动须合乎时机：尚未成熟时积蓄力量，有所成就后也应保持警觉。真正的刚健包含自律与分寸，不能把一味逞强当作奋进。",
+      "sources": [
+        {
+          "title": "周易正義/01乾",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/01%E4%B9%BE",
+          "revision_id": 2676007,
+          "sha256": "dae9906d9a18c9d1b9e1ad877081f1bb7a17e90756fcb417503a2735b1854d50"
+        },
+        {
+          "title": "周易/乾",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E4%B9%BE",
+          "revision_id": 2404991,
+          "sha256": "e8b8c4a93f7e1f86e00e83635a12423da0e134ec463ea21837f6a41b41661156"
+        }
+      ],
+      "basis_notes": "《正义》以健释乾；大象言自强不息，初九潜龙与上九亢龙呈现时位与进退的差别。现代段落据此强调进取有节。"
+    },
+    {
+      "number": 2,
+      "name": "坤",
+      "short_lines": [
+        "厚德承载",
+        "柔顺有常"
+      ],
+      "insight": "坤以大地承载万物为象，重在包容、配合与踏实成就事情。柔顺并非没有立场，而是在认清方向后，持久承担自己的责任。遇事不必争先主导，可以先观察、再协作；宽厚与坚定相济，才有承载复杂局面的力量。",
+      "sources": [
+        {
+          "title": "周易正義/01坤",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/01%E5%9D%A4",
+          "revision_id": 2404938,
+          "sha256": "4bdaa2d02468975f7eb2fdb5263e80dc073e94bbac8ef2b45f29afa6d77ceaa6"
+        },
+        {
+          "title": "周易/坤",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%9D%A4",
+          "revision_id": 2404999,
+          "sha256": "a229442f54886cd2b21b1b6ab19cb377c4c59e5fcd8ac6b75f44b846459ca881"
+        }
+      ],
+      "basis_notes": "卦辞利牝马之贞、先迷后得主、安贞吉；大象厚德载物。以承载、顺承和守正为古义，合作与责任为现代转述。"
+    },
+    {
+      "number": 3,
+      "name": "屯",
+      "short_lines": [
+        "初创多难",
+        "立序求助"
+      ],
+      "insight": "屯如草木初生、云雷相交，新的力量出现时，秩序尚未建立，困难也随之而来。此时宜先稳住根基，理清头绪，寻找可靠的协助，再逐步展开行动。起步受阻不等于没有前途，但盲目扩大行动，容易使原有困难更加纠结。",
+      "sources": [
+        {
+          "title": "周易正義/01屯",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/01%E5%B1%AF",
+          "revision_id": 2689596,
+          "sha256": "5d11567b8609c45961985cb7312f2ca57ce139b11a744d6a359d4c20838eb0b8"
+        },
+        {
+          "title": "周易/屯",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%B1%AF",
+          "revision_id": 2527353,
+          "sha256": "9683da38374211851362493c9a51489b50792b7ac6ab075d242c27ad7eabd48e"
+        }
+      ],
+      "basis_notes": "《正义》释屯为刚柔始交而难生；卦辞勿用有攸往、利建侯，大象经纶。由此整理初创时先建秩序、组织助力之意。"
+    },
+    {
+      "number": 4,
+      "name": "蒙",
+      "short_lines": [
+        "虚心求教",
+        "践行养正"
+      ],
+      "insight": "蒙以山下出泉为象，像人初学时尚不清楚去向。启蒙需要求知者主动请教，也需要教导者明白、一贯地回应。弄清疑问后，还应在行动中培养德行；若解释前后摇摆，让人无所适从，反而容易使困惑加深。",
+      "sources": [
+        {
+          "title": "周易正義/01蒙",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/01%E8%92%99",
+          "revision_id": 2404940,
+          "sha256": "1766d06d4984e624b206a237a83394aa6c28a5080a3eaf5eb85e718bab64a877"
+        },
+        {
+          "title": "周易/蒙",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E8%92%99",
+          "revision_id": 2601829,
+          "sha256": "54ad0a6054afd8ccb62053c8149a6b4c66b7cb9a7e77fe8b31c4d874b97fa276"
+        }
+      ],
+      "basis_notes": "卦辞童蒙求我、初筮告；王注及孔疏以决疑不一则复惑解释再三渎，大象果行育德。避免把蒙简化为愚笨或只讲禁止再占。"
+    },
+    {
+      "number": 5,
+      "name": "需",
+      "short_lines": [
+        "守信待时",
+        "养力应变"
+      ],
+      "insight": "需是有所等待，像云已升到天上，雨却尚未落下。前方有险时，有力量也不必立即闯入；可以守住诚信和原则，安顿生活，保存精力，观察条件何时成熟。等待的意义在于为行动作准备，而非把事情搁置后便不再过问。",
+      "sources": [
+        {
+          "title": "周易正義/02需",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/02%E9%9C%80",
+          "revision_id": 2404946,
+          "sha256": "9881cc913dd53555b11abde6ca752e0cd63eaa303ff355ffff6b465f5048a388"
+        },
+        {
+          "title": "周易/需",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E9%9C%80",
+          "revision_id": 2405039,
+          "sha256": "48abe6009474bf5afe40505001079457df8326910b7c5fac4125a5a7a356fe76"
+        }
+      ],
+      "basis_notes": "《彖》险在前、刚健而不陷；卦辞有孚、利涉大川，大象饮食宴乐。等待与准备相连，不作消极停滞之解。"
+    },
+    {
+      "number": 6,
+      "name": "讼",
+      "short_lines": [
+        "明辨止争",
+        "谋始防患"
+      ],
+      "insight": "讼以天与水背向而行为象，说明意见和利益相违，容易形成争执。即使自信有理，也应警惕把争论推向极端，必要时请公正者协助辨明。更长远的办法，是在事情开始时说清约定、责任与边界，减少日后争端的根由。",
+      "sources": [
+        {
+          "title": "周易正義/02訟",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/02%E8%A8%9F",
+          "revision_id": 2404945,
+          "sha256": "8145d6a55e866cb0917e8c64a0e0318393a47eb5d09fa7a7caac34895c0d634b"
+        },
+        {
+          "title": "周易/訟",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E8%A8%9F",
+          "revision_id": 2405032,
+          "sha256": "59292dbcac74e3f4a3d70cf783736326b42bfb1c0b822d419dcec5d77520ef09"
+        }
+      ],
+      "basis_notes": "卦辞中吉、终凶、利见大人；大象作事谋始，王注明言契之不明为讼由。现代转述不等于一概放弃正当主张。"
+    },
+    {
+      "number": 7,
+      "name": "师",
+      "short_lines": [
+        "正道统众",
+        "严中有容"
+      ],
+      "insight": "师原指众人组成的军队，重在以正当目标和可靠的领导组织力量。人多并不自然有序，行动需要明确职责与纪律，也要照顾参与者、容纳合理差异。用于日常协作，可反思是否准备充分、分工清楚，不能只凭声势催促众人前进。",
+      "sources": [
+        {
+          "title": "周易正義/02師",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/02%E5%B8%AB",
+          "revision_id": 2404943,
+          "sha256": "d1905c075fbaabb5b45d7e7d0c12900541852e84bbca7383888fbf15fa6fccdf"
+        },
+        {
+          "title": "周易/師",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%B8%AB",
+          "revision_id": 2405011,
+          "sha256": "131b206cbc0995b1adfdab9560e66d7843fd85e3172bb4e9f89bb37e4665c1f9"
+        }
+      ],
+      "basis_notes": "《彖》师众也、贞正也；卦辞丈人吉，大象容民畜众。孔疏强调威严之外须容众，不可纯用威猛；日常协作为项目引申。"
+    },
+    {
+      "number": 8,
+      "name": "比",
+      "short_lines": [
+        "亲比互助",
+        "择善守信"
+      ],
+      "insight": "比讲人与人相互亲近、扶助，如水在地上流通相润。建立关系前，宜看清共同目标与彼此是否可信；形成联系后，又须长久守正，及时表达合作意愿。亲近不是随众附和，更不是排外结党，稳定的联结应能经得住时间检验。",
+      "sources": [
+        {
+          "title": "周易正義/02比",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/02%E6%AF%94",
+          "revision_id": 2404944,
+          "sha256": "617e299f80a47dddb2cf8dcb9e83d03152fda76f3ab17dfe50282d6f7dbb93c0"
+        },
+        {
+          "title": "周易/比",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E6%AF%94",
+          "revision_id": 2405022,
+          "sha256": "bfa9eb4716a7c703479f6e6a7e4a9b15ab71ba78bd9c9912ded75e40f8b16554"
+        }
+      ],
+      "basis_notes": "卦辞原筮、元永贞，彖传以辅释比；王注反对不以元永贞的群党相比，大象建万国、亲诸侯。择伴与守信据此整理。"
+    },
+    {
+      "number": 9,
+      "name": "小畜",
+      "short_lines": [
+        "小有积蓄",
+        "修己待时"
+      ],
+      "insight": "小畜有小力量暂时蓄止大力量之意，如密云聚集而尚未成雨。条件还不足以广泛施展时，可以先把细小的准备做好，修整言行与能力，逐渐积累支持。暂时未见成果，不必强求立刻突破，也不宜把已有的小成当作充足把握。",
+      "sources": [
+        {
+          "title": "周易正義/02小畜",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/02%E5%B0%8F%E7%95%9C",
+          "revision_id": 2404941,
+          "sha256": "d56ee6df498b53dd9598f828bba6f35ae629d31456e5943470cc1f05d229ccb1"
+        },
+        {
+          "title": "周易/小畜",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%B0%8F%E7%95%9C",
+          "revision_id": 2405006,
+          "sha256": "f42cf7bcf0de765e5f997192eb4c9945a19487dfb20bd3ccadb704c52f02cdf4"
+        }
+      ],
+      "basis_notes": "《正义》释所畜狭小，卦辞密云不雨；大象懿文德，王注未能行其施。现代积累之说兼顾畜止古义，不只解释为储蓄。"
+    },
+    {
+      "number": 10,
+      "name": "履",
+      "short_lines": [
+        "谨慎履行",
+        "明礼知界"
+      ],
+      "insight": "履以踩到虎尾的险境说明行事需要分寸。面对强势力量或不熟悉的环境，宜辨清规则、位置和责任，以诚实而克制的态度前进。柔和不是逢迎，谨慎也不等于停止一切行动；关键在于看清危险，避免无知无畏地冒进。",
+      "sources": [
+        {
+          "title": "周易正義/02履",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/02%E5%B1%A5",
+          "revision_id": 2404942,
+          "sha256": "6ee83f5c36b73c7dd50eca8884879e4d25192b99304f303868b98ee18e77089e"
+        },
+        {
+          "title": "周易/履",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%B1%A5",
+          "revision_id": 2494097,
+          "sha256": "d86ef9a395ed5891e1bda0287c0f2b0397400b21d09e613d34c9eae4f48100e8"
+        }
+      ],
+      "basis_notes": "卦辞履虎尾、不咥人；彖传说而应乾，王注强调不以说行佞邪；大象辨上下、定民志。谨慎不能被解作安全保证。"
+    },
+    {
+      "number": 11,
+      "name": "泰",
+      "short_lines": [
+        "上下相通",
+        "通中有节"
+      ],
+      "insight": "泰以天地之气相交为象，表示上下沟通、彼此协力，事情较易通达。通畅时仍要照顾不同需要，建立适当的安排与节度，不能因顺利而任意扩张。把有利条件转成可持续的秩序，比只享受眼前的便利更能体现泰的用意。",
+      "sources": [
+        {
+          "title": "周易正義/02泰",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/02%E6%B3%B0",
+          "revision_id": 2000742,
+          "sha256": "48f91de91ad7035d96983b9e02a0673c4985665aba30cc23aca84841e2773fc7"
+        },
+        {
+          "title": "周易/泰",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E6%B3%B0",
+          "revision_id": 2106138,
+          "sha256": "ecd49dba63369af09ab717293badc4b5823106b89c25ee5ebed44466817616e7"
+        }
+      ],
+      "basis_notes": "彖传天地交、上下交而其志同；大象财成辅相。王注指出大通时物易失节，须裁成辅相，不将泰理解为永久顺境。"
+    },
+    {
+      "number": 12,
+      "name": "否",
+      "short_lines": [
+        "闭塞守正",
+        "敛德避难"
+      ],
+      "insight": "否以天地不交为象，表示沟通隔绝、上下难以相应。局面闭塞时，强求推进可能增添消耗，宜收敛锋芒、守住原则，减少不必要的卷入。尤其不要为了眼前名利勉强依附；先保存可以立身的根基，再观察转变的条件。",
+      "sources": [
+        {
+          "title": "周易正義/02否",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/02%E5%90%A6",
+          "revision_id": 2633973,
+          "sha256": "416c3035491ca09d67548d0f49047866708c9a83d8c9a573902927ee366a0747"
+        },
+        {
+          "title": "周易/否",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%90%A6",
+          "revision_id": 2106139,
+          "sha256": "f77270d71abb3e775b473769162c8ba82b523e733930e80f2cf260f6fa3ff4cf"
+        }
+      ],
+      "basis_notes": "彖传天地不交、上下不交；大象俭德辟难、不可荣以禄。依正义之闭塞与节俭避难整理，未许诺否极必然即时转泰。"
+    },
+    {
+      "number": 13,
+      "name": "同人",
+      "short_lines": [
+        "开放同心",
+        "守正协力"
+      ],
+      "insight": "同人重在把共同的志向放到开阔处，而非只顾熟人或小圈子的利益。合作既需要找到相通之处，也要辨明各自的特点与职责。目标公开、原则正当，才适合一起面对困难；若只求表面一致，反而容易把差别压成新的冲突。",
+      "sources": [
+        {
+          "title": "周易正義/02同人",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/02%E5%90%8C%E4%BA%BA",
+          "revision_id": 2000752,
+          "sha256": "354036a529be676ffa177205ae29624a2d0f5dfa5eb5a1a91983d409e17bcb70"
+        },
+        {
+          "title": "周易/同人",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%90%8C%E4%BA%BA",
+          "revision_id": 2106140,
+          "sha256": "9a9e6ac2ce8032856b0f061a594440d684b9a6e9ebb3e7db36212a726f66471b"
+        }
+      ],
+      "basis_notes": "卦辞同人于野、利涉大川、利君子贞；孔疏强调用心无私、处非近狭，大象类族辨物。开放合作不能取代对差异的辨明。"
+    },
+    {
+      "number": 14,
+      "name": "大有",
+      "short_lines": [
+        "有成有责",
+        "抑恶扬善"
+      ],
+      "insight": "大有表示拥有丰厚的资源与成就，如火在天上，明亮而广照。拥有越多，越需要辨清善恶、安排用途，并保持谦和而不自满。用于现实反思，应关注成果能否得到妥善管理、惠及相关的人，而非只把占有的多少当作价值。",
+      "sources": [
+        {
+          "title": "周易正義/02大有",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/02%E5%A4%A7%E6%9C%89",
+          "revision_id": 2386341,
+          "sha256": "86dbcd7b824901dfea5d56e73a84e8ba09030205995cb45f827ec7862ab01ad3"
+        },
+        {
+          "title": "周易/大有",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%A4%A7%E6%9C%89",
+          "revision_id": 2494004,
+          "sha256": "49b73707fe9e51e2e4efde66b960c5ae267f5b8eefcd1e752ee55fa7dd93db5a"
+        }
+      ],
+      "basis_notes": "彖传柔得尊位大中、刚健而文明；大象遏恶扬善，顺天休命。以资源和成就说明大有，是现代化表达，不预言发财。"
+    },
+    {
+      "number": 15,
+      "name": "谦",
+      "short_lines": [
+        "有实能谦",
+        "裒多益少"
+      ],
+      "insight": "谦并非刻意贬低自己，而是有能力、有成果仍能保持平实，愿意看到他人的长处。山藏于地中，提醒人不必把所有优势都显露出来。处理关系和资源时，应照顾多寡不均、使分配合宜，让谦逊落实为行动，而不止停在言辞。",
+      "sources": [
+        {
+          "title": "周易正義/02謙",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/02%E8%AC%99",
+          "revision_id": 2000726,
+          "sha256": "866555b1a68fabd6b8d64b0d8aeab4fdb7bb5e5baf9ed874e1541e2bde18a58c"
+        },
+        {
+          "title": "周易/謙",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E8%AC%99",
+          "revision_id": 2106142,
+          "sha256": "2ffb3b0269b10fe966f76b4dd96b49503733677215fa6b9df7414a0a903d3700"
+        },
+        {
+          "title": "原本周易本義 (四庫全書本)/卷01",
+          "url": "https://zh.wikisource.org/wiki/%E5%8E%9F%E6%9C%AC%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B701",
+          "revision_id": 736571,
+          "sha256": "4ede98c06c8f335015e303b88655005016d9f3d7f48bfc5ec2dc2fb2bb021623"
+        },
+        {
+          "title": "原本周易本義 (四庫全書本)/卷05",
+          "url": "https://zh.wikisource.org/wiki/%E5%8E%9F%E6%9C%AC%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B705",
+          "revision_id": 527365,
+          "sha256": "fe22155a61d2d10bbdb00580f75ff58610d8be0285e503190191c081ade01875"
+        }
+      ],
+      "basis_notes": "《本义》卷一谦卦以有而不居释谦；卷五谦卦大象以损高增卑、趋于平解释裒多益寡与称物平施。调平资源据朱熹此释，不混同王孔对裒多的不同解释。"
+    },
+    {
+      "number": 16,
+      "name": "豫",
+      "short_lines": [
+        "和顺而动",
+        "有备不逸"
+      ],
+      "insight": "豫以雷出地奋为象，既有振奋和愉悦，也强调顺应条件后采取行动。共同的热情可以凝聚力量，但仍须准备、秩序与合适的节奏。享受顺畅时，应留意是否沉迷安乐、只顾兴奋；把情绪转为有组织的行动，才不易流于空想。",
+      "sources": [
+        {
+          "title": "周易正義/02豫",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/02%E8%B1%AB",
+          "revision_id": 7904495,
+          "sha256": "204e9589d645d49ae519083e7b7df110ae17bdd26570ddaa4b7456cf90920360"
+        },
+        {
+          "title": "周易/豫",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E8%B1%AB",
+          "revision_id": 2106143,
+          "sha256": "444b5d44cc6d7005b0d43a9ef97fff42b8b82f30d2d8c4740c2418820d177b36"
+        }
+      ],
+      "basis_notes": "彖传刚应而志行、顺以动；大象作乐崇德；六三、上六分别有盱豫、冥豫之戒。振奋与防沉溺并重。"
+    },
+    {
+      "number": 17,
+      "name": "随",
+      "short_lines": [
+        "审时相随",
+        "守正有择"
+      ],
+      "insight": "随表示随时势、随合宜之人而行动，关键仍在守正。变化出现时，可以调整方法、听取他人意见，不必执着于原来的安排；但跟随也需要辨别对象，不能只因人多便认定正确。进退有节，劳作之后也懂得休息，才是合时的应对。",
+      "sources": [
+        {
+          "title": "周易正義/03隨",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/03%E9%9A%A8",
+          "revision_id": 2000746,
+          "sha256": "55ab922d758178bf26467c5429b4cd9e0304ebe0d7a26d932fc8566f1a505e14"
+        },
+        {
+          "title": "周易/隨",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E9%9A%A8",
+          "revision_id": 2497157,
+          "sha256": "4efab4ca14190c6d78e8a9a51ca51eb6ad73003166b9c89a0785f44e49c1071e"
+        }
+      ],
+      "basis_notes": "彖传动而说、随时之义；卦辞利贞无咎，大象向晦入宴息。现代择伴与调整方法据随时守正整理。"
+    },
+    {
+      "number": 18,
+      "name": "蛊",
+      "short_lines": [
+        "整治积弊",
+        "慎始慎终"
+      ],
+      "insight": "蛊指长期积累而生的败坏，如山下有风，事物久不整治便容易失序。发现问题后，须追问它怎样形成，处理根由，并安排后续维护，不能只补眼前破口。更新既要有担当，也要体察人情，使整治带来重新生长的可能。",
+      "sources": [
+        {
+          "title": "周易正義/03蠱",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/03%E8%A0%B1",
+          "revision_id": 2386435,
+          "sha256": "6321bbd4996eb325653cf3f911cee00f714e6a0a971f716584c208e2407e2667"
+        },
+        {
+          "title": "周易/蠱",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E8%A0%B1",
+          "revision_id": 2106145,
+          "sha256": "b823e1f7c186f7ae3ea27e22955595a873311c8c8f1c00a1b09d00f887df6a5a"
+        },
+        {
+          "title": "原本周易本義 (四庫全書本)/卷01",
+          "url": "https://zh.wikisource.org/wiki/%E5%8E%9F%E6%9C%AC%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B701",
+          "revision_id": 736571,
+          "sha256": "4ede98c06c8f335015e303b88655005016d9f3d7f48bfc5ec2dc2fb2bb021623"
+        },
+        {
+          "title": "原本周易本義 (四庫全書本)/卷05",
+          "url": "https://zh.wikisource.org/wiki/%E5%8E%9F%E6%9C%AC%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B705",
+          "revision_id": 527365,
+          "sha256": "fe22155a61d2d10bbdb00580f75ff58610d8be0285e503190191c081ade01875"
+        }
+      ],
+      "basis_notes": "《本义》卷一蛊卦以坏极而有事释蛊，并以防止前事大坏、后事丁宁鉴失解释先甲后甲；卷五大象为振民育德。追溯积弊与持续维护据此整理；《正义》另取宣令前后反复告谕之义。"
+    },
+    {
+      "number": 19,
+      "name": "临",
+      "short_lines": [
+        "亲临关照",
+        "盛时思退"
+      ],
+      "insight": "临有走近、照察和承担治理之意，像泽边的大地包容相接。处于能够影响他人的位置时，应耐心了解实际，给予持续教养与关怀。形势上升也并非不会变化，因此亲近不能变成控制，顺利时仍须为日后的消长预留余地。",
+      "sources": [
+        {
+          "title": "周易正義/03臨",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/03%E8%87%A8",
+          "revision_id": 2692101,
+          "sha256": "be13da3a1270ffba2030a8c7380892f723d883570ab37d387c8262c28d17f3e2"
+        },
+        {
+          "title": "周易/臨",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E8%87%A8",
+          "revision_id": 2106146,
+          "sha256": "beadffbfc5356c83e7068507a7446efbe4c175eeec1c3845ec634e288f3217cc"
+        }
+      ],
+      "basis_notes": "彖传刚浸而长，卦辞至于八月有凶提醒消长；大象教思无穷、容保民无疆。临人以教养，不作具体月份预报。"
+    },
+    {
+      "number": 20,
+      "name": "观",
+      "short_lines": [
+        "静观审己",
+        "以身示范"
+      ],
+      "insight": "观既是察看，也有让人观看、作为示范的一面。面对人事，宜先静心了解，不急于凭片面印象定论；同时检视自己的言行，是否足以让人信服。真正的观察要落实为自省和合宜的教导，不能只站在一旁评说他人。",
+      "sources": [
+        {
+          "title": "周易正義/03觀",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/03%E8%A7%80",
+          "revision_id": 2000708,
+          "sha256": "c7bdf80f3c1776ab51a12e1812fee682dfe00ddd68fed601d26eb0473720cfac"
+        },
+        {
+          "title": "周易/觀",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E8%A7%80",
+          "revision_id": 2106147,
+          "sha256": "82a41830c878c010fb1164b131c2a3b8ba18cbb4592d46f5d38abc120cf2e9e7"
+        }
+      ],
+      "basis_notes": "卦辞盥而不荐、有孚颙若；彖传中正以观天下，大象省方观民设教，九五观我生。兼顾观看与被观看的古义。"
+    },
+    {
+      "number": 21,
+      "name": "噬嗑",
+      "short_lines": [
+        "明辨除碍",
+        "公正有度"
+      ],
+      "insight": "噬嗑以咬开口中阻碍为象，说明隔阂不能总靠回避来消除。面对妨碍共同秩序的问题，宜先查明事实，再用清楚、公平的规则处理。果断应以明察为前提，不能把情绪当作裁断的根据，也不宜因怕冲突而任由问题扩大。",
+      "sources": [
+        {
+          "title": "周易正義/03噬嗑",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/03%E5%99%AC%E5%97%91",
+          "revision_id": 2404948,
+          "sha256": "97ea63d73b5f3180c43ecfc48c58586bd5b5e3475dab76d23ec62b4514c04d3a"
+        },
+        {
+          "title": "周易/噬嗑",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%99%AC%E5%97%91",
+          "revision_id": 2404997,
+          "sha256": "db8345f6caa1e34ad0add5951b6546db6ff1168375e5220e3efd8c4f6badf830"
+        }
+      ],
+      "basis_notes": "彖传颐中有物、噬而嗑之，卦辞利用狱；大象明罚敕法。借断狱古义说明明察与规则，不鼓励私刑或惩罚冲动。"
+    },
+    {
+      "number": 22,
+      "name": "贲",
+      "short_lines": [
+        "文质相称",
+        "饰不掩实"
+      ],
+      "insight": "贲讲文饰与质地的配合，如山下有火，使事物显出纹理与光彩。恰当的表达、礼节和修饰有助于理解，却不能替代真实内容。处理一般事务可以讲究呈现；面对重大判断，更应回到事实，避免让漂亮的外表遮住根本问题。",
+      "sources": [
+        {
+          "title": "周易正義/03賁",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/03%E8%B3%81",
+          "revision_id": 2404954,
+          "sha256": "fd3397ee25224d0eacab91e70d91087ac451399249db76055a16e2b91209560e"
+        },
+        {
+          "title": "周易/賁",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E8%B3%81",
+          "revision_id": 2405035,
+          "sha256": "f7418a0d3805c366e3afc6e9c7fb32c0c1da7883bf714cbe6235fe477365773c"
+        },
+        {
+          "title": "原本周易本義 (四庫全書本)/卷05",
+          "url": "https://zh.wikisource.org/wiki/%E5%8E%9F%E6%9C%AC%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B705",
+          "revision_id": 527365,
+          "sha256": "fe22155a61d2d10bbdb00580f75ff58610d8be0285e503190191c081ade01875"
+        }
+      ],
+      "basis_notes": "卦辞小利有攸往，彖传刚柔交错为文；《本义》卷五贲卦大象区分明庶政为小事、折狱为大事。一般呈现与重大裁断的区别据此转述，事实核验为现代引申。"
+    },
+    {
+      "number": 23,
+      "name": "剥",
+      "short_lines": [
+        "剥落知危",
+        "固本护下"
+      ],
+      "insight": "剥如山附于地，支撑逐渐削弱，表面尚存而根基已受损。此时宜先辨认消耗从何而来，减少冒进，保护真正承重的部分。处在上位的人尤其要照顾基础和下层的安稳；只有根基得到保全，眼前的位置才不至于成为空架。",
+      "sources": [
+        {
+          "title": "周易正義/03剝",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/03%E5%89%9D",
+          "revision_id": 2404947,
+          "sha256": "43e24439d01118bec837ea4eab0aa75c665b4a87abb2e334ed8e1c4827912253"
+        },
+        {
+          "title": "周易/剝",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%89%9D",
+          "revision_id": 2404994,
+          "sha256": "a719d564a93cd90a6474efe2515e070e2bc1537394eaeb85f3f92fe2da5d7ef3"
+        }
+      ],
+      "basis_notes": "卦辞不利有攸往；彖传柔变刚、顺而止之，大象厚下安宅。强调基础受损与厚下，不把剥只解释为暂时失财。"
+    },
+    {
+      "number": 24,
+      "name": "复",
+      "short_lines": [
+        "知失而复",
+        "养护新机"
+      ],
+      "insight": "复表示离开原有道路后重新回来，也像冬日地下初动的一线生机。回转之初，力量还弱，宜及时改正偏失，给新的习惯和方向留出恢复空间。不要因为看见一点好转便急于消耗；能在小处觉察、及早回头，比等到积重再改更可贵。",
+      "sources": [
+        {
+          "title": "周易正義/03復",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/03%E5%BE%A9",
+          "revision_id": 2404952,
+          "sha256": "40a8ae866671157352df174afba881ad1e1ee424637a55bea964d3e61a32d882"
+        },
+        {
+          "title": "周易/復",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%BE%A9",
+          "revision_id": 2497162,
+          "sha256": "81af912f4f2b2e80cd7e532e96ced7ddd4f2009a2e76358abac80c8c3ddf0c51"
+        },
+        {
+          "title": "原本周易本義 (四庫全書本)/卷05",
+          "url": "https://zh.wikisource.org/wiki/%E5%8E%9F%E6%9C%AC%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B705",
+          "revision_id": 527365,
+          "sha256": "fe22155a61d2d10bbdb00580f75ff58610d8be0285e503190191c081ade01875"
+        }
+      ],
+      "basis_notes": "彖传反复其道、刚反，初九不远复，大象雷在地中、至日闭关；《本义》卷五复卦大象以安静养微阳解释闭关。及时改过与养护新机据此整理，不解作无条件重来。"
+    },
+    {
+      "number": 25,
+      "name": "无妄",
+      "short_lines": [
+        "守诚去妄",
+        "顺理而行"
+      ],
+      "insight": "无妄重在不以私意妄作，行动应合乎真实处境与正当原则。付出时不宜一心算计即时回报，遭遇意外也不必急于寻找过错。先分清哪些是自己能负责的，哪些不能强求；少一些牵强安排，才能使行动更朴实而合宜。",
+      "sources": [
+        {
+          "title": "周易正義/03無妄",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/03%E7%84%A1%E5%A6%84",
+          "revision_id": 2625764,
+          "sha256": "84f42c932fde89ad63fce5cb0b6427931370da3eec8018d9351ab824d5510625"
+        },
+        {
+          "title": "周易/无妄",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E6%97%A0%E5%A6%84",
+          "revision_id": 2527352,
+          "sha256": "8b0c1cccd695ebeb46b21bb7dd2cd4fb6a7921f5310c0d4ff7238b1c07a99012"
+        },
+        {
+          "title": "原本周易本義 (四庫全書本)/卷01",
+          "url": "https://zh.wikisource.org/wiki/%E5%8E%9F%E6%9C%AC%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B701",
+          "revision_id": 736571,
+          "sha256": "4ede98c06c8f335015e303b88655005016d9f3d7f48bfc5ec2dc2fb2bb021623"
+        },
+        {
+          "title": "原本周易本義 (四庫全書本)/卷05",
+          "url": "https://zh.wikisource.org/wiki/%E5%8E%9F%E6%9C%AC%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B705",
+          "revision_id": 527365,
+          "sha256": "fe22155a61d2d10bbdb00580f75ff58610d8be0285e503190191c081ade01875"
+        }
+      ],
+      "basis_notes": "卦辞其匪正有眚，六三无妄之灾，九五无妄之疾；《本义》卷一无妄六二释为无私意期望，卷五同爻小象释为非计其利而为之，支持不算计回报。《正义》六二另取不为始而成末、臣道之义，不能混作同一解释。"
+    },
+    {
+      "number": 26,
+      "name": "大畜",
+      "short_lines": [
+        "蓄德养能",
+        "知止待用"
+      ],
+      "insight": "大畜如天在山中，强健的力量受到约束，也因此得到涵养。此时可广泛学习前人的言行，充实判断与能力，把冲劲转成可承担大事的本领。积蓄不是把资源永远封存，而是在有了根基、能够负责之后，将所学用于实际困难。",
+      "sources": [
+        {
+          "title": "周易正義/03大畜",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/03%E5%A4%A7%E7%95%9C",
+          "revision_id": 2404950,
+          "sha256": "66341c4158180c66ca5d7725f7d803d61d668e0933066bd9b9238f9b5604ec94"
+        },
+        {
+          "title": "周易/大畜",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%A4%A7%E7%95%9C",
+          "revision_id": 2405001,
+          "sha256": "8eb67508919828e639e9fbb6513318b183102e5412488007c35a562d3919f0a7"
+        }
+      ],
+      "basis_notes": "大象多识前言往行、以畜其德；彖传刚健笃实辉光，卦辞不家食吉、利涉大川。兼顾蓄止、养德与施用。"
+    },
+    {
+      "number": 27,
+      "name": "颐",
+      "short_lines": [
+        "慎言节食",
+        "养己养人"
+      ],
+      "insight": "颐以口与进食为象，讨论人依靠什么得到滋养，也怎样滋养别人。除了饮食，还可反思每天接纳的言语、信息与习惯，是否真正有益。照顾自身时应有节制，影响他人时应慎言；不宜只顾眼前欲求，忽略长久的身心与品行。",
+      "sources": [
+        {
+          "title": "周易正義/03頤",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/03%E9%A0%A4",
+          "revision_id": 2692196,
+          "sha256": "86aff6db0b0191a3deec1cc48570a84aa2258d87170afcf9a92034724a2ae184"
+        },
+        {
+          "title": "周易/頤",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E9%A0%A4",
+          "revision_id": 2405042,
+          "sha256": "fc7603fd1bd8e4d73bca4a6b12a322021754fce2f493c3e83b592b4abb7ab982"
+        }
+      ],
+      "basis_notes": "卦辞观颐、自求口实，彖传观其所养及自养，大象慎言语、节饮食。信息与习惯是明确的现代生活引申。"
+    },
+    {
+      "number": 28,
+      "name": "大过",
+      "short_lines": [
+        "承重过度",
+        "调衡济难"
+      ],
+      "insight": "大过以屋梁受重而弯曲为象，说明承担已超过平常的支撑。这样的时刻不能只靠继续加力，需要看清哪里薄弱，调整结构，寻求足够的支持。有时须独立坚持、采取非常办法，但非常行动更要衡量条件，不能把孤勇当作胜任。",
+      "sources": [
+        {
+          "title": "周易正義/03大過",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/03%E5%A4%A7%E9%81%8E",
+          "revision_id": 2692227,
+          "sha256": "9c3cfb9b6ee79bcabd791d8672a8be207a1a2320e07179c402880dceaf7fa8fe"
+        },
+        {
+          "title": "周易/大過",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%A4%A7%E9%81%8E",
+          "revision_id": 2405002,
+          "sha256": "ad4b9ded3baa7aff3ad1b90e4e034e331ca8c54cf84ba19208836bff5cc9f41b"
+        }
+      ],
+      "basis_notes": "卦辞栋桡，彖传本末弱、刚过而中；大象独立不惧、遁世无闷。应对承重失衡，不把大过简单等同过错。"
+    },
+    {
+      "number": 29,
+      "name": "坎",
+      "short_lines": [
+        "重险守信",
+        "习行求通"
+      ],
+      "insight": "坎是险中又有险，如水不断流过坑陷。面对反复出现的困难，先保持内在诚实与稳定，再用熟练、持续的行动寻找通路。惊慌冒进和停在恐惧中都难以改变处境；看清具体风险、一步步落实可行之事，比空想一次脱困更可靠。",
+      "sources": [
+        {
+          "title": "周易正義/03坎",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/03%E5%9D%8E",
+          "revision_id": 2404949,
+          "sha256": "20e0a361668627576799d602cd6c9a92ebe224522c76e9bd55231e94493ed0ef"
+        },
+        {
+          "title": "周易/坎",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%9D%8E",
+          "revision_id": 2502716,
+          "sha256": "da7aee1d247bc4ce1592fdafbf9d4b17fb3207ed5fa1e875963fa8e913b8f46c"
+        }
+      ],
+      "basis_notes": "彖传习坎、重险，水流而不盈、行险而不失其信；大象常德行、习教事。现实风险分析为据古义的反思，并非成功保证。"
+    },
+    {
+      "number": 30,
+      "name": "离",
+      "short_lines": [
+        "有所依附",
+        "明辨所守"
+      ],
+      "insight": "离有附丽之义，也象征火的光明。火须依托燃料，人的才智与行动也需要合适的基础和关系。此卦可用来反思自己依赖什么、所守是否正当；既保持清楚的判断，也培育柔和持久的力量，使明察能够照见事物，而非只显出自己。",
+      "sources": [
+        {
+          "title": "周易正義/03離",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/03%E9%9B%A2",
+          "revision_id": 2692302,
+          "sha256": "9a8ab663ba4a2bf24f002bf01b4e4513eb159a25e1d0ce3ee83f7ae88d3159ba"
+        },
+        {
+          "title": "周易/離",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E9%9B%A2",
+          "revision_id": 2528049,
+          "sha256": "4b4e7fdfa364bfa441d9d1b3ceb4037d5f6ed7da4e3f144d95393674cfec010a"
+        }
+      ],
+      "basis_notes": "彖传离丽也、丽乎正，卦辞畜牝牛吉；大象明两作、大人以继明照于四方。强调依附正当基础与持续光明。"
+    },
+    {
+      "number": 31,
+      "name": "咸",
+      "short_lines": [
+        "虚心感应",
+        "相感以正"
+      ],
+      "insight": "咸讲彼此感应，如山与泽的气息相通。关系中的触动应出于真诚和尊重，不能只靠急切追逐或刻意迎合。把心放空一些，才能听见对方实际的处境；有所感而有所行动时，也应辨明方向，让相互回应建立在合宜的分寸上。",
+      "sources": [
+        {
+          "title": "周易正義/04咸",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/04%E5%92%B8",
+          "revision_id": 2404957,
+          "sha256": "22a6fb2c3dbef1db997eb2bcc216f085a6ea6cbfc5c417adff7ac4709bf93a07"
+        },
+        {
+          "title": "周易/咸",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%92%B8",
+          "revision_id": 2404996,
+          "sha256": "2af1a796adc503c8d4e699506a8266ca9d26927f3e1927f0077ae174486023c1"
+        }
+      ],
+      "basis_notes": "彖传咸感也、柔上刚下、止而说；大象虚受人。以相感守正与虚心容受为据，不把感应等同必然的爱情结果。"
+    },
+    {
+      "number": 32,
+      "name": "恒",
+      "short_lines": [
+        "持久守道",
+        "随时有常"
+      ],
+      "insight": "恒强调能够长久的原则，而不是让一切做法永远不变。雷与风相互推动，持续的运行中本就包含变化。面对长期目标，宜守住值得坚持的方向，检视方法是否仍然合时；若只凭一时热情起步，或固执旧法，都难以形成真正的持久。",
+      "sources": [
+        {
+          "title": "周易正義/04恒",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/04%E6%81%92",
+          "revision_id": 2404960,
+          "sha256": "6730143ef1d47282f6fc17adc291455cef1d726807eb230c1fa4b612a9da7d32"
+        },
+        {
+          "title": "周易/恒",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E6%81%92",
+          "revision_id": 2530043,
+          "sha256": "f83bd210dfac9669fab947e02479a45bcff367da4ea21d29192c6afe8216d8c1"
+        }
+      ],
+      "basis_notes": "彖传久于其道、终则有始，日月得天而能久照；大象立不易方。以原则稳定、运行有变区别恒与机械不变。"
+    },
+    {
+      "number": 33,
+      "name": "遁",
+      "short_lines": [
+        "审时退避",
+        "远而不恶"
+      ],
+      "insight": "遁是在不利条件下及时退开，保存原则与行动空间。退避不必伴随敌意，也不等于承认自己毫无价值；有时越是纠缠，越难保持清醒。宜把距离、边界和后续安排处理妥当，不因一时意气硬争，也不在该离开时拖延不决。",
+      "sources": [
+        {
+          "title": "周易正義/04遯",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/04%E9%81%AF",
+          "revision_id": 2404968,
+          "sha256": "1c91e427a5e4170bdd4912dc16cd4a7532136a5793f1dbdffca9f90f0b4af204"
+        },
+        {
+          "title": "周易/遯",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E9%81%AF",
+          "revision_id": 2405037,
+          "sha256": "978fac550393f8f1c7710cce5596ab698183877f18b7fbea9473172952e7ab46"
+        }
+      ],
+      "basis_notes": "彖传遁而亨、与时行；大象远小人、不恶而严，卦辞小利贞。采用不利时退避的古义，不保证退出后必胜。"
+    },
+    {
+      "number": 34,
+      "name": "大壮",
+      "short_lines": [
+        "强而守礼",
+        "戒躁知止"
+      ],
+      "insight": "大壮表示力量增长，如雷在天上，声势强盛。力量可以用来承担事情，也可能使人忽略界限；因此越有把握，越应检查行动是否合礼、合宜。遇到阻碍时，不要只想着硬闯，先辨明进退条件，让能力受到判断和原则的节制。",
+      "sources": [
+        {
+          "title": "周易正義/04大壯",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/04%E5%A4%A7%E5%A3%AF",
+          "revision_id": 2404958,
+          "sha256": "842d27239e94200c2b83b935ac0e3b691c8d6aefa9cc1438c0c7b0fe51954026"
+        },
+        {
+          "title": "周易/大壯",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%A4%A7%E5%A3%AF",
+          "revision_id": 2531745,
+          "sha256": "674310af5463d01e36e6b8b11bb3e5dd7591b63ac381917e42391e2f2724ab7a"
+        }
+      ],
+      "basis_notes": "彖传大者壮也、大者正也；大象非礼弗履，上六羝羊触藩、不能退不能遂。强盛必须受正与礼约束。"
+    },
+    {
+      "number": 35,
+      "name": "晋",
+      "short_lines": [
+        "渐进向明",
+        "自明其德"
+      ],
+      "insight": "晋以明出地上为象，像日光逐渐显露，讲的是进展与被看见。获得机会时，宜先把自己的能力和品行磨得更清楚，再承担相应的责任。外在的认可可以珍惜，却不应成为唯一尺度；稳健的前进，需要内在的明白与实际的作为相称。",
+      "sources": [
+        {
+          "title": "周易正義/04晉",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/04%E6%99%89",
+          "revision_id": 2766694,
+          "sha256": "39fd3b0e6826fbed7973f10bf4b09790d157193fefb77f0d073955a9fe1e75ff"
+        },
+        {
+          "title": "周易/晉",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E6%99%89",
+          "revision_id": 2584802,
+          "sha256": "bd51d51f3a62784288fd183a0b610e0862f99e19289e75a1d8c735acf287db68"
+        }
+      ],
+      "basis_notes": "彖传晋进也、明出地上，卦辞康侯受锡；大象自昭明德。现实机会为引申，不把晋定为升职预言。"
+    },
+    {
+      "number": 36,
+      "name": "明夷",
+      "short_lines": [
+        "晦中守明",
+        "柔顺护正"
+      ],
+      "insight": "明夷如光明进入地中，才智和正道受到遮蔽。环境不利于直言或施展时，可以收敛外在锋芒，审慎表达，守住心中的判断。保护自己并不意味着放弃原则；应分清暂时隐忍与长期失守，让内在的清明不因处境艰难而消散。",
+      "sources": [
+        {
+          "title": "周易正義/04明夷",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/04%E6%98%8E%E5%A4%B7",
+          "revision_id": 2772387,
+          "sha256": "cfb00fa9b75ac5f5e175559a8c32b45938d88f396ec71f4f74e13478949b3fc7"
+        },
+        {
+          "title": "周易/明夷",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E6%98%8E%E5%A4%B7",
+          "revision_id": 2531747,
+          "sha256": "806bac05f2b162ccc57709315d392de0c1ec55c76e6805c086ca1f0eec907eb9"
+        }
+      ],
+      "basis_notes": "彖传内文明而外柔顺、蒙大难，卦辞利艰贞；大象用晦而明。取晦明自处，不把隐忍解释为无条件顺从伤害。"
+    },
+    {
+      "number": 37,
+      "name": "家人",
+      "short_lines": [
+        "各尽其责",
+        "言行有恒"
+      ],
+      "insight": "家人从家庭秩序谈起，强调亲近的人也需要清楚的责任和稳定的言行。关怀不能替代承诺，身份也不能代替实际付出。用于今天的共同生活，可反思分工是否合宜、沟通是否真诚；先把自己应做的事情做好，再期待彼此形成信任。",
+      "sources": [
+        {
+          "title": "周易正義/04家人",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/04%E5%AE%B6%E4%BA%BA",
+          "revision_id": 2404959,
+          "sha256": "d6d80e3b3b78da27dfec5712f2f341727030e8bcb9860dc7f1d839f0f5bb3cc3"
+        },
+        {
+          "title": "周易/家人",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%AE%B6%E4%BA%BA",
+          "revision_id": 2405005,
+          "sha256": "0179c8e76f2ef04ee811c1acf142f707d29083fe324de7c4cd086ceb47f79c99"
+        }
+      ],
+      "basis_notes": "彖传家人之道由内及外，大象言有物、行有恒。以责任和言行一致作现代整理，不照搬古代性别等级分工。"
+    },
+    {
+      "number": 38,
+      "name": "睽",
+      "short_lines": [
+        "异中求同",
+        "小事求通"
+      ],
+      "insight": "睽表示方向相异，如火向上燃、泽水向下润。差异未必都能马上消除，宜先承认各自的处境与立场，从可以合作的小事建立联系。共同生活不要求人人相同；在保留合理区别的同时，寻找真正相通的部分，比勉强统一更稳妥。",
+      "sources": [
+        {
+          "title": "周易正義/04睽",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/04%E7%9D%BD",
+          "revision_id": 2832235,
+          "sha256": "6314885d7bc49bed80004b6f6a35ba3b2f28f4894a4ae5d53697a0426b5c9add"
+        },
+        {
+          "title": "周易/睽",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E7%9D%BD",
+          "revision_id": 2531978,
+          "sha256": "c1d6fa887f02fe3cd5cd6f1cb26c19c681e6d3411baaffa0b63bf67205f754c1"
+        }
+      ],
+      "basis_notes": "卦辞小事吉；彖传二女同居其志不同行、天地睽而其事同；大象同而异。差异协调是现代转述，不推广古代性别判断。"
+    },
+    {
+      "number": 39,
+      "name": "蹇",
+      "short_lines": [
+        "遇阻反省",
+        "求助择路"
+      ],
+      "insight": "蹇以山上有水为象，前路受阻，行动不易。此时先停下来检视自己与环境，分清是方法不合、准备不足，还是道路确有危险。与其执意向最难处走，不如寻找较平易的方向，并向有能力的人求助；改变路径也可以是负责任的前进。",
+      "sources": [
+        {
+          "title": "周易正義/04蹇",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/04%E8%B9%87",
+          "revision_id": 2404967,
+          "sha256": "fc19706042bccd11fbb562024df9037d172de7d4da938d684165b0574ca49037"
+        },
+        {
+          "title": "周易/蹇",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E8%B9%87",
+          "revision_id": 2405036,
+          "sha256": "4fca7850987f383c2a66b195c5c35c5f39be0c41877c5607013d6a9858d7066b"
+        }
+      ],
+      "basis_notes": "彖传险在前、见险而能止；卦辞利西南、不利东北、利见大人；大象反身修德。方位取平易与险阻之义，不作现代地理导航。"
+    },
+    {
+      "number": 40,
+      "name": "解",
+      "short_lines": [
+        "解难宜速",
+        "宽以复常"
+      ],
+      "insight": "解表示险难有所松开，如雷雨发动，积郁得到疏解。问题已解决时，宜及时回到安稳的常态，不再无端增事；尚有必须处理的残余，则应及早完成。对人的过失也可区别轻重、适当宽宥，使解除困难真正带来关系与秩序的恢复。",
+      "sources": [
+        {
+          "title": "周易正義/04解",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/04%E8%A7%A3",
+          "revision_id": 2404966,
+          "sha256": "4497dce98eb1ecfac84d21596bf68f3ba3bade15a0323d71cbc52aac3ca8f125"
+        },
+        {
+          "title": "周易/解",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E8%A7%A3",
+          "revision_id": 2405031,
+          "sha256": "1692cdd39a4394193a1d2e6bf9b18e540d1b04f62ab995e7ffffbdfedf7db51c"
+        }
+      ],
+      "basis_notes": "卦辞无所往其来复吉、有攸往夙吉；大象赦过宥罪。依据正义区分无事复常与有事早行，避免把解写成放任一切。"
+    },
+    {
+      "number": 41,
+      "name": "损",
+      "short_lines": [
+        "减损有度",
+        "诚意为本"
+      ],
+      "insight": "损讨论有所减少之后，怎样使整体更加合宜。需要节省时，重在真诚和适度，不必为了体面维持过多排场；也可减少使自己失衡的愤怒与欲求。减损并非越少越好，应看清减少了什么、又成就了什么，避免伤及真正需要保全的根本。",
+      "sources": [
+        {
+          "title": "周易正義/04損",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/04%E6%90%8D",
+          "revision_id": 2404961,
+          "sha256": "3aa4a183f3e484fe9c035f47a9ba3bba79788a692af293cb0844d3fe5dfd5421"
+        },
+        {
+          "title": "周易/損",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E6%90%8D",
+          "revision_id": 2405014,
+          "sha256": "4a666d00946a3e1b263073fe01b4fc6c43005081345f1fef5edd7ad3631406e5"
+        }
+      ],
+      "basis_notes": "卦辞有孚、二簋可用享；彖传损益盈虚与时偕行；大象惩忿窒欲。兼顾礼简诚足和适时损益，不鼓励无度自我牺牲。"
+    },
+    {
+      "number": 42,
+      "name": "益",
+      "short_lines": [
+        "增益助人",
+        "迁善改过"
+      ],
+      "insight": "益强调把力量用于使人和事得到真实的增长。得到支持时，可以把握条件，推动有益的行动；自身也应向好的做法学习，发现过失便及时改正。增加不只在于数量，更在于是否改善了根基、减少了损害，让所得能够形成长久的益处。",
+      "sources": [
+        {
+          "title": "周易正義/04益",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/04%E7%9B%8A",
+          "revision_id": 2404964,
+          "sha256": "d02f87f0a6832f7800adcff6e7f51405c749265a28f4999bc0345dd4b8580695"
+        },
+        {
+          "title": "周易/益",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E7%9B%8A",
+          "revision_id": 2405025,
+          "sha256": "06c7cedf7e76fcc3cde93e19595b0eeaeae87a617c4672764c327eb1d8089013"
+        }
+      ],
+      "basis_notes": "彖传损上益下、利有攸往；大象见善则迁、有过则改。增益与受益者的实际改善相连，不许诺无条件获利。"
+    },
+    {
+      "number": 43,
+      "name": "夬",
+      "short_lines": [
+        "明决去弊",
+        "戒怒慎行"
+      ],
+      "insight": "夬有决断、去除阻碍之意，但公开说明问题比暗中逞强更重要。面对必须处理的积弊，应把理由和责任讲清，立场坚定而保持警惕。行动若被怒气和强硬支配，可能另生争端；果决需要正当的方法，也需要避免把胜负当作唯一目标。",
+      "sources": [
+        {
+          "title": "周易正義/05夬",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/05%E5%A4%AC",
+          "revision_id": 2608165,
+          "sha256": "be02cc13f745cb8652bb8bb10e6a4ad45624c13a93b5cfdde7c745642112d7fa"
+        },
+        {
+          "title": "周易/夬",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%A4%AC",
+          "revision_id": 2405003,
+          "sha256": "1dbda1e9e07a19fe4ff04491bf7f99b3b9c501702773972d647745c2c5f4b0aa"
+        }
+      ],
+      "basis_notes": "卦辞扬于王庭、有孚号、有厉、不利即戎；彖传决而和。以公开、有戒、非武力的决断为据，未泛化为任意清除异己。"
+    },
+    {
+      "number": 44,
+      "name": "姤",
+      "short_lines": [
+        "偶遇审慎",
+        "勿遽相托"
+      ],
+      "insight": "姤表示不期而遇，一股新的力量进入原有关系。相遇可以带来可能，也需要观察对方的意图、分寸和持续影响，不宜因为一时吸引就作深度承诺。古辞借婚姻设戒，今天可用来反思各种突然出现的联系，而非据此评价某一性别的好坏。",
+      "sources": [
+        {
+          "title": "周易正義/05姤",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/05%E5%A7%A4",
+          "revision_id": 2404972,
+          "sha256": "2dd85793c8df7dd4de8f1d39987c1fd44c85e06624a7ce6fda2d390fa1243fce"
+        },
+        {
+          "title": "周易/姤",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%A7%A4",
+          "revision_id": 2437487,
+          "sha256": "0ad9c15852f82af7ee896aea1b53a3a28bdb922c4b2e484fb1f4f8dc29c2eb5d"
+        }
+      ],
+      "basis_notes": "彖传姤遇也，卦辞女壮、勿用取女。保留古代婚姻设戒的出处，现代解释限于审慎相遇，不沿用性别贬抑或预言姻缘。"
+    },
+    {
+      "number": 45,
+      "name": "萃",
+      "short_lines": [
+        "聚众有序",
+        "聚中防患"
+      ],
+      "insight": "萃讲众人汇聚，如泽水聚在地面。聚集需要共同的中心、可信的组织和明确的秩序，不能只靠人数或一时情绪维持。人多、资源集中时，也更应预想疏漏与意外，做好必要准备；让每个人知道为何而来、如何相处，聚合才有实际意义。",
+      "sources": [
+        {
+          "title": "周易正義/05萃",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/05%E8%90%83",
+          "revision_id": 2404976,
+          "sha256": "339c1171c8264ad6c2da8043ac52294a6ab3ab290c9141164753477761c2a6f3"
+        },
+        {
+          "title": "周易/萃",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E8%90%83",
+          "revision_id": 2535017,
+          "sha256": "0c75443453aa21e178d88f3ca69fb92bb275f1a3369e4d6c36ff4f9638e7c960"
+        }
+      ],
+      "basis_notes": "彖传萃聚也、顺以说、刚中而应；卦辞利见大人，大象除戎器、戒不虞。共同中心与防患据古义整理。"
+    },
+    {
+      "number": 46,
+      "name": "升",
+      "short_lines": [
+        "积小成高",
+        "顺时而升"
+      ],
+      "insight": "升如木在地中生长，向上的力量来自细小而持续的积累。面对较长的目标，宜把每天能做好的部分做扎实，也可向可靠的人请益，不必因起点低而急躁。成长有自身的次序，稳步增加能力与承担，往往比追求突然跃升更合乎此卦之意。",
+      "sources": [
+        {
+          "title": "周易正義/05升",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/05%E5%8D%87",
+          "revision_id": 2405458,
+          "sha256": "d7736a0b930dc858894021f392973b598738a0d780f0dfcfa6377e2dd7366222"
+        },
+        {
+          "title": "周易/升",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%8D%87",
+          "revision_id": 2404995,
+          "sha256": "93e1dc68658655b3f7848ad602a105ea69c48698a7a66982c688ee4999745009"
+        }
+      ],
+      "basis_notes": "大象地中生木、顺德、积小以高大；卦辞用见大人、勿恤。强调渐积与助力，不将南征吉直接用作方向或升迁保证。"
+    },
+    {
+      "number": 47,
+      "name": "困",
+      "short_lines": [
+        "困中守志",
+        "少言务实"
+      ],
+      "insight": "困表示可用的条件受到压缩，如泽中水少，处境令人受限。此时言语未必能取得信任，更需要守住值得坚持的志向，以实际行动维持自己。可先辨明哪些事务必须保全、哪些可以暂缓；承认限制，不等于让困境替自己决定一切。",
+      "sources": [
+        {
+          "title": "周易正義/05困",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/05%E5%9B%B0",
+          "revision_id": 2407153,
+          "sha256": "e05742cda4142070a62d307ad2f0be316b782dad7ca01bd5794d6dbbba223350"
+        },
+        {
+          "title": "周易/困",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%9B%B0",
+          "revision_id": 2502714,
+          "sha256": "bf6317455d24514e3663a47f299d2ebf43a08995c560ac3d68912f98c3e398d9"
+        }
+      ],
+      "basis_notes": "卦辞困亨、贞、大人吉、有言不信；大象致命遂志。现代转述取守志之意，不将致命直解为轻生或无谓牺牲。"
+    },
+    {
+      "number": 48,
+      "name": "井",
+      "short_lines": [
+        "修井养人",
+        "善始善终"
+      ],
+      "insight": "井如村落共有的水源，价值在于长久供人取用。已有资源若缺乏修整，或取水过程在最后一步失当，仍可能不能发挥作用。可据此检查基础设施、能力与协作是否真正可用；既重视持续养护，也把交付与收尾做好，让益处到达人群。",
+      "sources": [
+        {
+          "title": "周易正義/05井",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/05%E4%BA%95",
+          "revision_id": 2407709,
+          "sha256": "55e9b04713f38adecbe19a6d2cb6313779ca4f9c4706cf1cf4a89c2934e2984e"
+        },
+        {
+          "title": "周易/井",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E4%BA%95",
+          "revision_id": 2404992,
+          "sha256": "34f78ff12497ad2d99e182c2fe5f072af9e27549fbd326b257c8cfcacc50fd21"
+        }
+      ],
+      "basis_notes": "卦辞改邑不改井、汔至亦未繘井、羸其瓶凶；大象劳民劝相。用公共资源及最后一步说明养人与完成条件，不预测财产。"
+    },
+    {
+      "number": 49,
+      "name": "革",
+      "short_lines": [
+        "审时革弊",
+        "革而取信"
+      ],
+      "insight": "革讲旧有安排需要改变，但人往往习惯旧制，未必立即相信新的办法。应先弄清弊端、时机与影响，以正当的方式推进，让实际成效逐步建立信任。更新还须经得起检验，不能只凭一时不满翻转一切，损伤原本仍有用的部分。",
+      "sources": [
+        {
+          "title": "周易正義/05革",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/05%E9%9D%A9",
+          "revision_id": 2407710,
+          "sha256": "5f7b5aa7aba32478a149485e25b6930f263bb409cd10aa2772a2af29bd1c43e5"
+        },
+        {
+          "title": "周易/革",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E9%9D%A9",
+          "revision_id": 2674393,
+          "sha256": "06ae513abe4310a8e54515ef9425f92a197ad60db172e931a6051a6e9c0bba1e"
+        },
+        {
+          "title": "原本周易本義 (四庫全書本)/卷02",
+          "url": "https://zh.wikisource.org/wiki/%E5%8E%9F%E6%9C%AC%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B702",
+          "revision_id": 736575,
+          "sha256": "2b5ba5e76bee6b7f9313ed57926e9ff1cb8acc189039ca75ed0e71de392f3b4b"
+        }
+      ],
+      "basis_notes": "卦辞巳日乃孚、元亨利贞；彖传大亨以正、革而信之，大象治历明时。《正义》卦辞王注及《本义》卷二革卦均强调变革初起未必见信。以正当行动及后续成效建立信任，不误作必须先获信任才可改变。"
+    },
+    {
+      "number": 50,
+      "name": "鼎",
+      "short_lines": [
+        "鼎新养贤",
+        "正位尽责"
+      ],
+      "insight": "鼎是烹饪和祭享之器，借熟成食物说明养人、成就人才与建立新秩序。更新不止在于换一个外表，还要让承担者能力相称、位置得当，并有稳定的制度支持。可反思自己所经营的事情，是否真正改善了条件，使有用的力量得到合宜发挥。",
+      "sources": [
+        {
+          "title": "周易正義/05鼎",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/05%E9%BC%8E",
+          "revision_id": 2608820,
+          "sha256": "37b27a5db1f745b7562169e435a8ac0d8e2975d9175077571d32bd7a7c6c4aab"
+        },
+        {
+          "title": "周易/鼎",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E9%BC%8E",
+          "revision_id": 2106200,
+          "sha256": "4705977c9a85a039a0ddf61ffb9e7baa6208def15b4d41934cb823046e6b5ec3"
+        }
+      ],
+      "basis_notes": "彖传鼎象也、烹以享上帝、养圣贤；大象正位凝命。现代经营与制度为据养贤正位之义的转述，不把鼎新等同表面改装。"
+    },
+    {
+      "number": 51,
+      "name": "震",
+      "short_lines": [
+        "震来知惧",
+        "省察自稳"
+      ],
+      "insight": "震如突来的雷声，使人惊惧，也使人警醒。遇到变动时，先承认自己的震动，再稳住重要的职责，不让慌乱扩大影响。事后还应检查平日的疏忽、修正习惯；若能把惊惧转成认真省察，突发的扰动也可成为重新站稳的契机。",
+      "sources": [
+        {
+          "title": "周易正義/05震",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/05%E9%9C%87",
+          "revision_id": 2404977,
+          "sha256": "b1e9db5205c6fe7aff139e44d7112916fd68f8d2c677c4f555adca04eee09428"
+        },
+        {
+          "title": "周易/震",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E9%9C%87",
+          "revision_id": 2560429,
+          "sha256": "0084d1f85a25ac2556fe40e4fccc6a03b0ddfc75723291a2b56564c1ac593bee"
+        }
+      ],
+      "basis_notes": "卦辞震来虩虩、不丧匕鬯；彖传恐致福、后有则；大象恐惧修省。由惊而定的过程是重点，不承诺震动一定吉利。"
+    },
+    {
+      "number": 52,
+      "name": "艮",
+      "short_lines": [
+        "动静知时",
+        "止于其所"
+      ],
+      "insight": "艮以重山为象，讲在适当的位置停下来。行动有行动的时机，停止也有停止的理由；若心思总追逐眼前欲望，即使身体不动也未必能安定。可先划清自己应做之事，把注意力放回当前职责，不越位强求，也不把停滞误当作有定力。",
+      "sources": [
+        {
+          "title": "周易正義/05艮",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/05%E8%89%AE",
+          "revision_id": 2409039,
+          "sha256": "8cd6a3e625df84e23b7d07e0ea06e79619dcd5c202a63055a78afe4311e8f259"
+        },
+        {
+          "title": "周易/艮",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E8%89%AE",
+          "revision_id": 2405028,
+          "sha256": "0fb0d5820dfb140cb97ede2657770f56d925b622c117fd570a5dd8dfee418d77"
+        }
+      ],
+      "basis_notes": "彖传时止则止、时行则行、动静不失其时；大象思不出其位。以适时知止释艮，区别于永不行动或压抑一切思想。"
+    },
+    {
+      "number": 53,
+      "name": "渐",
+      "short_lines": [
+        "循序渐进",
+        "安正而行"
+      ],
+      "insight": "渐像树木在山上生长，根基稳固之后才逐步伸展。重要的关系和长远事务，都需要合宜的次序、时间与持续投入，不能只凭急切心愿催成。宜把当前阶段的准备做好，在守正中观察变化；每一步有所依据，进展才不易成为表面的推进。",
+      "sources": [
+        {
+          "title": "周易正義/05漸",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/05%E6%BC%B8",
+          "revision_id": 2665440,
+          "sha256": "2374a402b2e79d4ed408bb9e9bc4815396d7eafb148ac71af2b062601c68b1c9"
+        },
+        {
+          "title": "周易/漸",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E6%BC%B8",
+          "revision_id": 2560535,
+          "sha256": "46da172e6576ba774f6c61741a2d566014f5e5fc90c1065251cb80ccd89b28d7"
+        }
+      ],
+      "basis_notes": "彖传渐进也、进得位、止而巽；卦辞女归吉、利贞，大象居贤德善俗。由古代婚礼次序引申至长期关系与事务，非包办婚姻观。"
+    },
+    {
+      "number": 54,
+      "name": "归妹",
+      "short_lines": [
+        "关系辨位",
+        "慎始虑终"
+      ],
+      "insight": "归妹借婚嫁关系讨论位置与次序失当的问题。仅凭一时喜悦进入关系，却没有想清责任、条件和长远安排，容易在以后受到牵制。面对合作或承诺，宜先辨明彼此所处的位置、是否出于自愿；把开端考虑周全，比事后勉强维持更稳妥。",
+      "sources": [
+        {
+          "title": "周易正義/05歸妹",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/05%E6%AD%B8%E5%A6%B9",
+          "revision_id": 2404973,
+          "sha256": "a25ee8373a74ce30cc7e2ba5333458f877840bfcc5ceb9047fc8712d01264fdb"
+        },
+        {
+          "title": "周易/歸妹",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E6%AD%B8%E5%A6%B9",
+          "revision_id": 2511521,
+          "sha256": "03a725d580b54c4fb9279c88fbed6ee3f8a0198d4bb06bda8005e4fa96a4a8da"
+        }
+      ],
+      "basis_notes": "卦辞征凶、无攸利，彖传说以动、位不当；大象永终知敝。现代反思由关系失序与虑终而来，不把卦义用于贬低女性身份。"
+    },
+    {
+      "number": 55,
+      "name": "丰",
+      "short_lines": [
+        "丰盛任事",
+        "明察持中"
+      ],
+      "insight": "丰表示光明与行动相遇，形成盛大的局面。处在事务繁多、资源集中的时候，应承担责任，保持清楚而公正的判断，不必因畏惧变化便缩手。盛满也会转移，宜珍惜当下能够做成的事，同时留意遮蔽与失衡，不把眼前的繁盛视为永恒。",
+      "sources": [
+        {
+          "title": "周易正義/06豐",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/06%E8%B1%90",
+          "revision_id": 2608391,
+          "sha256": "c28e2dc96219f91a91147f0f2dac288602c583776cddd5aa474352359c53a4ad"
+        },
+        {
+          "title": "周易/豐",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E8%B1%90",
+          "revision_id": 2560608,
+          "sha256": "34a7435e6f633a3921adfc6416d4d5d1ca4fcb466369f4c35950aa66f419bbef"
+        }
+      ],
+      "basis_notes": "卦辞勿忧、宜日中；彖传明以动、日中则昃；大象折狱致刑。兼顾盛时任事与盛衰之理，不一味把丰读成衰败预告。"
+    },
+    {
+      "number": 56,
+      "name": "旅",
+      "short_lines": [
+        "旅处知慎",
+        "守正少扰"
+      ],
+      "insight": "旅讲离开熟悉根基、暂处异地的状态。条件有限时，宜尊重所在环境的规则，谨慎处理关系，不把短暂借居当作可以任意主张的位置。能守正、能自持，才适合谋求有限的进展；处理争端也应明察而不拖延，避免使小事长期牵累。",
+      "sources": [
+        {
+          "title": "周易正義/06旅",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/06%E6%97%85",
+          "revision_id": 2404984,
+          "sha256": "956c6b4ffe1c15e7817b049359d487bb7587349e5aae2402fab4ffedf650032b"
+        },
+        {
+          "title": "周易/旅",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E6%97%85",
+          "revision_id": 2560781,
+          "sha256": "d5fb1000d0ba4ae8e1a8aff0f3888fdfe37db39650a4a29ba8b91e0e4080b39c"
+        }
+      ],
+      "basis_notes": "卦辞小亨、旅贞吉；彖传止而丽乎明；大象明慎用刑、而不留狱。借旅境说明处事分寸，不预测出行成败。"
+    },
+    {
+      "number": 57,
+      "name": "巽",
+      "short_lines": [
+        "谦入渐行",
+        "申明落实"
+      ],
+      "insight": "巽以风相继而至为象，重在柔顺地进入、反复说明并逐渐落实。面对不易立即改变的事情，可以先理解情势，以清楚而一致的表达争取回应。柔和仍需方向和判断；若总在犹疑中进退，或只求顺从，便难以形成真正有效的行动。",
+      "sources": [
+        {
+          "title": "周易正義/06巽",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/06%E5%B7%BD",
+          "revision_id": 2635592,
+          "sha256": "92697ba19702a6e54de474d429ba382ee0bb0ddaa74dbf97b1836c30707b8c19"
+        },
+        {
+          "title": "周易/巽",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%B7%BD",
+          "revision_id": 2441563,
+          "sha256": "79e94364967282b18bcfec37796580eae17c3af103d87a626fc1d959abced2fe"
+        }
+      ],
+      "basis_notes": "彖传重巽以申命、刚巽乎中正而志行；大象申命行事。既取柔入与重复落实，也据爻辞进退之戒避免无原则迁就。"
+    },
+    {
+      "number": 58,
+      "name": "兑",
+      "short_lines": [
+        "和悦相交",
+        "诚信为本"
+      ],
+      "insight": "兑讲喜悦与交流，如两泽相连，彼此滋润。良好的气氛有助于人们讨论和学习，但真正的和悦需要内在的坚定与诚实，不能靠迎合维持。可在相互切磋中增进理解，也应留意快乐是否偏离原则；能听见不同意见，关系才不只剩表面融洽。",
+      "sources": [
+        {
+          "title": "周易正義/06兌",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/06%E5%85%8C",
+          "revision_id": 2412226,
+          "sha256": "ea6bae6f7cef52122c358bee56cae9f64125a3b855992260120e4eafd2de7857"
+        },
+        {
+          "title": "周易/兌",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%85%8C",
+          "revision_id": 2404993,
+          "sha256": "0ecebe0d070dcd3cdf07019a3f1d578cbcd4d1bb441c48b8536bb596e3e49850"
+        }
+      ],
+      "basis_notes": "彖传说以利贞、刚中而柔外；大象朋友讲习。以守正和悦、互相学习为据，不把兑写成单纯讨好或享乐。"
+    },
+    {
+      "number": 59,
+      "name": "涣",
+      "short_lines": [
+        "疏通隔阂",
+        "重建联结"
+      ],
+      "insight": "涣表示原有的凝聚散开，也有疏散阻塞、重新相通的可能。人心疏离时，强行捆在一起未必有效，宜先辨清造成隔阂的因素，再寻找值得共同认同的中心。必要时放下小圈子的成见，使分散的力量能够重新联系，而非只顾维持旧的形式。",
+      "sources": [
+        {
+          "title": "周易正義/06渙",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/06%E6%B8%99",
+          "revision_id": 2404987,
+          "sha256": "0d81bf938e700508680a4f34342568f3d6574a6364ace2db8b090cb8baf6a916"
+        },
+        {
+          "title": "周易/渙",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E6%B8%99",
+          "revision_id": 2405023,
+          "sha256": "198a4a36895852ef5012d78d8b34adbbf463f22d094899c38f37e149e8094efc"
+        }
+      ],
+      "basis_notes": "卦辞王假有庙、利涉大川；大象享于帝立庙，六四涣其群。依据散而求聚与超越群私，非一切分散都有益。"
+    },
+    {
+      "number": 60,
+      "name": "节",
+      "short_lines": [
+        "节制有度",
+        "不以苦守"
+      ],
+      "insight": "节以泽上有水为象，水有容量，事情也需要限度与规矩。合理的节制能保护资源、安定生活，但若严苛到难以持久，就会失去原来的意义。宜根据实际需要安排用度和责任，让边界清楚而有弹性，避免在放纵与过分压抑之间摆动。",
+      "sources": [
+        {
+          "title": "周易正義/06節",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/06%E7%AF%80",
+          "revision_id": 2404988,
+          "sha256": "e4e347e12cae1fc16a912a5e8626662ff8d91601716db720005fee163e14ee60"
+        },
+        {
+          "title": "周易/節",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E7%AF%80",
+          "revision_id": 2405027,
+          "sha256": "a017661595c6358621214894a41885648d4e2fe71af0d43ebd9f7b3f66517bcf"
+        }
+      ],
+      "basis_notes": "卦辞节亨、苦节不可贞；彖传节以制度、不伤财不害民；大象制数度、议德行。区分适度制度与苦节，不作极端自律要求。"
+    },
+    {
+      "number": 61,
+      "name": "中孚",
+      "short_lines": [
+        "内诚取信",
+        "审慎待人"
+      ],
+      "insight": "中孚重在内心真实，使信任有可以依靠的根基。诚意需要通过可验证的言行体现，也需要愿意理解他人的处境，不能只靠漂亮承诺。判断他人过失时应仔细核察、保留宽恕的余地；信任与审慎相互配合，才不至于落入轻信或猜疑。",
+      "sources": [
+        {
+          "title": "周易正義/06中孚",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/06%E4%B8%AD%E5%AD%9A",
+          "revision_id": 2620549,
+          "sha256": "f0112802ef2b4507721528720205d085b1910f886de2d6e32f3926fac643f8c9"
+        },
+        {
+          "title": "周易/中孚",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E4%B8%AD%E5%AD%9A",
+          "revision_id": 2404990,
+          "sha256": "d61da365e37c5e41ce60429337ccbd3ef23acb10e5e1d4aee1f35c0f4c66c9be"
+        }
+      ],
+      "basis_notes": "彖传柔在内而刚得中、孚乃化邦；大象议狱缓死。以真诚、慎察与缓刑之义整理，未把诚信解释为无需判断地相信。"
+    },
+    {
+      "number": 62,
+      "name": "小过",
+      "short_lines": [
+        "小处谨慎",
+        "低行守分"
+      ],
+      "insight": "小过容许在细小之处稍加用心，却不宜凭有限力量承担过大的目标。飞鸟宜下不宜上的比喻，提醒人保持低稳，少求高远的声势。可以在礼貌、节用和照顾细节上多做一点，但这种谨慎也须切合事情本身，不能变成处处畏缩。",
+      "sources": [
+        {
+          "title": "周易正義/06小過",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/06%E5%B0%8F%E9%81%8E",
+          "revision_id": 2644981,
+          "sha256": "517d8d6127eabdf530513ba301972edfe17a950e454d42d68123bb543d77beea"
+        },
+        {
+          "title": "周易/小過",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E5%B0%8F%E9%81%8E",
+          "revision_id": 2405007,
+          "sha256": "7ab47c03fc3e16fd20c550bdcc825ba2e666591a70da6b6800cb9c30ad1e3436"
+        }
+      ],
+      "basis_notes": "卦辞可小事、不可大事、飞鸟遗之音、宜下大吉；大象行过恭、丧过哀、用过俭。以低稳、小事、适度的谨慎为主旨。"
+    },
+    {
+      "number": 63,
+      "name": "既济",
+      "short_lines": [
+        "功成须慎",
+        "防患未然"
+      ],
+      "insight": "既济表示渡过难关、秩序初成。水与火各得其用，却仍需照看才能维持。卦辞由初吉说到终乱，提醒人在顺利时尤其容易松懈。应及时检查遗漏，防备后患，并继续修整；已有成果值得珍惜，也需要持续维护。",
+      "sources": [
+        {
+          "title": "周易正義/06既濟",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/06%E6%97%A2%E6%BF%9F",
+          "revision_id": 2404985,
+          "sha256": "895bcf7ef89e51385c2ba4e3f52f193366ea2bcadf2e8fc731f0a30aa01b05b9"
+        },
+        {
+          "title": "周易/既濟",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E6%97%A2%E6%BF%9F",
+          "revision_id": 2572417,
+          "sha256": "e9099522d8013177a9316c8fc499a10b80d50edd18b3401cbd79b2d31ab58d78"
+        }
+      ],
+      "basis_notes": "卦辞初吉终乱；王注终乱不为自乱、由止故乱；大象思患而豫防之。明确终乱是戒惧之辞，不写成注定由吉转凶。"
+    },
+    {
+      "number": 64,
+      "name": "未济",
+      "short_lines": [
+        "事犹未成",
+        "慎辨求济"
+      ],
+      "insight": "未济表示事情尚未完成，并非永远不能完成。小狐渡水而沾湿尾巴，提示力量不足、收尾失当会使进展受阻。此时宜辨清条件，让人和事各安其位，借助合适的力量，留足完成最后一步的余力，不因接近终点就急于求成。",
+      "sources": [
+        {
+          "title": "周易正義/06未濟",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/06%E6%9C%AA%E6%BF%9F",
+          "revision_id": 2414136,
+          "sha256": "36b3e362858366e88e8050ca51cd008f0662b1d7e2e5dbade79ac7137bde128d"
+        },
+        {
+          "title": "周易/未濟",
+          "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93/%E6%9C%AA%E6%BF%9F",
+          "revision_id": 2405020,
+          "sha256": "b12a283926d6a25db17f50c4b490fc417ecd66e8578b5bec757b7b6581e16911"
+        }
+      ],
+      "basis_notes": "孔疏未济、不言不济；王注济未济者必有余力；大象慎辨物居方。强调可济的条件与慎终，而非保证很快成功。"
+    }
+  ]
+}
