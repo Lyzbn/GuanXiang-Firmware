@@ -1,0 +1,101 @@
+name: Verify public relink kit on Linux
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag containing the v1.1.0 candidate relink assets
+        required: true
+        type: string
+        default: v1.1.0-rc.1
+
+permissions:
+  contents: read
+
+concurrency:
+  group: public-relink-${{ inputs.tag }}
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    if: github.repository == 'Lyzbn/GuanXiang-Firmware'
+    runs-on: ubuntu-22.04
+    timeout-minutes: 30
+    env:
+      RELINK_ASSET: GuanXiang-Cardputer-ADV-v1.1.0-candidate-Relink.zip
+
+    steps:
+      - name: Set isolated working directories
+        shell: bash
+        run: |
+          echo "PLATFORMIO_CORE_DIR=$RUNNER_TEMP/platformio" >> "$GITHUB_ENV"
+          echo "RELINK_KIT=$RUNNER_TEMP/relink-kit" >> "$GITHUB_ENV"
+          echo "RELINK_DOWNLOAD=$RUNNER_TEMP/relink-download" >> "$GITHUB_ENV"
+
+      - name: Check out public validation scripts
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.11'
+
+      - name: Check archive validation safeguards
+        run: python -m unittest discover -s tests -p test_verify_relink_release.py -v
+
+      - name: Download this repository's release assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ inputs.tag }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$RELEASE_TAG" =~ ^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$ ]]
+          mkdir -p "$RELINK_DOWNLOAD"
+          gh release download "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" \
+            --pattern "$RELINK_ASSET" --pattern SHA256SUMS \
+            --dir "$RELINK_DOWNLOAD"
+
+      - name: Verify checksums and safely extract the kit
+        run: |
+          python tools/verify_relink_release.py extract \
+            --archive "$RELINK_DOWNLOAD/$RELINK_ASSET" \
+            --checksums "$RELINK_DOWNLOAD/SHA256SUMS" \
+            --destination "$RELINK_KIT"
+
+      - name: Install the kit's pinned official tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install 'platformio==6.1.19'
+          pio pkg install --global --tool 'espressif/toolchain-xtensa-esp32s3@8.4.0+2021r2-patch5'
+          pio pkg install --global --tool 'platformio/tool-esptoolpy@2.41100.260830'
+          python "$PLATFORMIO_CORE_DIR/packages/tool-esptoolpy/esptool.py" version
+
+      - name: Relink unmodified kit and verify the exact expected image
+        shell: bash
+        run: |
+          set -euo pipefail
+          python "$RELINK_KIT/relink.py" \
+            --toolchain-bin "$PLATFORMIO_CORE_DIR/packages/toolchain-xtensa-esp32s3/bin" \
+            --esptool "$PLATFORMIO_CORE_DIR/packages/tool-esptoolpy/esptool.py"
+          python tools/verify_relink_release.py image \
+            --path "$RELINK_KIT/work/firmware.bin" \
+            --size 1202112 \
+            --sha256 f76041e5a5aaa683826788b46376822eff67437ef9d8953681d7a5e467c966a0 \
+            >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Recompile and relink the supplied Arduino core
+        shell: bash
+        run: |
+          set -euo pipefail
+          python "$RELINK_KIT/relink.py" \
+            --toolchain-bin "$PLATFORMIO_CORE_DIR/packages/toolchain-xtensa-esp32s3/bin" \
+            --esptool "$PLATFORMIO_CORE_DIR/packages/tool-esptoolpy/esptool.py" \
+            --rebuild-core
+          python tools/verify_relink_release.py rebuilt --kit "$RELINK_KIT" \
+            >> "$GITHUB_STEP_SUMMARY"
+          echo 'Linux native relink and core rebuild passed. No device was flashed; no build files were uploaded.' \
+            >> "$GITHUB_STEP_SUMMARY"
