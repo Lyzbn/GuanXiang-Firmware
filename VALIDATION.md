@@ -2,7 +2,7 @@
 
 ## 1.1.0 候选状态（2026-10-16）
 
-应用源码已冻结，Linux CI 镜像已选定，构建与主机检查已通过。**本候选尚未烧录或完成新版设备验收，固件尚未正式发布。** 许可材料及与所选镜像匹配的重链材料已备齐，相关重链检查已通过。
+应用源码已冻结，Linux CI 镜像已选定，构建与主机检查已通过。**本候选已烧录并通过启动检查，完整设备验收进行中，固件尚未正式发布。** 许可材料及与所选镜像匹配的重链材料已备齐，相关重链检查已通过。
 
 | 项目 | 选定候选 |
 | --- | --- |
@@ -43,7 +43,9 @@
 
 macOS 本地 Release 镜像为 **1,202,368 字节**，Debug 为 **1,247,296 字节**；两种本地构建的 RAM 统计均为 **24,508 字节**。本地镜像与选定的 Linux CI 镜像字节不同，本地镜像及其重链输入不能直接替代上表候选。最终匹配结论应以选定 CI 镜像和对应材料的验证记录为准。
 
-## 新版设备待验收
+## 新版设备验收进行中
+
+2026-10-16，所选候选已通过应用区升级写入设备，写入摘要匹配。升级前完成 8 MB 备份并与设备摘要校验；升级及首次启动前后 NVS 字节完全一致。20 秒串口检查确认循环、显示、IMU 和扬声器就绪，未见 panic 或重启循环。
 
 仍需在所选候选镜像上确认 LCD 字形和分页、设置页与卦意页的 T 键行为、完整六爻流程、旧历史和设置保留、新历史仅增加一条，以及 USB／电池分别冷启动。长时间运行与连续进退也尚未形成新版验收记录。
 
@@ -53,7 +55,7 @@ macOS 本地 Release 镜像为 **1,202,368 字节**，Debug 为 **1,247,296 字�
 
 The application is frozen at `4d412daab3e4f18339637392813d51ea159af610`. The selected Linux CI image is **1,202,112 bytes**, SHA-256 `6a694cd5e1bec230d249fa4298cd9568841b52689c28484f853b38075b2b06f3`. Native checks (**149,362**), host layout checks (**9,800**), the **62-page** preview audit and two CI rounds for the frozen application passed. Latest private runs `38952526657` (PR CI) and `38952513232` (fixed-source relink-input capture) also passed.
 
-The workflow-only PR head `bb3cd84` does not change the frozen application. Subsequent relink checks using those captured inputs have passed. The macOS local Release image is different and is not the selected candidate. **The new candidate has not been flashed or accepted on hardware and remains unpublished.** Licensing and relink materials are prepared; relink checks have passed; previous hardware acceptance applies only to the b3 image below.
+The workflow-only PR head `bb3cd84` does not change the frozen application. Subsequent relink checks using those captured inputs have passed. The macOS local Release image is different and is not the selected candidate. **The new candidate has been flashed and passed the serial boot check; full device acceptance is in progress and firmware remains unpublished.** Licensing and relink materials are prepared; relink checks have passed; previous hardware acceptance applies only to the b3 image below.
 
 ## 旧版 b3 基线（2026-10-16）
 

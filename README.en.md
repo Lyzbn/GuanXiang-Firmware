@@ -2,7 +2,7 @@
 
 Offline three-coin I Ching firmware for **M5Stack Cardputer ADV**, with a dark landscape interface, warm gold text, and local reading history.
 
-**Version 1.1.0 has passed build and host checks and remains an unpublished release candidate.** The Linux CI application image has been selected. It has not been flashed or accepted on hardware; licensing and matching relink materials are prepared. Application source remains private. [中文](README.md)
+**Version 1.1.0 has passed build and host checks and remains an unpublished release candidate.** The Linux CI application image has been selected. It has been flashed and passed the serial boot check; full device acceptance is in progress; licensing and matching relink materials are prepared. Application source remains private. [中文](README.md)
 
 ## Three reading modes
 

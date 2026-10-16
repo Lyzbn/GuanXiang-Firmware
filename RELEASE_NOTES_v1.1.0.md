@@ -22,7 +22,7 @@
 
 ## 发行前剩余工作
 
-**本候选尚未烧录或完成新版设备验收，固件尚未正式发布或提供下载。** 许可与匹配所选镜像的重链材料已备齐，重链和修改库后的重建检查已通过。
+**本候选已烧录并通过启动检查，完整设备验收进行中，固件尚未正式发布或提供下载。** 许可与匹配所选镜像的重链材料已备齐，重链和修改库后的重建检查已通过。
 
 仍须确认新版的完整起卦、T 键切换、历史与设置保留、LCD 分页及 USB／电池冷启动。旧 b3 应用的验收结论仅适用于旧镜像；macOS 本地构建也不能替代这里选定的 Linux CI 镜像。正式安装包及其摘要将在发行材料确认后提供。
 
@@ -34,4 +34,4 @@ Modern readings are project interpretations based on classical commentaries, not
 
 Application source is frozen at `4d412daab3e4f18339637392813d51ea159af610`. The selected Linux CI application is **1,202,112 bytes**, with the SHA-256 shown above. **149,362 native checks**, **9,800 layout checks**, the **62-page** preview audit and two CI rounds passed; latest private CI and relink-input capture also succeeded. The workflow-only PR head does not change the application.
 
-Licensing and matching relink materials are prepared and relink checks have passed. **The candidate remains unpublished and has not been flashed or accepted on hardware.** Previous hardware acceptance applies only to the earlier b3 image. See [VALIDATION.md](VALIDATION.md) for the selected artifact, completed checks and remaining device work.
+Licensing and matching relink materials are prepared and relink checks have passed. **The candidate firmware remains unpublished. It has been flashed and passed the serial boot check; full device acceptance is in progress.** Previous hardware acceptance applies only to the earlier b3 image. See [VALIDATION.md](VALIDATION.md) for the selected artifact, completed checks and remaining device work.
