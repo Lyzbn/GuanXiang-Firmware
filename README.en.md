@@ -2,7 +2,7 @@
 
 Offline three-coin I Ching and self-study firmware for **M5Stack Cardputer ADV**, with a dark landscape interface, warm gold text, and local reading history. Learn the eight trigrams and explore all 64 hexagrams without making a cast.
 
-**The updated 1.1.0 candidate passed fixed-source CI and was written to the device application partition. The serial boot smoke test passed; user acceptance is in progress, with no user result recorded yet, and firmware remains unpublished.** The written application digest matches, and all 20,480 NVS bytes remain identical to the pre-upgrade state. These checks do not establish acceptance of the display, controls or history interface. Matching release materials are being updated; application source remains private. [中文](README.md)
+**v1.1.0-rc.1 is publicly available as a prerelease**, with three reading modes, continuous moving-line reading and self-study for all 64 hexagrams. Fixed-source CI and this release’s device acceptance checks passed. All study cards pair a 40px name with the hexagram figure. [Download the prerelease](https://github.com/Lyzbn/GuanXiang-Firmware/releases/tag/v1.1.0-rc.1). Application source remains private. [中文](README.md)
 
 ## Three reading modes
 
@@ -28,7 +28,10 @@ Press **L** on the home screen. Study does not require a cast or create a histor
 
 1. **Twelve foundation lessons** introduce yin and yang, reading lines from bottom to top, and the eight trigrams through traditional mnemonics and diagrams.
 2. **Combine two trigrams** to see the resulting six-line figure, name and number. Li below Kan forms Jiji; reversing them forms Weiji. Up/Down selects the upper or lower trigram, and Left/Right changes it.
+
 3. **Explore all 64 in the conventional order**, with Left/Right jumping eight entries. Read the judgment, Great Image, Insight, six lines and sources using the same material as casting. Returning preserves the catalogue or combination position.
+
+Each study card uses a **40px name beside the hexagram figure**, with upper/lower trigram labels above and two short summary lines below. The layout supports all 64 hexagrams.
 
 ## Casting and history
 
@@ -36,21 +39,21 @@ Press Enter once to spin and again to toss for each line: twelve presses complet
 
 The firmware interface and reading texts are in Chinese; this English guide does not imply an English firmware interface.
 
-## Planned installation assets
+## Installation assets
 
 | Installation | Flash address | Existing history and settings |
 | --- | --- | --- |
 | Complete merged image | `0x0` | Resets NVS; preserve important records first |
 | Compatible GuanXiang application update | `0x10000` | Does not write NVS; requires matching partitions and app0 boot selection |
 
-Follow the final package instructions and checksums once released. Existing history and settings formats remain unchanged. Device interaction, history retention and cold starts still require acceptance for the expanded-reading and self-study candidate. Matching installation assets, checksums and relink materials are being updated. No public 1.1.0 release download is available.
+Follow the prerelease package instructions and checksums. Existing history and settings formats remain unchanged. The user accepted the large-name cards, confirmed preserved old history/settings, completed primary/moving-line/changed-hexagram reading with exactly one new history entry, and verified USB and battery cold starts with the new data retained. Prerelease assets, checksums and relink materials are available on the [download page](https://github.com/Lyzbn/GuanXiang-Firmware/releases/tag/v1.1.0-rc.1).
 
 ## Validation status
 
-The updated **1.1.0** application source is `38f2db6`. Local Release and Debug builds and **238,355 native checks** passed. Main-reading checks cover **13,522 layouts and 214,191 bounds**; study checks cover **5,359 layouts and 34,070 bounds**, with zero errors. The two galleries contain 68 and 29 host previews respectively. Fixed-source CI `38964682642` passed; the selected Linux application image is **1,567,440 bytes**. Its digest and device-check boundaries are recorded in [VALIDATION.md](VALIDATION.md).
+The public **v1.1.0-rc.1 prerelease** retains source-version metadata `1.1.0-dev`. Its application source is `ae85426`. The local Release build and fixed-source CI, including 238,355 native regression checks, passed. Main-reading checks cover **13,522 layouts and 214,191 bounds**; study checks cover **5,362 layouts and 34,342 bounds**, with zero errors. The two galleries contain 68 and 32 host previews respectively. Fixed-source CI `38967327177` passed; the selected Linux application image is **1,567,632 bytes**. Its digest and device-check boundaries are recorded in [VALIDATION.md](VALIDATION.md).
 
-The updated candidate is flashed, with the serial boot smoke test passed and user acceptance in progress; no user result has been recorded yet. Device evidence for earlier applications, including the previous three-mode draft, applies only to those images. The [validation record](VALIDATION.md) will distinguish each artifact and its device results; the [release notes](RELEASE_NOTES_v1.1.0.md) remain a candidate draft.
+The new candidate passed app-only writing, independent flash verification, NVS preservation and the serial boot smoke test; user acceptance passed. Matching relink and modified-framework rebuild checks also passed; native execution of the public Linux wrapper remains pending. The [validation record](VALIDATION.md) will distinguish each artifact and its device results; the [release notes](RELEASE_NOTES_v1.1.0.md) describe this prerelease.
 
 ## Release materials
 
-Firmware downloads will appear on the [releases page](https://github.com/Lyzbn/GuanXiang-Firmware/releases) after candidate device acceptance. See the [installation guide](INSTALL.md), [third-party notices](THIRD_PARTY_NOTICES.md) and [font sources](FONT_SOURCES.md).
+Prerelease firmware downloads are available on the [release page](https://github.com/Lyzbn/GuanXiang-Firmware/releases/tag/v1.1.0-rc.1). See the [installation guide](INSTALL.md), [third-party notices](THIRD_PARTY_NOTICES.md) and [font sources](FONT_SOURCES.md).

@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       tag:
-        description: Public release tag containing the 38f2db604024 candidate relink assets
+        description: Public release tag containing the ae85426a6943 candidate relink assets
         required: true
         type: string
         default: v1.1.0-rc.1
@@ -23,8 +23,8 @@ jobs:
     timeout-minutes: 30
     env:
       RELINK_ASSET: GuanXiang-Cardputer-ADV-v1.1.0-candidate-Relink.zip
-      EXPECTED_SOURCE_COMMIT: 38f2db6040246967c6b827f2c809dde6f2cad725
-      EXPECTED_RELEASE_APP_SHA256: f58703ade8e478e8950393c071d9625de22d77e389ebff9f8f85504cf5565b6a
+      EXPECTED_SOURCE_COMMIT: ae85426a6943abf851704dd74d2dc820eb4ae4c6
+      EXPECTED_RELEASE_APP_SHA256: 57e9dd2d6238164209ce90b4fc03c7b92e6c33df8f383d3b3cbba28dfb087f5e
       EXPECTED_APP_OBJECTS: '18'
 
     steps:
@@ -108,8 +108,8 @@ jobs:
             --esptool "$PLATFORMIO_CORE_DIR/packages/tool-esptoolpy/esptool.py"
           python tools/verify_relink_release.py image \
             --path "$RELINK_KIT/work/firmware.bin" \
-            --size 1567440 \
-            --sha256 16370bc0d6c23d27221071fa3c2b3fdad991c613598e7f84c4d265955294c670 \
+            --size 1567632 \
+            --sha256 8f21618ed29e31fac0d6b212650d17aa65a7e39dfbe453e50f56b2ec4cbc3e7d \
             >> "$GITHUB_STEP_SUMMARY"
 
       - name: Recompile and relink the supplied Arduino core

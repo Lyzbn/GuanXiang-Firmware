@@ -1,9 +1,10 @@
-# 观象 1.1.0（深化精意与自学候选草稿）
+# 观象 v1.1.0-rc.1（公开预发行）
 
-这次候选扩展阅读深度，并加入无需起卦的六十四卦自学。应用源码为 `38f2db6040246967c6b827f2c809dde6f2cad725`。**固定源码 CI 已全部通过，新应用已仅写入设备 app0；启动烟测通过，用户对新增阅读、自学与顺读的验收进行中，尚未收到验收结果，固件未正式发布。**
+这次候选扩展阅读深度，并加入无需起卦的六十四卦自学。应用源码为 `ae85426a6943abf851704dd74d2dc820eb4ae4c6`。**固定源码 CI 已全部通过，已仅更新 app0，写后核验、NVS 保持与启动烟测通过；用户验收已通过，v1.1.0-rc.1 已公开预发行。**
 
 ## 新增与调整
 
+- **64 卦大字卦象卡**：40px 卦名与左侧卦图，上方标明上下卦，底部保留两句短意；复用现有官方字体，全部 64 卦均支持。
 - **64 卦深化精意**：按「卦势、义理、处事、辨误」四节展开，讲清古义、处境和行动条件。
 - **386 份逐爻与用辞解读**：384 爻及用九、用六分「释义、精意」，古注节选与出处另列。现代反思不冒称古注原话。
 - **12 课 → 叠六爻 → 六十四卦自学**：首页 L 进入，从阴阳、读画方向和传统口诀认识八卦，再选择上下卦查找重卦，最后按通行卦序阅读。无需起卦，不新增历史。
@@ -16,15 +17,21 @@
 
 ## 已完成的软件验证
 
-本地 Release／Debug 构建通过；238,355 项原生检查通过。主阅读主机审计覆盖 13,522 个布局、214,191 个边界，提供 68 张预览；自学覆盖 5,359 个布局、34,070 个边界，提供 29 张预览，两者均无错误。内容检查覆盖 64 卦、386 份爻级解读与 450 处来源锚点。
+本地 Release 构建与固定源码 CI（含 238,355 项原生检查）通过。主阅读主机审计覆盖 13,522 个布局、214,191 个边界，提供 68 张预览；自学覆盖 5,362 个布局、34,342 个边界，提供 32 张预览，两者均无错误。内容检查覆盖 64 卦、386 份爻级解读与 450 处来源锚点。
 
-固定源码 Linux CI `38964682642` 全部通过；选定应用为 1,567,440 字节，SHA-256 为 `f58703ade8e478e8950393c071d9625de22d77e389ebff9f8f85504cf5565b6a`。仅写 app0 后摘要验证通过，NVS 全部 20,480 字节与升级前一致。启动烟测通过，用户验收进行中，尚无本次用户验收结论；匹配重链和安装材料正在更新。逐版本检查及设备边界见 [VALIDATION.md](VALIDATION.md)。
+固定源码 Linux CI `38967327177` 全部通过；选定应用为 1,567,632 字节，SHA-256 为 `57e9dd2d6238164209ce90b4fc03c7b92e6c33df8f383d3b3cbba28dfb087f5e`。准确输入采集 `38967328357` 成功，匹配重链及修改框架重建验证均通过；公开 Linux wrapper 原生运行仍待单独执行。仅写 app0 后独立 verify_flash 通过，20,480 字节 NVS 保持一致，20 秒启动烟测通过；用户验收已通过；不能沿用旧 38 的设备或重链结论。逐版本检查及设备边界见 [VALIDATION.md](VALIDATION.md)。
 
-## 发行前剩余工作
+## 用户验收与预发行材料
 
-新候选需要验证 LCD 字形与分节分页、首页 L 和课程／组合／目录按键、动爻到之卦的顺读，以及原有起卦、阅读档位、历史和设置保留、USB／电池冷启动。旧候选已完成的启动或交互记录仅适用于旧镜像。安装包与摘要将在匹配材料确认后更新，本文件不提供尚未确认的下载链接。
+用户已确认本次 `ae85426`：大字卦卡显示满意，旧历史与设置保留；完整本卦、动爻到之卦阅读正常，完成新占后历史只增加一条；USB 与电池分别冷启动正常，新历史和设置保留。这不是长期压力测试结论。
+
+已公开 [`v1.1.0-rc.1` 预发行](https://github.com/Lyzbn/GuanXiang-Firmware/releases/tag/v1.1.0-rc.1)，源码元数据仍为 `1.1.0-dev`，不称为稳定正式版。安装包、摘要与匹配重链材料随该预发行提供。
 
 ## English
+
+The user accepted this exact `ae85426` candidate: large-name study cards, preserved old history/settings, complete primary/moving-line/changed reading with exactly one new history entry, and both USB and battery cold starts with new data retained. This is not a long-duration stress-test result. The public release is [**v1.1.0-rc.1**](https://github.com/Lyzbn/GuanXiang-Firmware/releases/tag/v1.1.0-rc.1), a prerelease with source-version metadata `1.1.0-dev`, not a stable release.
+
+All 64 study cards now show a 40px hexagram name beside the figure, upper/lower trigram labels above, and two short summary lines below. This visual update reuses the existing official fonts.
 
 This 1.1.0 candidate expands all 64 hexagram readings into four sections and adds 386 individual readings: 384 lines plus the special Use of Nine and Use of Six. Each separates explanation of the classical commentary from modern reflections, with commentary excerpts and sources shown separately.
 
@@ -34,4 +41,4 @@ Enter finishes each moving-line card before continuing through line text, Small 
 
 Canonical text, Wang Bi/Kong Yingda commentary excerpts and AI-assisted project interpretations are labelled separately. Recommended modern books are further-reading suggestions, not licensed translations or endorsements.
 
-Application source: `38f2db6040246967c6b827f2c809dde6f2cad725`. Local Release/Debug builds and 238,355 native checks passed. Main-reading audit: 13,522 layouts / 214,191 bounds / 68 previews. Study audit: 5,359 layouts / 34,070 bounds / 29 previews. Both report zero errors. **Fixed-source CI `38964682642` passed and the selected application was flashed to app0 only. The serial boot smoke test passed; user acceptance is in progress, with no user result recorded yet, and firmware remains unpublished.** The application is 1,567,440 bytes; its SHA-256 is shown above and its written digest matches. All 20,480 NVS bytes are unchanged. Matching materials are being updated; earlier draft device or relink results do not validate this build. See [VALIDATION.md](VALIDATION.md).
+Application source: `ae85426a6943abf851704dd74d2dc820eb4ae4c6`. The local Release build and fixed-source CI, including 238,355 native regression checks, passed. Main-reading audit: 13,522 layouts / 214,191 bounds / 68 previews. Study audit: 5,362 layouts / 34,342 bounds / 32 previews. Both report zero errors. **Fixed-source CI `38967327177` passed. App-only writing, independent flash verification, NVS preservation and the serial boot smoke test passed; this candidate’s user acceptance passed, and v1.1.0-rc.1 is publicly available as a prerelease.** The application is 1,567,632 bytes; its SHA-256 is shown above. Exact-input capture `38967328357`, matching relink and modified-framework rebuild verification passed. Native execution of the public Linux wrapper remains pending. Earlier draft device or relink results do not validate this build. See [VALIDATION.md](VALIDATION.md).

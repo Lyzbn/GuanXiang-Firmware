@@ -1,6 +1,6 @@
 # Fonts / 字体来源
 
-The expanded-reading/self-study 1.1.0 candidate (application source `38f2db6`)
+The expanded-reading/self-study 1.1.0 candidate (application source `ae85426`; font data unchanged from `38f2db6`)
 regenerates runtime title and UI glyphs from official font inputs.
 Both font subsets are distributed under SIL Open Font License 1.1; their licenses
 apply independently from the proprietary application license.
@@ -33,6 +33,7 @@ apply independently from the proprietary application license.
 The original font inputs and generated subsets have pinned SHA-256 digests in
 [font-manifest.json](font-manifest.json). The manifest records reproducible sources;
 it contains no device backups or user history. The manifest is copied exactly
-from the fixed application commit’s official-font metadata. Its `ui_16` entry
+from the 38 candidate’s official-font metadata and has been verified byte-identical
+to the current `ae85426` commit. Its `ui_16` entry
 records the 972-glyph UI subset; the separate body supplement is described above.
 Its SHA-256 is `918c2a8e8cc25c7b7de9aadf06be7ffbeb4ff34c337229dd8e3d42106a5f623d`.

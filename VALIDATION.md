@@ -1,10 +1,67 @@
 # 验证记录 · Validation
 
-## 深化精意与自学候选（2026-10-16）
+## 当前候选：64 卦大字卦象卡（2026-10-16）
+
+源码 `ae85426a6943abf851704dd74d2dc820eb4ae4c6` 仅在 38 候选基础上调整自学卦象卡：所有 64 卦显示 40px 大字卦名、左侧卦图、上方上下卦与底部两句短意。阅读内容、课程和字体数据未改变，已与该固定提交逐字核对。
+
+**固定源码 CI 全部通过。已仅更新 app0，写后核验、NVS 保持与启动烟测通过；本候选用户验收已通过，v1.1.0-rc.1 已公开预发行。** 旧 38 的用户反馈、启动记录及重链结论均留在下方历史区，不能自动归给新镜像。
+
+| 选定应用 | 标识 |
+| --- | --- |
+| 固定源码 Linux CI | `38967327177`，全部通过 |
+| 应用镜像大小 | 1,567,632 字节 |
+| 应用 SHA-256 | `57e9dd2d6238164209ce90b4fc03c7b92e6c33df8f383d3b3cbba28dfb087f5e` |
+| 准确重链输入采集 | `38967328357`，成功；匹配重链验证通过 |
+| 设备结果 | 仅写 app0；独立 verify_flash 通过，NVS 全部 20,480 字节与升级前一致；20 秒启动烟测通过，用户验收已通过 |
+
+| 软件检查 | 结果与范围 |
+| --- | --- |
+| 本地正式构建 | 通过；RAM 24,556 / 327,680 字节；Flash 1,567,545 / 3,342,336 字节 |
+| 原生回归与构建 | 固定源码 CI 通过，238,355 项原生检查通过 |
+| 主阅读主机审计 | 13,522 个布局、214,191 个边界，0 错误；68 张预览 |
+| 自学主机审计 | 5,362 个布局、34,342 个边界，0 错误；32 张预览 |
+| 新布局覆盖 | 全部 64 卦均支持大字卦名与卦图 |
+| 安装资产 | 8 项离线升级检查通过；Full 为 1,633,168 字节，应用偏移及 NVS 全 `0xff` 检查通过 |
+| Debug | 本轮未重跑；下方 38 的 Debug 成功仅属历史证据 |
+
+Flash 是本地构建统计，不是 Linux CI `.bin` 长度。主阅读与自学采用各自审计口径。本次机器检查和用户验收已通过，具体用户确认范围如下；未据此宣称全部设置组合或长期压力测试通过。
+
+### 本候选匹配重链通过
+
+- 采集运行 `38967328357` 的 3,351 个 framework/source/SDK 文件逐个与所提供材料匹配。
+- 18 个原始应用对象重链精确复现所选 CI 应用；删除未使用的 IPA 日文字体成员后仍逐字节相同。
+- 18 个去除调试信息的应用对象可重链，产物仍为 1,567,632 字节；仅 ELF 摘要及镜像校验区域的 65 个字节变化，其余字节一致。重链 SHA-256 为 `8f21618ed29e31fac0d6b212650d17aa65a7e39dfbe453e50f56b2ec4cbc3e7d`，不是安装镜像摘要。
+- 修改框架后 48 个 core/SPI/Wire 源文件与 3 个库重建和链接通过，测试结束后已恢复原始源文件。
+
+以上在交叉工具环境中使用准确 Linux CI 运行库完成；**公开 Linux wrapper 原生运行仍待单独执行**。完整结果见 [RELINK_VALIDATION.json](RELINK_VALIDATION.json)。该 JSON 是重链包生成时的记录，发布状态以本页为准。它仅描述重链流程，其 `device_flashing_performed: false` 表示此重链流程不烧录设备；本候选的独立设备结果记录在下文。
+
+### 本候选设备机器检查
+
+应用区写入后独立 `verify_flash` 通过；全部 20,480 字节 NVS 与升级前一致。20 秒受控串口启动烟测通过，观察到一次正常应用启动，显示 240×135，loop、IMU 与扬声器就绪，报告 heap 358,076 字节；观察窗口内未见 fatal 或重启循环。
+
+### 本候选用户验收通过
+
+用户明确确认：
+
+- 大字卦卡显示满意，旧历史和设置保留。
+- 完整本卦、动爻到之卦阅读正常，新占完成后历史只有一条新增。
+- USB 与电池分别冷启动正常，新历史和设置均保留。
+
+以上为本次 `ae85426` 的实际确认范围，不宣称长期压力测试或全部设置组合已验证。[`v1.1.0-rc.1`](https://github.com/Lyzbn/GuanXiang-Firmware/releases/tag/v1.1.0-rc.1) 已公开预发行，源码元数据仍为 `1.1.0-dev`；不称为稳定正式版。
+
+### Current candidate — English
+
+Source `ae85426a6943abf851704dd74d2dc820eb4ae4c6` changes only the study hexagram card relative to the 38 candidate: all 64 cards show a 40px name, a figure on the left, trigram labels above and two summary lines below. Published reading, lesson and font data are byte-identical to this source.
+
+Fixed-source CI `38967327177` passed. The selected application is 1,567,632 bytes, SHA-256 `57e9dd2d6238164209ce90b4fc03c7b92e6c33df8f383d3b3cbba28dfb087f5e`. Exact-input capture `38967328357` and matching relink verification passed: 3,351 framework/source/SDK files matched; original objects and the unused-font removal reproduce the CI image exactly. All 18 stripped objects relink with only 65 digest/checksum bytes changed; rebuilding 48 core source units and three libraries after modification also passed. Native execution of the public Linux wrapper remains pending. Local Release statistics are RAM 24,556 bytes / Flash 1,567,545 bytes. Main-reading audit: 13,522 layouts / 214,191 bounds / 68 previews. Study audit: 5,362 layouts / 34,342 bounds / 32 previews; both report zero errors. The exact-source CI recorded 238,355 passing native checks. Debug was not rerun for this source.
+
+**App-only writing and independent flash verification passed. All 20,480 NVS bytes remain unchanged. The 20-second serial boot smoke test passed, with one normal boot, display/loop/IMU/speaker ready and no fatal error or reboot loop in the observation window. User acceptance passed; v1.1.0-rc.1 is publicly available as a prerelease.** The user confirmed the large-name cards, old data retention, complete reading with exactly one new history entry, and USB/battery cold starts with new data retained. These checks do not establish long-duration stress-test results. The historical 38 evidence below, including its Debug build, remains separate.
+
+## 历史基线：38 深化精意与自学候选（2026-10-16）
 
 本次应用源码为 `38f2db6040246967c6b827f2c809dde6f2cad725`，新增 64 卦四节精意、384 爻及用九／用六共 386 份解读、12 课八卦入门与上下卦组合自学。动爻 Enter 顺读完成爻辞、小象、精意及下一动爻，末项进入之卦。
 
-**本次固定源码 CI 已全部通过，选定应用已仅写入设备 app0；启动烟测通过，用户真机验收进行中，尚未收到验收结果，固件仍未正式发布。** 写后应用摘要匹配；NVS 全部 20,480 字节与升级前一致。这些证据不代替功能交互、历史回顾或冷启动验收。配套重链包另经完整来源与重链检查，结果见下文；不沿用旧 `4d412daa` 的结论。
+**本次固定源码 CI 已全部通过，选定应用已仅写入设备 app0；启动烟测通过；用户已确认正常启动、旧数据保留且总体体验良好，之后提出大字卦卡增强，固件当时未正式发布。** 写后应用摘要匹配；NVS 全部 20,480 字节与升级前一致。这些证据不代替功能交互、历史回顾或冷启动验收。配套重链包另经完整来源与重链检查，结果见下文；不沿用旧 `4d412daa` 的结论。
 
 | 选定应用 | 标识 |
 | --- | --- |
@@ -15,7 +72,7 @@
 
 该摘要只标识应用镜像，不是合并镜像或发行归档。
 
-本次受控串口启动烟测通过：显示 240×135、IMU 与扬声器就绪，应用进入 loop，报告 heap 358,076 字节。观察到一次正常应用启动，观察窗口内未见 fatal 错误或重启。用户正在核验启动数据、深度排版与动爻衔接、自学路线；尚未收到用户结果。启动烟测不等于这些交互项目已通过。
+本次受控串口启动烟测通过：显示 240×135、IMU 与扬声器就绪，应用进入 loop，报告 heap 358,076 字节。观察到一次正常应用启动，观察窗口内未见 fatal 错误或重启。用户随后确认正常启动、旧数据保留且总体体验良好；该反馈不等于下列全部专项验收项目逐一通过。启动烟测不等于这些交互项目已通过。
 
 | 检查 | 本次结果 |
 | --- | --- |
@@ -39,20 +96,20 @@
 - 修改框架后的 48 个 core/SPI/Wire 源文件及 3 个库重建通过，验证后原始源码已恢复；完整包清单核对通过。
 - 新版应用升级脚本的 8 个离线用例通过，测试仅使用包内应用和嵌入的布局样本，不依赖私有构建路径。
 
-重链验证在 macOS 交叉工具环境中使用准确 Linux CI 运行库完成；最终 Linux wrapper 尚待公开只读流程运行。详细记录见 [RELINK_VALIDATION.json](RELINK_VALIDATION.json)。这不替代下列用户硬件验收。
+重链验证在 macOS 交叉工具环境中使用准确 Linux CI 运行库完成；最终 Linux wrapper 尚待公开只读流程运行。此处保留旧 38 的摘要记录；[RELINK_VALIDATION.json](RELINK_VALIDATION.json) 当前仅对应新 ae 候选。这不替代下列用户硬件验收。
 
-### 新候选待验收
+### 38 未逐项确认的验收范围
 
 - 乾、坎、既济等完整卦级及逐爻精意的 LCD 字形、分节分页和页脚提示。
 - 首页 L、12 课全部内容、上下卦组合、64 卦目录、返回位置和用九／用六。
 - 无动、单动、多动与全动乾坤的 Enter 顺读，包括末项进入之卦。
 - 原有起卦、T 模式切换、历史与设置保留、新历史仅增加一条、USB／电池冷启动和长时间运行。
 
-### Current candidate — English
+### Historical 38 candidate — English
 
 Updated application source is `38f2db6040246967c6b827f2c809dde6f2cad725`. Local Release/Debug builds and 238,355 native checks passed. Main-reading audit: 13,522 layouts / 214,191 bounds / 68 previews. Study audit: 5,359 layouts / 34,070 bounds / 29 previews. Both audits report zero errors. Content checks cover 64 expanded hexagram readings, 386 line/special-text readings and 450 source anchors.
 
-**Fixed-source CI `38964682642` passed and the selected application was flashed to app0 only. The serial boot smoke test passed; user acceptance is in progress, with no user result recorded yet, and firmware remains unpublished.** The application is 1,567,440 bytes, SHA-256 `f58703ade8e478e8950393c071d9625de22d77e389ebff9f8f85504cf5565b6a`; its written digest matches. All 20,480 NVS bytes remain unchanged. Matching relink and modified-framework rebuild checks passed with the supplied CI inputs; the final Linux wrapper remains to be run in the read-only public workflow. Local program-size statistics are not the CI `.bin` byte length. Older artifact and device records below apply only to their stated versions.
+**Fixed-source CI `38964682642` passed and the selected application was flashed to app0 only. The serial boot smoke test passed; the user subsequently confirmed normal startup, preserved data and a positive overall experience, then requested the large study-card names. This was not acceptance of every individual scenario, and firmware remained unpublished.** The application is 1,567,440 bytes, SHA-256 `f58703ade8e478e8950393c071d9625de22d77e389ebff9f8f85504cf5565b6a`; its written digest matches. All 20,480 NVS bytes remain unchanged. Matching relink and modified-framework rebuild checks passed with the supplied CI inputs; the final Linux wrapper remains to be run in the read-only public workflow. Local program-size statistics are not the CI `.bin` byte length. Older artifact and device records below apply only to their stated versions.
 
 ## 以下为历史基线：上一轮三档阅读候选
 
