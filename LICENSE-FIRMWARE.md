@@ -1,8 +1,8 @@
-# GuanXiang Firmware Binary License 1.0 — draft
+# GuanXiang Firmware Binary License 1.0
 
 Copyright © 2026 Lyzbn. Rights reserved in the original GuanXiang portions.
 
-This document is prepared for the planned public release. The candidate firmware is not yet a published release.
+This document applies to the publicly available GuanXiang firmware prerelease v1.1.0-rc.1.
 
 ## Personal use
 

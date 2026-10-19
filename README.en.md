@@ -2,7 +2,23 @@
 
 Offline three-coin I Ching and self-study firmware for **M5Stack Cardputer ADV**, with a dark landscape interface, warm gold text, and local reading history. Learn the eight trigrams and explore all 64 hexagrams without making a cast.
 
+![GuanXiang on Cardputer ADV — device illustration with a large-name hexagram card](docs/media/device-overview.png)
+
+[Product page](https://lyzbn.github.io/GuanXiang-Firmware/en/) · Device illustration; screen UI rendered from the matching firmware and embedded fonts. [Image provenance](docs/media/README.md).
+
 **v1.1.0-rc.1 is publicly available as a prerelease**, with three reading modes, continuous moving-line reading and self-study for all 64 hexagrams. Fixed-source CI and this release’s device acceptance checks passed. All study cards pair a 40px name with the hexagram figure. [Download the prerelease](https://github.com/Lyzbn/GuanXiang-Firmware/releases/tag/v1.1.0-rc.1). Application source remains private. [中文](README.md)
+
+## Screen preview
+
+The 240 × 135 UI keeps the firmware's hexagram figures, 40px names and footer controls. These are static firmware-source renders, not hardware screenshots.
+
+| Qian · large-name card | Jiji · large-name card |
+| --- | --- |
+| ![Qian: six yang lines and a large hexagram name](docs/media/qian-native.png) | ![Jiji: six-line figure, large name and upper/lower trigrams](docs/media/jiji-native.png) |
+
+| Coins rise | Coins in flight | Coins settled |
+| --- | --- | --- |
+| ![Three coins rising](docs/media/42-coin-rise-native.png) | ![Three coins in flight](docs/media/43-coin-apex-native.png) | ![Three coins settled](docs/media/48-coin-settled-native.png) |
 
 ## Three reading modes
 

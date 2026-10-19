@@ -2,7 +2,23 @@
 
 面向 **M5Stack Cardputer ADV** 的离线三币六爻与自学固件。近黑与暖金的横屏界面，让六爻依次形成，再阅读本卦、动爻和之卦；也可从八卦入门，独立学习六十四卦。
 
+![观象运行于 Cardputer ADV 的设备效果示意，屏幕显示既济大字卦卡](docs/media/device-overview.png)
+
+[查看产品介绍页](https://lyzbn.github.io/GuanXiang-Firmware/) · 设备效果示意；屏幕按对应固件与嵌入字模重绘。[图片说明](docs/media/README.md)。
+
 **v1.1.0-rc.1 已公开预发行**，支持三档阅读、动爻顺读与六十四卦自学，已通过固定源码 CI 和本轮实机验收。自学卦卡为全部 64 卦提供 40px 大字卦名与卦图。[下载预发行固件](https://github.com/Lyzbn/GuanXiang-Firmware/releases/tag/v1.1.0-rc.1)。源码仓库保持私有。[English](README.en.md)
+
+## 界面预览
+
+240 × 135 的界面保留固件中的卦图、40px 大字卦名和页脚按键。以下为按固件源码重绘的静态画面，不是真机截屏。
+
+| 乾 · 大字卦卡 | 既济 · 大字卦卡 |
+| --- | --- |
+| ![乾卦：六条阳爻与大字卦名](docs/media/qian-native.png) | ![既济卦：六爻卦图、大字卦名及上下卦](docs/media/jiji-native.png) |
+
+| 三币起腾 | 三币腾落 | 三币落定 |
+| --- | --- | --- |
+| ![三枚钱币起腾](docs/media/42-coin-rise-native.png) | ![三枚钱币腾落](docs/media/43-coin-apex-native.png) | ![三枚钱币落定](docs/media/48-coin-settled-native.png) |
 
 ## 三档阅读
 
