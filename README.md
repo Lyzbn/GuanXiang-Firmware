@@ -86,4 +86,6 @@
 
 ## 发行材料
 
+2026-10-20：[下载 rc.1 许可补充包](https://github.com/Lyzbn/GuanXiang-Firmware/releases/download/v1.1.0-rc.1/GuanXiang-v1.1.0-rc.1-License-Supplement-20261020.zip)，建议与现有 Relink.zip 一并保存；补齐 Adafruit TCA8418 的完整 BSD 声明，不改变固件或原发行附件。
+
 预发行固件已在[发行页](https://github.com/Lyzbn/GuanXiang-Firmware/releases/tag/v1.1.0-rc.1)提供。当前用户验收已通过；可先阅读[安装说明](INSTALL.md)、[第三方声明](THIRD_PARTY_NOTICES.md)和[字体来源](FONT_SOURCES.md)。

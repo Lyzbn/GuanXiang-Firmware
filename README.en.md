@@ -72,4 +72,6 @@ The new candidate passed app-only writing, independent flash verification, NVS p
 
 ## Release materials
 
+2026-10-20: [Download the rc.1 license supplement](https://github.com/Lyzbn/GuanXiang-Firmware/releases/download/v1.1.0-rc.1/GuanXiang-v1.1.0-rc.1-License-Supplement-20261020.zip) alongside the existing Relink.zip; it adds the complete Adafruit TCA8418 BSD notice without changing firmware or the original release assets.
+
 Prerelease firmware downloads are available on the [release page](https://github.com/Lyzbn/GuanXiang-Firmware/releases/tag/v1.1.0-rc.1). See the [installation guide](INSTALL.md), [third-party notices](THIRD_PARTY_NOTICES.md) and [font sources](FONT_SOURCES.md).

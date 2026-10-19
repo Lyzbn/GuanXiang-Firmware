@@ -9,7 +9,7 @@
 | 组件及版本 | 适用文件或材料 | 许可与署名材料 |
 | --- | --- | --- |
 | Arduino-ESP32 2.0.17；PlatformIO framework `3.20017.241212+sha.dcc1105b` | Arduino core、SPI、Wire 及提供的源码；`libFrameworkArduino.a`、`libSPI.a`、`libWire.a` | LGPL-2.1-or-later；Arduino、Espressif 及各文件作者。见 [LGPL 全文](licenses/third-party/LGPL-2.1.txt)和 [Arduino 文件声明](licenses/third-party/extracted-notices/ARDUINO_SOURCE_NOTICES.txt)，其中 libb64 另见[原声明](licenses/third-party/libb64-LICENSE.txt)。 |
-| M5Cardputer 1.2.0 | `libM5Cardputer.a` | M5Stack Technology CO LTD；[MIT](licenses/third-party/M5Cardputer-MIT.txt)。 |
+| M5Cardputer 1.2.0 | `libM5Cardputer.a` | M5Stack Technology CO LTD；[MIT](licenses/third-party/M5Cardputer-MIT.txt)。其中 `Adafruit_TCA8418.cpp.o` 的 Adafruit 驱动另适用 Copyright (c) 2019 Limor Fried (Adafruit Industries) 的 [BSD 3-Clause 完整条款](licenses/third-party/Adafruit-TCA8418-BSD.txt)，不统一归为外层 MIT；条款取自 [Adafruit 固定上游文件](https://github.com/adafruit/Adafruit_TCA8418/blob/df1319acbe1f250b74d155c3535c177a20854030/license.txt)。 |
 | M5Unified 0.2.18 | `libM5Unified*.a` | M5Stack；[MIT](licenses/third-party/M5Unified-MIT.txt)和[文件声明](licenses/third-party/extracted-notices/M5UNIFIED_SOURCE_NOTICES.txt)。 |
 | M5GFX 0.2.25 | `libM5GFX*.a` | M5Stack；[MIT](licenses/third-party/M5GFX-MIT.txt)。其字体、解码器等文件另有声明，见 [M5GFX 文件声明](licenses/third-party/extracted-notices/M5GFX_SOURCE_NOTICES.txt)。Adafruit GFX 字体见 [BSD 全文](licenses/third-party/vendor-fonts/Adafruit-GFXFF-BSD.txt)，Tom Thumb 的 BSD 声明也保留于文件声明中。 |
 | IRremote 4.7.1 | 构建配置依赖；当前重链包无单独 IRremote archive | [MIT 与原版权](licenses/third-party/IRremote-MIT.txt)保留作依赖出处，不将它计为已确认链接的独立库。 |
