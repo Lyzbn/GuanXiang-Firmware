@@ -1,0 +1,42 @@
+{
+  "firmware_release": "v1.1.0-rc.1",
+  "firmware_source_commit": "ae85426a6943abf851704dd74d2dc820eb4ae4c6",
+  "published_media_date": "2026-10-20",
+  "assets": [
+    {
+      "file": "device-overview.png",
+      "sha256": "3502df1ec6cfa2d6e9b73d9b4ba53b371ff3bcd9c76e2c9318a855395234b08f",
+      "kind": "device illustration"
+    },
+    {
+      "file": "device-portrait.png",
+      "sha256": "a9f2d91607d7f3765d5b06dd9a6fefc8d939cf4ce5b5347740c1aa132a1ece60",
+      "kind": "device illustration"
+    },
+    {
+      "file": "jiji-native.png",
+      "sha256": "a4ce73cb49191b180b1efb2fbaccb82542748ab5245b36d13de7358d33fbdfde",
+      "kind": "firmware-source UI render"
+    },
+    {
+      "file": "qian-native.png",
+      "sha256": "10fa899a6744200682677eaa1be83b59726fd1c04066adb81d521f68119f3767",
+      "kind": "firmware-source UI render"
+    },
+    {
+      "file": "42-coin-rise-native.png",
+      "sha256": "1b38a5b59d08652004b55739e64f7ef5ce83b6b7241c8e8f706f1c5d427c01f6",
+      "kind": "firmware-source UI render"
+    },
+    {
+      "file": "43-coin-apex-native.png",
+      "sha256": "4a4eb9ee7cc9ec1c0c9c6988b657157876d8622b3af600ded29d935130b0ab1a",
+      "kind": "firmware-source UI render"
+    },
+    {
+      "file": "48-coin-settled-native.png",
+      "sha256": "cf98e632489905fe1f8f361a79e16fd5fb6b4ef7cdee3cbd55b480ec6ad0e9ef",
+      "kind": "firmware-source UI render"
+    }
+  ]
+}
