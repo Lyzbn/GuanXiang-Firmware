@@ -1,6 +1,6 @@
 # 观象文本来源 · Text sources
 
-核对于 2026-10-16。本说明对应深化精意与六十四卦自学候选，应用源码 `ae85426`（文字数据与旧 `38f2db6` 完全一致）；设备验收及安装资产状态另见 [VALIDATION.md](VALIDATION.md)。
+文字核对于 2026-10-16；2026-10-25 更新发行范围。v1.1.0-rc.2 只修复自学目录翻页，沿用 rc.1（应用源码 `ae85426`）的阅读与课程数据，内容与更早的 `38f2db6` 完全一致。设备验收及安装资产状态另见 [VALIDATION.md](VALIDATION.md)。
 
 **观象今释是本项目依据古典原文和注疏、借助 AI 辅助编写并复核的现代阅读文字，不是王弼、孔颖达、朱熹或现代学者的现成白话译文。** 经传原文、古注节选、项目今释和延伸阅读书目分别标明，不将来源引用或书目推荐作为作者、出版社或机构对本产品的背书。
 
@@ -35,7 +35,7 @@
 
 ## English
 
-This candidate distinguishes **canonical text**, **classical commentary excerpts**, **GuanXiang’s modern interpretations**, and **further-reading recommendations**. Modern text was prepared by the project with AI assistance and checked against the cited classical material. It is not an existing translation by Wang Bi, Kong Yingda, Zhu Xi or a modern scholar, nor an endorsement by the cited authors or institutions.
+The rc.1 and rc.2 releases distinguish **canonical text**, **classical commentary excerpts**, **GuanXiang’s modern interpretations**, and **further-reading recommendations**. Modern text was prepared by the project with AI assistance and checked against the cited classical material. It is not an existing translation by Wang Bi, Kong Yingda, Zhu Xi or a modern scholar, nor an endorsement by the cited authors or institutions.
 
 [readings.json](readings.json) provides 64 short summaries and four-part expanded hexagram readings, plus 386 individual readings for the 384 lines and the two special Use texts. Each individual reading separates explanation of the commentary from present-day reflections. The new expanded readings primarily follow Wang Bi and Kong Yingda’s *Zhouyi Zhengyi*. Earlier short-note sources, including specified passages from Zhu Xi, remain separately recorded.
 
@@ -45,7 +45,7 @@ Revision IDs and source-wikitext hashes identify the cited transcriptions; the 4
 
 ## 数据校验 · Dataset verification
 
-The following SHA-256 values identify the public data files originally exported from `38f2db6040246967c6b827f2c809dde6f2cad725` and verified byte-identical to current application source `ae85426a6943abf851704dd74d2dc820eb4ae4c6`. They are data digests, not firmware or release-archive digests.
+The following SHA-256 values identify the public data files originally exported from `38f2db6040246967c6b827f2c809dde6f2cad725` and verified byte-identical to rc.1 application source `ae85426a6943abf851704dd74d2dc820eb4ae4c6`. The rc.2 pagination fix leaves these data files unchanged. They are data digests, not firmware or release-archive digests.
 
 | File | SHA-256 |
 | --- | --- |

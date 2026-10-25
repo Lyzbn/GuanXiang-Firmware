@@ -1,6 +1,6 @@
 # 第三方软件与资源声明
 
-观象 v1.1.0-rc.1 公开预发行的第三方声明，材料核对日期：2026-10-16。本说明覆盖固件和配套重链接材料中实际提供的第三方库、SDK 文件及资源；某个库随 SDK 提供，不表示其全部功能进入最终固件。配套重链包使用与候选固件对应的 Linux CI 材料；对象和验证结果由包内清单记录。
+观象 v1.1.0-rc.2 预发行的第三方声明。依赖许可材料核对于 2026-10-16，2026-10-20 补齐 Adafruit TCA8418 BSD 全文；2026-10-25 更新发行范围。rc.2 仅修复自学目录翻页，第三方依赖、字体与阅读文字沿用 rc.1。本说明覆盖固件和配套重链接材料中实际提供的第三方库、SDK 文件及资源；某个库随 SDK 提供，不表示其全部功能进入最终固件。具体构建输入及结果以各版本配套重链包的清单为准。
 
 第三方组件保留各自许可。观象的[固件许可](LICENSE-FIRMWARE.md)不限制这些组件原有的权利。下表是阅读索引，完整版权、许可条款和逐文件声明见 [licenses/third-party](licenses/third-party/)；该目录的 `SHA256SUMS` 可检查材料完整性。原始声明保持原文，来源 JSON 仅将本地准备目录改为相对路径。
 
@@ -59,7 +59,7 @@ SDK 的 ESP-IDF 基线为 `v4.4.7`，主仓提交 `38eeba213aa695aabfd6d89aa9f50
 
 应用所用 GNU Unifont 17.0.04、Noto Serif CJK SC Black、efont 的来源与许可见 [FONT_SOURCES.md](FONT_SOURCES.md)。古文来源与现代整理文字见 [TEXT_SOURCES.md](TEXT_SOURCES.md)。
 
-当前 `ae85426` 配套重链包已从 M5GFX archive 删除未使用的 `lgfx_font_japan.c.o`（IPA 衍生日文字体），成员数由 59 变为 58，其余成员顺序保持不变。删除前后使用原始 CI 应用对象重链，固件均逐字节等于候选应用摘要 `57e9dd2d6238164209ce90b4fc03c7b92e6c33df8f383d3b3cbba28dfb087f5e`。因此该日文字体成员不随包分发；[IPA 原许可](licenses/third-party/vendor-fonts/IPA_Font_License_Agreement_v1.0.txt)仅作为裁剪来源记录保留。其他 GFXFF、efont 成员及相应声明仍保留。新候选完整来源、18 个去调试应用对象及修改框架重建的验证见 [RELINK_VALIDATION.json](RELINK_VALIDATION.json)；去调试后的重链产物有 65 个摘要／校验字段字节变化，不与安装镜像摘要混用。
+rc.2（CI 检出 `fd68d201`）配套重链包已从 M5GFX archive 删除未使用的 `lgfx_font_japan.c.o`（IPA 衍生日文字体），成员数由 59 变为 58，其余成员顺序保持不变。删除前后使用原始 CI 应用对象重链，固件均逐字节等于本版应用摘要 `44dd57a8d659d0097c00e48154155ce8d289ef2272c89fbe6df7feaf48239ec5`。因此该日文字体成员不随包分发；[IPA 原许可](licenses/third-party/vendor-fonts/IPA_Font_License_Agreement_v1.0.txt)仅作为裁剪来源记录保留。其他 GFXFF、efont 成员及相应声明仍保留。18 个去调试应用对象的重链产物为 1,567,664 字节，SHA-256 为 `a5cdc800ab90c56efdd98a6b27f6b668e50ca5b612169de4ed19a9cad967525d`；仅 64 个 ELF 摘要／镜像校验字段字节变化，其余字节与安装应用相同，不与安装镜像摘要混用。3,351 个框架来源文件核对、48 个 core/SPI/Wire 源文件与 3 个库的修改重建均通过。具体结果见配套包的验证 JSON 与[rc.2 重链记录](https://github.com/Lyzbn/GuanXiang-Firmware/blob/main/RELINK_VALIDATION_v1.1.0-rc.2.json)；[rc.1 记录](https://github.com/Lyzbn/GuanXiang-Firmware/blob/v1.1.0-rc.1/RELINK_VALIDATION.json)仅作历史证据。
 
 ## 外部工具链
 
@@ -71,4 +71,4 @@ SDK 的 ESP-IDF 基线为 `v4.4.7`，主仓提交 `38eeba213aa695aabfd6d89aa9f50
 
 ## 随包材料
 
-本说明与 `licenses/third-party/` 应随候选发行资产一起提供；`SHA256SUMS` 校验许可材料，重链包自身的清单与 `VALIDATION.json` 校验构建输入及结果。硬件验收和发布状态由项目维护记录说明，不由许可材料的准备状态代替。
+本说明与 `licenses/third-party/` 随对应发行资产提供；`SHA256SUMS` 校验许可材料，重链包自身的清单与 `VALIDATION.json` 校验构建输入及结果。硬件验收和发布状态由项目维护记录说明，不由许可材料的准备状态代替。

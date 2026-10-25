@@ -6,7 +6,7 @@ Offline three-coin I Ching and self-study firmware for **M5Stack Cardputer ADV**
 
 [Product page](https://lyzbn.github.io/GuanXiang-Firmware/en/) · Device illustration; screen UI rendered from the matching firmware and embedded fonts. [Image provenance](docs/media/README.md).
 
-**v1.1.0-rc.1 is publicly available as a prerelease**, with three reading modes, continuous moving-line reading and self-study for all 64 hexagrams. Fixed-source CI and this release’s device acceptance checks passed. All study cards pair a 40px name with the hexagram figure. [Download the prerelease](https://github.com/Lyzbn/GuanXiang-Firmware/releases/tag/v1.1.0-rc.1). Application source remains private. [中文](README.md)
+**v1.1.0-rc.2 prerelease** fixes skipped pages in the 64-hexagram catalogue: Left/Right now moves four entries, matching the visible page, and wraps at both ends. Three reading modes, continuous moving-line reading, self-study and 40px study-card names remain unchanged. [Download the prerelease](https://github.com/Lyzbn/GuanXiang-Firmware/releases/tag/v1.1.0-rc.2). Application source remains private. [中文](README.md)
 
 ## Screen preview
 
@@ -45,7 +45,7 @@ Press **L** on the home screen. Study does not require a cast or create a histor
 1. **Twelve foundation lessons** introduce yin and yang, reading lines from bottom to top, and the eight trigrams through traditional mnemonics and diagrams.
 2. **Combine two trigrams** to see the resulting six-line figure, name and number. Li below Kan forms Jiji; reversing them forms Weiji. Up/Down selects the upper or lower trigram, and Left/Right changes it.
 
-3. **Explore all 64 in the conventional order**, with Left/Right jumping eight entries. Read the judgment, Great Image, Insight, six lines and sources using the same material as casting. Returning preserves the catalogue or combination position.
+3. **Explore all 64 in the conventional order**, with Left/Right moving four entries and wrapping at both ends. Read the judgment, Great Image, Insight, six lines and sources using the same material as casting. Returning preserves the catalogue or combination position.
 
 Each study card uses a **40px name beside the hexagram figure**, with upper/lower trigram labels above and two short summary lines below. The layout supports all 64 hexagrams.
 
@@ -62,16 +62,16 @@ The firmware interface and reading texts are in Chinese; this English guide does
 | Complete merged image | `0x0` | Resets NVS; preserve important records first |
 | Compatible GuanXiang application update | `0x10000` | Does not write NVS; requires matching partitions and app0 boot selection |
 
-Follow the prerelease package instructions and checksums. Existing history and settings formats remain unchanged. The user accepted the large-name cards, confirmed preserved old history/settings, completed primary/moving-line/changed-hexagram reading with exactly one new history entry, and verified USB and battery cold starts with the new data retained. Prerelease assets, checksums and relink materials are available on the [download page](https://github.com/Lyzbn/GuanXiang-Firmware/releases/tag/v1.1.0-rc.1).
+Follow the prerelease package instructions and checksums. Existing history and settings formats remain unchanged. This rc.2 device check confirmed normal startup, retained history/settings, forward and backward catalogue wrapping, and opening hexagram 64 and returning to the correct page. Full casting, exactly one new history entry, and USB/battery cold starts were accepted on rc.1 and were not repeated this round. Assets, checksums and relink materials are on the [download page](https://github.com/Lyzbn/GuanXiang-Firmware/releases/tag/v1.1.0-rc.2).
 
 ## Validation status
 
-The public **v1.1.0-rc.1 prerelease** retains source-version metadata `1.1.0-dev`. Its application source is `ae85426`. The local Release build and fixed-source CI, including 238,355 native regression checks, passed. Main-reading checks cover **13,522 layouts and 214,191 bounds**; study checks cover **5,362 layouts and 34,342 bounds**, with zero errors. The two galleries contain 68 and 32 host previews respectively. Fixed-source CI `38967327177` passed; the selected Linux application image is **1,567,632 bytes**. Its digest and device-check boundaries are recorded in [VALIDATION.md](VALIDATION.md).
+The current **v1.1.0-rc.2 prerelease** retains source-version metadata `1.1.0-dev`. Pagination fix `96057ad` was merged as `935194f`; fixed-source CI `40195260690` passed on same-tree checkout `fd68d201`. All **239,345 native regression checks** passed. Study checks cover **5,362 layouts and 34,342 bounds**, with zero errors. The selected Linux application is **1,567,664 bytes**; its digest and version-specific evidence are in [VALIDATION.md](VALIDATION.md).
 
-The new candidate passed app-only writing, independent flash verification, NVS preservation and the serial boot smoke test; user acceptance passed. Matching relink and modified-framework rebuild checks also passed; native Linux relinking and framework rebuilding [passed](https://github.com/Lyzbn/GuanXiang-Firmware/actions/runs/38968830479) using the published release assets. The [validation record](VALIDATION.md) will distinguish each artifact and its device results; the [release notes](RELEASE_NOTES_v1.1.0.md) describe this prerelease.
+This build passed app-only writing, independent Flash verification, NVS preservation and a 20-second serial boot smoke test. Targeted catalogue device acceptance passed. Matching relink and modified-framework rebuilding also passed; native Linux verification of the release assets is recorded separately. Earlier full-reading, cold-start and relink results are not treated as rc.2 results; the [validation record](VALIDATION.md) separates current and historical checks. The [release notes](RELEASE_NOTES_v1.1.0-rc.2.md) describe the fix and downloads.
 
 ## Release materials
 
-2026-10-20: [Download the rc.1 license supplement](https://github.com/Lyzbn/GuanXiang-Firmware/releases/download/v1.1.0-rc.1/GuanXiang-v1.1.0-rc.1-License-Supplement-20261020.zip) alongside the existing Relink.zip; it adds the complete Adafruit TCA8418 BSD notice without changing firmware or the original release assets.
+For rc.1 users: [download the 2026-10-20 license supplement](https://github.com/Lyzbn/GuanXiang-Firmware/releases/download/v1.1.0-rc.1/GuanXiang-v1.1.0-rc.1-License-Supplement-20261020.zip) alongside the rc.1 Relink.zip; it adds the complete Adafruit TCA8418 BSD notice without changing firmware or the original release assets.
 
-Prerelease firmware downloads are available on the [release page](https://github.com/Lyzbn/GuanXiang-Firmware/releases/tag/v1.1.0-rc.1). See the [installation guide](INSTALL.md), [third-party notices](THIRD_PARTY_NOTICES.md) and [font sources](FONT_SOURCES.md).
+rc.2 materials are on the [release page](https://github.com/Lyzbn/GuanXiang-Firmware/releases/tag/v1.1.0-rc.2); its packages include the complete Adafruit TCA8418 BSD notice. See the [installation guide](INSTALL.md), [third-party notices](THIRD_PARTY_NOTICES.md) and [font sources](FONT_SOURCES.md).
