@@ -1,0 +1,242 @@
+{
+  "status": "packaged candidate; not published; hardware status separate",
+  "binary_source_commit": "fd68d2017fbc170a3f683679d279a2a282080ee4",
+  "source_ci_run_id": 40201888616,
+  "source_repository_visibility": "private",
+  "release_app_sha256": "44dd57a8d659d0097c00e48154155ce8d289ef2272c89fbe6df7feaf48239ec5",
+  "release_app_size": 1567664,
+  "application_object_count": 18,
+  "framework_sdk_public_files_sha256_verified": 3351,
+  "framework_source_evidence_scope": "Every supplied public framework/source/SDK file matched the new CI source hash evidence.",
+  "current_ci_framework_source_files_verified": 3351,
+  "ci_sdk_files_matched_to_supplied_framework": 2383,
+  "external_packages_verification_against_previously_verified_official_capture": {
+    "toolchain-xtensa-esp32s3": {
+      "scope": "all ordinary installed package files byte-identical to verified reference capture",
+      "matched_files": 1764
+    },
+    "tool-esptoolpy": {
+      "scope": "199 official esptool files and all other installed dependencies matched; two post-install dependencies changed",
+      "official_package_files_matched": 199,
+      "new_installed_file_count": 473,
+      "reference_installed_file_count": 473,
+      "dependency_versions": {
+        "bitarray": {
+          "reference": "3.12.2",
+          "current": "3.12.3"
+        },
+        "pycparser": {
+          "reference": "3.11",
+          "current": "3.12"
+        }
+      },
+      "added": {
+        "_contrib/bitarray-3.12.3.dist-info/INSTALLER": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+        "_contrib/bitarray-3.12.3.dist-info/METADATA": "1e3d96938b6c4c392ee46c04e5f50da2df85a41cc043e5e206fc6bdabf8ae6a2",
+        "_contrib/bitarray-3.12.3.dist-info/RECORD": "803c9e4d6f855e97119028110599975570091094c9827f447e37b5024afa0ced",
+        "_contrib/bitarray-3.12.3.dist-info/WHEEL": "6f4e81f3cefcac86f82eb136b868a4639c86666f3dcc0c146b0d15ef86a8dbdd",
+        "_contrib/bitarray-3.12.3.dist-info/licenses/LICENSE": "e19b1180b6ee73307a8545716be9b36318cf4f926aaf3eb43f7fde3396a102dd",
+        "_contrib/bitarray-3.12.3.dist-info/top_level.txt": "70b7687881e8b53c21e1e1d27bcab2f2e985ef3cf2c5433dd08f3315bdbfc618",
+        "_contrib/pycparser-3.12.dist-info/INSTALLER": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+        "_contrib/pycparser-3.12.dist-info/METADATA": "ad8db5fe2b0e0a3b0e8419fe5041b80be92470a40b06bd9c1462a0a8bb637c92",
+        "_contrib/pycparser-3.12.dist-info/RECORD": "ea700bd8ad997cbf36a536f11377c931e1ee5256eebf6324bf31c10f9558223c",
+        "_contrib/pycparser-3.12.dist-info/WHEEL": "98e75747d0b7c0c568bfb71263c3d8f970b3a374a6996087bc642be5cb09a1aa",
+        "_contrib/pycparser-3.12.dist-info/licenses/LICENSE": "0a9e78156ae8b96caf1b4f11ac2df424b83de29736f9e757630548a6272fdf90",
+        "_contrib/pycparser-3.12.dist-info/top_level.txt": "73e94f712ef82fff0aa07ec813a3d0179a1fca2ad140d57856191b48520f7963"
+      },
+      "removed": {
+        "_contrib/bitarray-3.12.2.dist-info/INSTALLER": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+        "_contrib/bitarray-3.12.2.dist-info/METADATA": "2bba68e631816c4ba099147c84e31f84bc4008a1d7834fbe057d7f0c95bfc4c4",
+        "_contrib/bitarray-3.12.2.dist-info/RECORD": "63b800a4fb62bfa3766010a00cc9f8a5f9975487263b39484619244ca3b904f7",
+        "_contrib/bitarray-3.12.2.dist-info/WHEEL": "6f4e81f3cefcac86f82eb136b868a4639c86666f3dcc0c146b0d15ef86a8dbdd",
+        "_contrib/bitarray-3.12.2.dist-info/licenses/LICENSE": "e19b1180b6ee73307a8545716be9b36318cf4f926aaf3eb43f7fde3396a102dd",
+        "_contrib/bitarray-3.12.2.dist-info/top_level.txt": "70b7687881e8b53c21e1e1d27bcab2f2e985ef3cf2c5433dd08f3315bdbfc618",
+        "_contrib/pycparser-3.11.dist-info/INSTALLER": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+        "_contrib/pycparser-3.11.dist-info/METADATA": "e3a74c846648bb55f4f907284b745e2003b87b96d9c9d17a8a50cf37804541c9",
+        "_contrib/pycparser-3.11.dist-info/RECORD": "a41b0dbb37ad1770f722f906489a00ce55f8ec671df46136d73a6f79c3ca4622",
+        "_contrib/pycparser-3.11.dist-info/WHEEL": "61532836a2b3111b7ec23519c09df7c41180c27165fb872a6d8913b566b88ad1",
+        "_contrib/pycparser-3.11.dist-info/licenses/LICENSE": "0a9e78156ae8b96caf1b4f11ac2df424b83de29736f9e757630548a6272fdf90",
+        "_contrib/pycparser-3.11.dist-info/top_level.txt": "73e94f712ef82fff0aa07ec813a3d0179a1fca2ad140d57856191b48520f7963"
+      },
+      "changed": {
+        "_contrib/bitarray/__init__.pyi": {
+          "reference_sha256": "093e289dd71fa88aabad9e57170047368c23bad3e352b7c510a09c6d8e58eb0d",
+          "current_sha256": "b5b9ee43f91cd071685e8268b006fb8aa7937b2e638ddca474eb8bec3c873992"
+        },
+        "_contrib/bitarray/_bitarray.cpython-311-x86_64-linux-gnu.so": {
+          "reference_sha256": "6b5cd295bac272be65e4db4ddeb5b162e39aae7b0f0f111df4f1ad16ad024f6d",
+          "current_sha256": "6794dbe115b8ca33f19cde7c8a2338f6be10e2c4bced5922bd63325a7c8e975d"
+        },
+        "_contrib/bitarray/_util.cpython-311-x86_64-linux-gnu.so": {
+          "reference_sha256": "6d6f37b142ee090b3676b15e7a4204487a13422b2247afb31c33d437680706e8",
+          "current_sha256": "3ee8f097c5f032c805e19ebc407b61d503f11fcfdff934fdef96b6f37986b8f2"
+        },
+        "_contrib/bitarray/bitarray.h": {
+          "reference_sha256": "aabc4dc85fd577f11c3c3a77904d0e5cfbde499963e9dfbdff8f3b88aad2024d",
+          "current_sha256": "925755a1c2314b37e370470202a2af9326855f46337b1a54ff09dcb31ee94cfe"
+        },
+        "_contrib/bitarray/test_bitarray.py": {
+          "reference_sha256": "ca1c12f81bbf6add8bb65ba09ceb9c73274da9fee6b7e447a7fe36a891cd0e93",
+          "current_sha256": "07d583ff655601a61c2e04a248d7ccaa3230f188ddf996613a7a26106509bdd1"
+        },
+        "_contrib/bitarray/test_util.py": {
+          "reference_sha256": "751e062f469907e53b02d1a32742458335f86fc12f0bfcffcfb00d075508bb48",
+          "current_sha256": "b21005062aa2dcdd416ddb1a4f76a329a8ac7b44c614e6f10569e5d9b65a92f7"
+        },
+        "_contrib/pycparser/__init__.py": {
+          "reference_sha256": "a78bf364bc0be541872ee109193d3e852d569cc82bd6715c8716d99808b190ff",
+          "current_sha256": "35922781317a3f15be51e6676d8fc2c6690f1b9c8f108d5705fff94835e34a14"
+        },
+        "_contrib/pycparser/_ast_gen.py": {
+          "reference_sha256": "f3ee67c4806e366f89c8a081fb6a96b25e7daf5eb789e6719dd09878ecc1307a",
+          "current_sha256": "3ca193689f1e47f2be2856b2bc969642672fd54820dfdf8749cf37364bfb786b"
+        },
+        "_contrib/pycparser/_c_ast.cfg": {
+          "reference_sha256": "9b0d422a7a039ea02d37bb411f1b8a4188303bbc1a7a16e8aa203e452c1c76e8",
+          "current_sha256": "47d94972e972397535e778a44f220a6c215ef137e4dbe7220adc9ff72a660798"
+        },
+        "_contrib/pycparser/ast_transforms.py": {
+          "reference_sha256": "be8a97e579b7864abc9bb62b78fed044fdeb9d1ad542d2e3ad7c86b3e295c071",
+          "current_sha256": "cbc35d509a8b833cb00732666c92ef6dcb0d46d2b3da0dd87ea42f8062fecf58"
+        },
+        "_contrib/pycparser/c_ast.py": {
+          "reference_sha256": "ea7da69073a22bf4f97a4ac8ba0651a2ebe63d50debc4da67d051402cd8c3be4",
+          "current_sha256": "042a060231e60d1f12d1dd061ab114384e0d506605651b7e5bd6e9d257781896"
+        },
+        "_contrib/pycparser/c_generator.py": {
+          "reference_sha256": "68211cc34c0a18462061e5c21ab14f8e9005c1662ce886e5a2e393538f7bb1b6",
+          "current_sha256": "770c62a48e69a505cc374ce3f39d4eb6a21610affe72d45067f2059d838ac882"
+        },
+        "_contrib/pycparser/c_lexer.py": {
+          "reference_sha256": "f390447cdc32939eb727cd5ae4e87e276acf7454a414b06a8507d2657b2e6e75",
+          "current_sha256": "ef5e16cc8031c4880672978d0080b59e9bd94a5b2cd66e16c0b52cf1dfbe105e"
+        },
+        "_contrib/pycparser/c_parser.py": {
+          "reference_sha256": "ceb19bdbc09e5ebc8fc8bd1050d7103adf57ce7fc3bfce17815ea67b723b2579",
+          "current_sha256": "b8c9a31bc8e57a075de2c44821995ba339653fa19d29e2dfbe2ea864a7381e48"
+        }
+      },
+      "distributed_in_public_kit": false
+    }
+  },
+  "device_flashing_performed": false,
+  "public_release_performed": false,
+  "hardware_acceptance": "Not established by relink packaging checks.",
+  "baseline_original_objects_exact_match": true,
+  "font_removal_image_identical_to_original_ci": true,
+  "removed_font_member": "lgfx_font_japan.c.o",
+  "mgfx_members_before": 59,
+  "mgfx_members_after": 58,
+  "private_app_objects_stripped": 18,
+  "stripped_app_debug_section_scan": "PASS",
+  "stripped_app_relink_sha256": "a5cdc800ab90c56efdd98a6b27f6b668e50ca5b612169de4ed19a9cad967525d",
+  "relinked_size": 1567664,
+  "differing_byte_count": 64,
+  "differing_byte_offsets": [
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    1567631,
+    1567632,
+    1567633,
+    1567634,
+    1567636,
+    1567637,
+    1567638,
+    1567639,
+    1567640,
+    1567641,
+    1567642,
+    1567643,
+    1567644,
+    1567645,
+    1567646,
+    1567647,
+    1567648,
+    1567649,
+    1567650,
+    1567651,
+    1567652,
+    1567653,
+    1567654,
+    1567655,
+    1567656,
+    1567657,
+    1567658,
+    1567659,
+    1567660,
+    1567661,
+    1567662,
+    1567663
+  ],
+  "difference_scope": [
+    "embedded ELF SHA256 at 0xb0..0xcf",
+    "image XOR checksum at 0x17eb8f",
+    "trailing image SHA256"
+  ],
+  "all_other_image_bytes_identical": true,
+  "modified_core_rebuild_and_link": "PASS; 48 source units, 3 libraries, temporary nop confirmed in disassembly; source restored",
+  "modified_core_test_sha256": "1971f752b18805d2af33ed566c2a6f54d560217cb63abbcc1713379fd11cc4a3",
+  "modified_core_test_size": 1567136,
+  "validation_execution": "Cross-compiler/binutils with exact captured Linux runtime archives/startup objects; baseline reproduced selected CI firmware. Native Linux public-wrapper execution is separately recorded.",
+  "validated_recipe_sha256": "7512742708d7cabaa58149cd25d84945ccc6320fb73410c493d601114b373d77",
+  "validated_object_manifest_sha256": "b55e4e3855139ee77bdac0c2902396420937218112559d96f7cbdf7f712b2667",
+  "validated_framework_manifest_sha256": "542cc1e80aa5d49e1b3eda6ee9d3c1abd48430d835b5c125311449cf1140ef91",
+  "recipe_version_metadata_clarification": {
+    "prior_validated_recipe_sha256": "1dfafbe2db9cd811647cc968660fb490f541efeac30317268bcd23e302317246",
+    "link_and_rebuild_commands_unchanged": true,
+    "change": "Rename release label to release_version; separately record unchanged source version metadata."
+  },
+  "release_version": "v1.1.0-rc.2",
+  "source_version_json_version": "1.1.0-dev",
+  "embedded_app_descriptor_version": "esp-idf: v4.4.7 38eeba213a",
+  "embedded_app_descriptor_project": "arduino-lib-builder",
+  "accepted_fix_commit": "96057ad3627ad6f43f429ebddca6d1dadd72d48b",
+  "accepted_ci_run_id": 40195260690,
+  "capture_app_and_elf_byte_identical_to_accepted_ci": true,
+  "accepted_ci_elf_sha256": "f82f87e2b1d4674b78ed24b997cfcf019d85c562ecd504c71f2cbbc5376652cf",
+  "framework_source_hash_evidence_sha256": "dcbd7652a748dca30f9f7c2cba82f5780923851164c15c68d8d7954e6bff0a45",
+  "framework_source_hash_evidence_run_id": 40201888616,
+  "private_application_source_included": false,
+  "linked_elf_included": false,
+  "standalone_toolchain_runtime_archives_included": false,
+  "excluded_unused_upstream_binary_files": 55,
+  "private_app_object_privacy_scan": {
+    "objects_checked": 18,
+    "DWARF_sections": 0,
+    "private_absolute_path_markers": 0,
+    "scope": "Private application relocatable objects only; original public third-party archives may retain upstream debug metadata."
+  },
+  "third_party_license_manifest_entries_verified": 94,
+  "TCA8418_full_BSD_included": true,
+  "preparation_snapshot_note": "public_release_performed=false records this local materials-preparation task, not the current availability of the release."
+}

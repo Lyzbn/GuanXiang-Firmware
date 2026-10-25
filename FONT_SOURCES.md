@@ -1,7 +1,8 @@
 # Fonts / 字体来源
 
-The expanded-reading/self-study 1.1.0 candidate (application source `ae85426`; font data unchanged from `38f2db6`)
-regenerates runtime title and UI glyphs from official font inputs.
+The v1.1.0-rc.2 pagination fix retains the font data of v1.1.0-rc.1
+(application source `ae85426`, unchanged from `38f2db6`). Runtime title and UI
+glyphs were regenerated from official font inputs; this release adds no new fonts.
 Both font subsets are distributed under SIL Open Font License 1.1; their licenses
 apply independently from the proprietary application license.
 
@@ -22,7 +23,7 @@ apply independently from the proprietary application license.
   supplement where needed. The body-text coverage audit checks 2,241 distinct
   characters across the included texts; this is a coverage total, not the size
   of a single font subset. Short readings use 234 distinct characters. Complete
-  third-party notices belong in the final distribution package.
+  third-party notices and the efont copyright text accompany the release packages.
 
 大字可复现原有像素；原417个小字中407个与官方Unifont一致，
 其余10字“→养卦受回月美辞：？”采用官方字形。当前界面子集为972字，
@@ -34,6 +35,6 @@ The original font inputs and generated subsets have pinned SHA-256 digests in
 [font-manifest.json](font-manifest.json). The manifest records reproducible sources;
 it contains no device backups or user history. The manifest is copied exactly
 from the 38 candidate’s official-font metadata and has been verified byte-identical
-to the current `ae85426` commit. Its `ui_16` entry
+to the rc.1 `ae85426` commit. The rc.2 fix leaves these font files unchanged. Its `ui_16` entry
 records the 972-glyph UI subset; the separate body supplement is described above.
 Its SHA-256 is `918c2a8e8cc25c7b7de9aadf06be7ffbeb4ff34c337229dd8e3d42106a5f623d`.

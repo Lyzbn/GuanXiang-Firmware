@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
     inputs:
       tag:
-        description: Public release tag containing the ae85426a6943 candidate relink assets
+        description: Release tag containing the rc.2 relink assets
         required: true
         type: string
-        default: v1.1.0-rc.1
+        default: v1.1.0-rc.2
 
 permissions:
   contents: read
@@ -22,9 +22,9 @@ jobs:
     runs-on: ubuntu-22.04
     timeout-minutes: 30
     env:
-      RELINK_ASSET: GuanXiang-Cardputer-ADV-v1.1.0-candidate-Relink.zip
-      EXPECTED_SOURCE_COMMIT: ae85426a6943abf851704dd74d2dc820eb4ae4c6
-      EXPECTED_RELEASE_APP_SHA256: 57e9dd2d6238164209ce90b4fc03c7b92e6c33df8f383d3b3cbba28dfb087f5e
+      RELINK_ASSET: GuanXiang-Cardputer-ADV-v1.1.0-rc.2-Relink.zip
+      EXPECTED_SOURCE_COMMIT: fd68d2017fbc170a3f683679d279a2a282080ee4
+      EXPECTED_RELEASE_APP_SHA256: 44dd57a8d659d0097c00e48154155ce8d289ef2272c89fbe6df7feaf48239ec5
       EXPECTED_APP_OBJECTS: '18'
 
     steps:
@@ -49,8 +49,8 @@ jobs:
         run: python -m unittest discover -s tests -p test_verify_relink_release.py -v
 
       - name: Download this repository's release assets
-        # Keep contents:read. Run only when the selected release is public;
-        # a draft-asset permission denial must not be retried with broader access.
+        # Keep contents:read. Download published or draft assets only when the
+        # repository token permits; do not broaden access after a denial.
         env:
           GH_TOKEN: ${{ github.token }}
           RELEASE_TAG: ${{ inputs.tag }}
@@ -108,8 +108,8 @@ jobs:
             --esptool "$PLATFORMIO_CORE_DIR/packages/tool-esptoolpy/esptool.py"
           python tools/verify_relink_release.py image \
             --path "$RELINK_KIT/work/firmware.bin" \
-            --size 1567632 \
-            --sha256 8f21618ed29e31fac0d6b212650d17aa65a7e39dfbe453e50f56b2ec4cbc3e7d \
+            --size 1567664 \
+            --sha256 a5cdc800ab90c56efdd98a6b27f6b668e50ca5b612169de4ed19a9cad967525d \
             >> "$GITHUB_STEP_SUMMARY"
 
       - name: Recompile and relink the supplied Arduino core

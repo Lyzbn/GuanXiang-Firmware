@@ -6,7 +6,7 @@
 
 [查看产品介绍页](https://lyzbn.github.io/GuanXiang-Firmware/) · 设备效果示意；屏幕按对应固件与嵌入字模重绘。[图片说明](docs/media/README.md)。
 
-**v1.1.0-rc.1 已公开预发行**，支持三档阅读、动爻顺读与六十四卦自学，已通过固定源码 CI 和本轮实机验收。自学卦卡为全部 64 卦提供 40px 大字卦名与卦图。[下载预发行固件](https://github.com/Lyzbn/GuanXiang-Firmware/releases/tag/v1.1.0-rc.1)。源码仓库保持私有。[English](README.en.md)
+**v1.1.0-rc.2 预发行**修复六十四卦目录隔页跳过的问题：←→ 每次翻 4 卦，与屏幕显示一致，首尾可循环。三档阅读、动爻顺读、六十四卦自学和 40px 大字卦卡保持不变。[下载预发行固件](https://github.com/Lyzbn/GuanXiang-Firmware/releases/tag/v1.1.0-rc.2)。源码仓库保持私有。[English](README.en.md)
 
 ## 界面预览
 
@@ -47,7 +47,7 @@
 1. **12 课识八卦**：从阴阳、由下而上的读画方向开始，用传统口诀与卦画对照认识八卦。
 2. **叠六爻**：选择上卦和下卦，实时查看组合后的六爻、卦名与序号；例如下离上坎为既济，交换后为未济。↑↓ 选择上／下卦，←→ 切换八卦。
 
-3. **读六十四卦**：按通行卦序浏览，←→ 跳八卦；进入后共用卦辞、大象、精意、六爻与出处，返回保留目录或组合位置。
+3. **读六十四卦**：按通行卦序浏览，←→ 每次翻 4 卦，首尾循环；进入后共用卦辞、大象、精意、六爻与出处，返回保留目录或组合位置。
 
 自学卦象卡先用 **40px 大字卦名与左侧卦图** 展示当前卦，上方辨认上下卦，底部保留两句短意；全部 64 卦使用同一层级。
 
@@ -67,7 +67,7 @@
 | 首次安装或从其他固件切换 | 合并固件写入 `0x0` | 会重置；先保留重要记录 |
 | 相同分区布局且从 app0 启动的观象 | 应用固件写入 `0x10000` | 不写 NVS；须先通过兼容性检查 |
 
-现有历史及设置格式保持不变。用户已确认大字卦卡显示满意、旧历史与设置保留，完整本卦／动爻到之卦阅读正常且新历史只增加一条，USB 与电池分别冷启动正常并保留新数据。预发行安装包、摘要和重链材料见[下载页](https://github.com/Lyzbn/GuanXiang-Firmware/releases/tag/v1.1.0-rc.1)。
+现有历史及设置格式保持不变。本轮 rc.2 已确认正常启动、旧历史和设置保留，目录首尾正反翻页及第 64 卦打开后返回位置正常。完整起卦、只新增一条历史及 USB／电池冷启动的验收来自 rc.1，本轮未重测。预发行安装包、摘要和重链材料见[下载页](https://github.com/Lyzbn/GuanXiang-Firmware/releases/tag/v1.1.0-rc.2)。
 
 ## 快速开始
 
@@ -80,12 +80,12 @@
 
 ## 版本与验证
 
-已公开版本：**v1.1.0-rc.1（预发行）**，源码版本元数据仍为 `1.1.0-dev`。本次应用源码提交为 `ae85426`；本地 Release 构建与固定源码 CI（含 238,355 项原生检查）通过。主阅读检查 **13,522 个布局、214,191 个边界**，自学检查 **5,362 个布局、34,342 个边界**，均无错误；分别提供 68 张与 32 张主机预览。固定源码 CI `38967327177` 全部通过；选定 Linux 应用镜像为 **1,567,632 字节**，摘要及设备检查边界见[验证记录](VALIDATION.md)。
+当前发行：**v1.1.0-rc.2（预发行）**，源码版本元数据仍为 `1.1.0-dev`。翻页修复提交 `96057ad`，已合并为 `935194f`；固定源码 CI `40195260690` 使用同树提交 `fd68d201`，已通过。原生回归检查 **239,345 项**全部通过；自学检查 **5,362 个布局、34,342 个边界**，无错误。选定 Linux 应用镜像为 **1,567,664 字节**；摘要与逐版本证据见[验证记录](VALIDATION.md)。
 
-本次用户验收与匹配重链均已通过；公开 Linux 原生重链与框架重建[检查已通过](https://github.com/Lyzbn/GuanXiang-Firmware/actions/runs/38968830479)。各候选的镜像摘要与实际设备结果分别记录在 [VALIDATION.md](VALIDATION.md)；[发行说明](RELEASE_NOTES_v1.1.0.md) 记录本次预发行内容。
+本轮应用区写入、独立 Flash 核验、NVS 保留及 20 秒启动烟测通过，用户完成了针对目录翻页的实机验收。本版匹配重链及修改框架重建也已通过；公开 Linux 工作流的发行资产复核单独记录。旧版完整阅读、冷启动和重链结果不自动作为 rc.2 的验证结论；[验证记录](VALIDATION.md) 分别注明本轮与历史范围，[发行说明](RELEASE_NOTES_v1.1.0-rc.2.md) 说明改动与下载文件。
 
 ## 发行材料
 
-2026-10-20：[下载 rc.1 许可补充包](https://github.com/Lyzbn/GuanXiang-Firmware/releases/download/v1.1.0-rc.1/GuanXiang-v1.1.0-rc.1-License-Supplement-20261020.zip)，建议与现有 Relink.zip 一并保存；补齐 Adafruit TCA8418 的完整 BSD 声明，不改变固件或原发行附件。
+旧 rc.1 用户：2026-10-20 的[许可补充包](https://github.com/Lyzbn/GuanXiang-Firmware/releases/download/v1.1.0-rc.1/GuanXiang-v1.1.0-rc.1-License-Supplement-20261020.zip)，建议与 rc.1 Relink.zip 一并保存；补齐 Adafruit TCA8418 的完整 BSD 声明，不改变固件或原发行附件。
 
-预发行固件已在[发行页](https://github.com/Lyzbn/GuanXiang-Firmware/releases/tag/v1.1.0-rc.1)提供。当前用户验收已通过；可先阅读[安装说明](INSTALL.md)、[第三方声明](THIRD_PARTY_NOTICES.md)和[字体来源](FONT_SOURCES.md)。
+rc.2 预发行材料见[发行页](https://github.com/Lyzbn/GuanXiang-Firmware/releases/tag/v1.1.0-rc.2)，新包内包含完整 Adafruit TCA8418 BSD 声明。安装前请阅读[安装说明](INSTALL.md)、[第三方声明](THIRD_PARTY_NOTICES.md)和[字体来源](FONT_SOURCES.md)。

@@ -1,6 +1,65 @@
 # 验证记录 · Validation
 
-## 当前候选：64 卦大字卦象卡（2026-10-16）
+## 当前发行：v1.1.0-rc.2 目录翻页修复（2026-10-25）
+
+本版是六十四卦目录翻页修复，验收日期为 2026-10-25。目录每页显示 4 卦，旧版左右键却移动 8 卦，导致 57–60 页向右回到 1–4、61–64 页向右到 5–8。本版把翻页步长与显示行数统一为 4。
+
+### 固定二进制
+
+| 项目 | 本版记录 |
+| --- | --- |
+| 修复提交 | `96057ad3627ad6f43f429ebddca6d1dadd72d48b` |
+| 合并提交 | `935194f62ca76e54500362c131d37846b82b581b` |
+| CI 检出提交 | `fd68d2017fbc170a3f683679d279a2a282080ee4` |
+| 共同源码树 | `e4c99572509edae0e1e30885576edaba0c3ff8b8` |
+| 固件与主机检查 CI | `40195260690`，通过 |
+| 应用 | 1,567,664 字节；SHA-256 `44dd57a8d659d0097c00e48154155ce8d289ef2272c89fbe6df7feaf48239ec5` |
+| 完整镜像 | 1,633,200 字节；SHA-256 `81f8cea104067171cf768409fd686dd82cb8b3f359d0f95c6aa8ef109e472069` |
+
+应用和完整镜像均原样取自所选 CI 归档；没有重新编译或修改二进制版本字段。对外发行号为 v1.1.0-rc.2，固件内部版本仍为 1.1.0-dev。
+
+### 软件与安装包检查
+
+- 原生回归检查 239,345 项通过；新用例在旧代码上出现 129 项失败，修复后为 0 项失败。覆盖首尾翻页、每个行位置的全部 16 页循环、双向反向一致性，以及 61–64 卦进入与返回。
+- Cardputer ADV 构建、字体与文本审计通过。
+- 自学主机布局审计通过：5,362 个布局、34,342 个边界检查，0 错误；最后一页预览包含 61 中孚、62 小过、63 既济、64 未济。
+- 应用升级器的 8 项离线测试通过，包括有效检查／写入、应用篡改、分区改变、app1 启动选择、损坏 OTA 元数据和短读取。测试模拟设备调用，没有执行真实串口写入。
+- 完整镜像布局校验通过：`0x10000` 后与应用逐字节相同，启动程序、分区表、OTA 元数据与 CI 对应段相同，NVS 区全部为 `0xff`。完整安装会清除历史和设置。
+
+### 本版设备检查与用户验收
+
+先完成完整 Flash 备份并独立验证，再只写 app0 的 `0x10000`。写入摘要和独立完整 Flash 摘要验证均通过；首 64 KiB 的启动程序、分区、NVS 和 OTA 区域与升级前逐字节相同，包含全部 20,480 字节 NVS。
+
+20 秒串口烟测观察到一次健康启动；240×135 显示、loop、IMU 和扬声器就绪，观察窗口内未见 fatal 或重启循环。
+
+用户确认：
+
+- 正常进入观象，原有历史和设置保留。
+- 反向 `1–4 → 61–64 → 57–60` 和正向 `57–60 → 61–64 → 1–4` 均正常。
+- 打开第 64 卦并返回，仍停在 61–64 页。
+
+本轮未重复完整起卦、USB 冷启动、电池冷启动、长期压力测试或全部设置组合。rc.1 曾经通过的相关验收属于旧二进制的历史证据，不自动算作本版结果。
+
+### 配套重链接验证
+
+采集运行 `40201888616` 的应用和 ELF 与选定 CI `40195260690` 逐字节相同；3,351 个提供的框架／SDK 来源文件与本次采集材料匹配。
+
+- 18 个原始应用对象重链，精确复现本版应用摘要 `44dd57a8d659d0097c00e48154155ce8d289ef2272c89fbe6df7feaf48239ec5`。
+- M5GFX 删除未使用的 `lgfx_font_japan.c.o` 后，archive 由 59 个成员减至 58 个，重链应用仍逐字节相同。
+- 18 个去调试应用对象重链得到 1,567,664 字节，SHA-256 为 `a5cdc800ab90c56efdd98a6b27f6b668e50ca5b612169de4ed19a9cad967525d`。仅 ELF 摘要及镜像校验区域的 64 个字节变化，其余应用字节相同；这不是安装应用摘要。
+- 48 个 core/SPI/Wire 源文件与 3 个库的临时修改、重编及重链通过，并已恢复原始源码。
+
+以上是在交叉工具环境下使用准确捕获的 Linux 运行库完成。官方工具链和 esptool 包版本保持不变；esptool 安装后依赖 bitarray、pycparser 的版本变化单独记录，未分发进公开重链包。公开 Linux 工作流使用发行资产的复核须另行记录，未以旧版公开运行代替。
+
+本轮机器记录见 [RELINK_VALIDATION_v1.1.0-rc.2.json](RELINK_VALIDATION_v1.1.0-rc.2.json)。其中 `device_flashing_performed: false` 和 `public_release_performed: false` 保留生成快照时该重链流程未烧录、未发布的事实，不覆盖上文独立设备验收；实际发行可用性以[发行页](https://github.com/Lyzbn/GuanXiang-Firmware/releases/tag/v1.1.0-rc.2)为准。仓库原有 [RELINK_VALIDATION.json](RELINK_VALIDATION.json) 保留 rc.1 原快照，不改写历史状态。
+
+### English scope
+
+This release fixes the study catalogue's four-item page navigation. The selected CI application and merged image are unchanged. All 239,345 native checks passed, the study audit reported 5,362 layouts / 34,342 bounds with zero errors, and all eight offline upgrader tests passed. Device flashing, independent verification, preservation of the first 64 KiB (including NVS), and a 20-second boot smoke check passed. The user confirmed startup/data retention, both catalogue wrap directions and returning from hexagram 64. Matching relink validation also passed: 18 original application objects reproduce the accepted image, while the stripped-object image differs only in 64 digest/checksum bytes. Modified core/SPI/Wire rebuilding passed. Native Linux verification of the published assets is recorded separately. Full new-cast, USB/battery cold-start and long-duration tests were not repeated for this binary.
+
+---
+
+## 历史基线：rc.1 大字卦象卡（2026-10-16）
 
 源码 `ae85426a6943abf851704dd74d2dc820eb4ae4c6` 仅在 38 候选基础上调整自学卦象卡：所有 64 卦显示 40px 大字卦名、左侧卦图、上方上下卦与底部两句短意。阅读内容、课程和字体数据未改变，已与该固定提交逐字核对。
 
@@ -53,7 +112,7 @@ Flash 是本地构建统计，不是 Linux CI `.bin` 长度。主阅读与自学
 
 以上为本次 `ae85426` 的实际确认范围，不宣称长期压力测试或全部设置组合已验证。[`v1.1.0-rc.1`](https://github.com/Lyzbn/GuanXiang-Firmware/releases/tag/v1.1.0-rc.1) 已公开预发行，源码元数据仍为 `1.1.0-dev`；不称为稳定正式版。
 
-### Current candidate — English
+### Historical rc.1 candidate — English
 
 Source `ae85426a6943abf851704dd74d2dc820eb4ae4c6` changes only the study hexagram card relative to the 38 candidate: all 64 cards show a 40px name, a figure on the left, trigram labels above and two summary lines below. Published reading, lesson and font data are byte-identical to this source.
 

@@ -2,7 +2,7 @@
 
 Copyright © 2026 Lyzbn. Rights reserved in the original GuanXiang portions.
 
-This document applies to the publicly available GuanXiang firmware prerelease v1.1.0-rc.1.
+This document applies to the GuanXiang firmware prereleases v1.1.0-rc.1 and v1.1.0-rc.2.
 
 ## Personal use
 
